@@ -1,0 +1,98 @@
+
+    Story-fying the Project:
+
+### INTRO ###
+0)  Wireless Power transfer - Maxwell equations explains the strong
+fall off of effieciency with distance.
+
+0)  Transformation optics is a powerful tool for designing arbitrary
+field manipulation devices.
+	- We have specifications for a device that concentrates
+	  magnetic field in free space by an arbitrary factor while
+	  maintaining the original characteristics of the field.
+	- Using 'Metamaterial' to realise solution as highly
+          anisotropic material needed.
+	- optimal coupling between two shells is wanted. Can discuss
+          here how this arrangement is better than two dipoles at x-2R
+          distance apart.
+	- Other uses for such a device
+	  e.g - Safe strong magnet.
+	      - Small field detection.
+	      - Brain scan.
+	      - magnetic memory devices if miniaturization possible.
+
+0) For Power transfer we need two coupled dipoles. To efficiently
+transfer power we may use an RLC arrangement (although discuss
+alternative arrangements too).
+
+0) Exploration of RLC coupled dipoles. Here describe the resonant
+conditions and show our proposed circuitary. Introduce the Tee and Pi
+equivalent circuits in order to perform complex analysis on the
+circuit for a theoretical power transfer.
+        - Discussion of sublte dependence on load resistance on power
+          transfer due to not having a ideal RLC set up. This has not
+          been found in literature so is an interesting developement.
+
+### RESULTS ###
+0) Testing the shell in various ways to characterize the physical
+implementation of the theory. Many Transformation optic experiments
+finish at simulation but real devices are quite different. Discuss
+here the lack of SC material in DC case yet use of copper is available
+in AC regime.
+
+0) First simple DC characterisation to validate set up and see how
+device works using strong external field. Also to compare with COMSOL
+simulations.
+        - Get our first concentration factor and using simple circuit.
+        - Talk about the Hall probe and Helmholtz coil.
+	- Internal dipole experiment with Hall probe at various
+          distances?
+	- Various shell set ups being explored and some comparison
+          with values found in COMSOL.
+	- A discussion on why we do not see behaviour described in
+          transformation optics as we are discretizing the anistropic
+          behaviour.
+
+0)  AC experimentation and comparison with COMSOL modelling.
+     |  - Simple set up first without RLC set up to ensure devices are
+     |    correct.
+     |	- Load resistance should equal internal resistances for
+     |    optimum power transfer.
+     |	- Frequency sweeps show interesting behaviour of device. Is
+     |    this a break down of Mu metal or a limitation of non-ideal
+     |    inductors/capacitors?
+
+	- Show power loss of inductor dependence on frequency - can
+          this be excluded in a clever way?
+
+     |  - RLC circuit used and now show dependence on R load both in
+     |    model and in real experiment.
+     |	- Modelling fits okay in terms of behaviour but poorly gives
+     |    actual observed measurement - is this due to non-ideality of
+     |    components?
+     |  - We show increase when shell is used and obtain concentration
+     |    factors.
+     |  - Maximum power transfer observed is 1% - well below expected
+     |    value.
+     |	- Discuss calculations of Mutual inductances and strong
+     |    dependence on distance.
+
+        - The role of a thin sheet of copper in the experiment is
+          interesting - an effect is observed even at low frequencies
+          where skin depth is not yet reached. This effect is also
+          saturated early on suggesting that eddy currents effectively
+          screen on much smaller thicknesses than initially
+          anticipated. A model could be suggested.
+
+### Extensions ###
+0) For further understanding we would need to look at more frequencies
+and expecially at much higher freqs. A selection of different dipoles
+would also be beneficial to ensure that frequency dependence is not
+linked to non-ideal dipole.
+
+0) Perhaps another circuit could be designed that works more similarly
+to an RLC? Could propose one however experimentation has not been
+performed.
+
+0) Could a more complicated and directional shell be designed for
+power transfer?
