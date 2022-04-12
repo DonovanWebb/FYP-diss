@@ -1,0 +1,40 @@
+Abstract
+- At the end! ~150 words (1/3-1/2 page)
+
+Introduction
+- Motivation and overview
+- Wireless power transfer - lit review
+- Maxwell equations
+- Transformation optics at extension 
+    - Metamaterial realization
+    - lit review
+- Back to power transfer and discussion on circuitary, RLC (could
+  leave to methods?)
+- Where this work fits in overall field
+
+Methods
+- Do not gloss over too many details
+- Do discuss calibration of devices
+- How to make shell
+- Helmholtz and Hall probe(skip?)
+- Circuitary for both DC, AC and power transfer.
+- RLC parallel tuning
+
+Results
+- Key results only!
+- Discuss observed trends
+    - Concentration factor
+    - Power transfer
+- Discuss sources and magnitude of errors
+- Simulations
+
+Discussion
+- Tee and Pi circuit analysis
+- Models
+- Overall trends matching simulation, analysis and Experimental
+- Comparison with other published results
+- Contextualize findings in light of other work
+
+Conclusions
+- At the end!
+- What else could be explored
