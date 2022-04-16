@@ -1,0 +1,56 @@
+\documentclass[11pt]{iopart}
+%Uncomment next line if AMS fonts required
+%\usepackage{iopams}
+\usepackage{graphicx}
+\begin{document}
+
+\title[]{LaTeX-Word IOP formatting comparison}
+
+\author{Anton Tcholakov}
+
+\address{Department of Physics,
+University of Bath, Bath BA2 7AY, United Kingdom}
+\ead{apt20@bath.ac.uk}
+\begin{abstract}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at tellus nec ipsum auctor viverra in vel sapien. Aliquam erat volutpat. Suspendisse potenti. Fusce pulvinar, metus at rhoncus elementum, dolor nibh mattis neque, tincidunt mollis erat ipsum vitae sem. Phasellus convallis consectetur faucibus. Quisque leo augue, elementum a elementum vitae, sollicitudin vitae metus. Vivamus vestibulum, leo venenatis vulputate adipiscing, lectus sapien faucibus ligula, in sodales nisl magna sed odio. Mauris id malesuada diam. Nulla purus eros, fringilla vitae auctor eu, adipiscing in turpis.
+\end{abstract}
+
+%Uncomment for PACS numbers title message
+%\pacs{00.00, 20.00, 42.10}
+% Keywords required only for MST, PB, PMB, PM, JOA, JOB? 
+%\vspace{2pc}
+%\noindent{\it Keywords}: Article preparation, IOP journals
+% Uncomment for Submitted to journal title message
+%\submitto{\JPA}
+% Comment out if separate title page not required
+%\maketitle
+
+\section{Section}
+Integer purus tellus, adipiscing vitae bibendum non, fringilla a sem. Nunc sed nunc mi. Maecenas vulputate, lacus et interdum tempor, mi erat scelerisque leo, ac placerat ante elit ac magna. Nunc aliquet sem id lorem volutpat posuere. Fusce pharetra risus vel odio eleifend consectetur. In luctus pharetra dignissim. Proin vestibulum ultrices tellus, id varius sapien lobortis a. Mauris eget mattis neque. Morbi eu egestas turpis. Vestibulum in nunc eros.
+
+Aliquam tempus nunc nec magna pharetra vel ultricies neque condimentum. Suspendisse interdum euismod felis at ultrices. Praesent fermentum suscipit consectetur. Nullam nisi tortor, commodo at aliquet eu, ornare eget mi. Curabitur vulputate lorem a libero molestie mattis. Donec vehicula iaculis pharetra. Praesent tempus suscipit ante, vel mollis libero sollicitudin at. Vestibulum rhoncus purus enim. Maecenas facilisis molestie justo in ornare. Suspendisse pharetra libero quis felis porttitor quis luctus sapien consectetur. Phasellus ut turpis felis, ac porta arcu. Maecenas interdum augue ut ipsum tincidunt scelerisque. Nullam eget ipsum mi. Vivamus vitae massa diam. Cras tristique, enim vitae mollis adipiscing, arcu nisl convallis tellus, vel tempus neque ipsum quis magna. Donec quis neque diam.
+
+Nunc lobortis porttitor augue, sed placerat elit porttitor nec. Pellentesque mattis blandit eros non venenatis. Nunc posuere velit nec felis sagittis mattis. Proin faucibus felis sed est sollicitudin eget malesuada enim ullamcorper. Proin tristique hendrerit mattis. Nullam massa nisl, vulputate et bibendum ac, hendrerit vitae orci. Curabitur vel libero nisi. Phasellus eu hendrerit urna. Vestibulum blandit dignissim odio. Curabitur non sapien erat, et hendrerit metus. Suspendisse suscipit lacinia fermentum.
+
+Quisque luctus quam sed nisi accumsan non egestas justo convallis. In accumsan aliquet sapien quis elementum. Etiam vel est urna, scelerisque sollicitudin mauris. Morbi a leo sit amet sem luctus pretium. Sed interdum sodales tempus. Maecenas at leo sed sapien posuere sodales quis ut diam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+
+Aliquam pharetra faucibus lectus eget ultricies. Phasellus pretium, ligula quis viverra sollicitudin, ligula purus euismod sem, eget commodo mauris quam sed tortor. Donec sodales convallis libero nec porttitor. Praesent nisl dolor, porta ut posuere sed, commodo eu justo. Maecenas turpis sapien, ullamcorper eget posuere a, venenatis in purus. Quisque mattis lacinia facilisis. Vivamus magna nunc, ultricies eu dictum a, sagittis quis purus. Vivamus risus quam, blandit non egestas at, lacinia nec felis. In hac habitasse platea dictumst. Sed pharetra dolor eget magna tempor luctus.
+
+Curabitur vitae lectus lacus. Maecenas quis ipsum justo. In venenatis nisi condimentum urna vehicula tincidunt. Integer dignissim est at quam congue elementum. Maecenas rutrum congue risus sed sagittis. Phasellus eleifend libero ac dolor lobortis placerat. In ac iaculis orci. Donec tempor urna at velit molestie condimentum. Sed mi diam, sodales ut sodales volutpat, ultrices quis libero. Phasellus sit amet leo eget nibh tincidunt fermentum. Maecenas scelerisque velit vel arcu molestie sodales.
+
+Nullam hendrerit arcu lacinia sem tincidunt porttitor. Morbi faucibus vestibulum sem, et vestibulum diam pharetra nec. Nam dictum porta egestas. Maecenas justo mi, mollis id viverra sit amet, fringilla eu arcu. Etiam dapibus, eros eget sollicitudin vehicula, nibh erat dictum nunc, eget lacinia erat orci nec dolor. Ut odio velit, vehicula vitae consequat vel, laoreet vel nisl. In vel ultricies urna. Ut sed felis non lectus mollis varius a vitae mauris. Integer malesuada lectus arcu. Nam tincidunt, elit eu sagittis tristique, sapien odio fermentum ipsum, id ultricies mauris erat in enim. Donec id elit et neque eleifend elementum sit amet at sem.
+
+Morbi vehicula consequat hendrerit. Vivamus consequat pellentesque diam. Proin id arcu nec sapien mattis condimentum et et lacus. Maecenas pulvinar sagittis blandit. Suspendisse vel quam in tellus faucibus ornare in nec felis. Cras tempus dignissim ligula, ut eleifend nisi sollicitudin nec. Mauris vel ante erat. Maecenas quis ullamcorper risus. Curabitur egestas mi ut odio tristique eget varius nulla suscipit. Nulla vitae tellus tristique dui tempor porttitor. Aenean a sapien eu diam adipiscing lacinia ultrices ac enim. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Praesent in odio neque, eget luctus turpis. Mauris lectus sapien, placerat a mattis in, vulputate non mi. Praesent mattis ultricies volutpat.
+
+Morbi lectus ligula, tristique sed consequat ut, aliquam quis lorem. Nullam sit amet turpis ac dui tincidunt semper. Phasellus condimentum facilisis massa, ut consequat arcu convallis nec. Vivamus est nisl, tincidunt vel tincidunt id, dictum a ante. Fusce bibendum rutrum leo non rutrum. Proin ornare nulla purus. Maecenas nisi ante, placerat in hendrerit id, aliquet at erat. Vivamus aliquam justo sit amet turpis suscipit nec porta massa venenatis. Mauris tristique malesuada convallis.
+
+Nulla eget sem in massa elementum fringilla. Nunc non lorem dolor. Vivamus nec justo risus. Integer vulputate nibh nec nisi ullamcorper placerat. Nullam ac augue vel dui dictum porta. Nam tristique risus sit amet orci posuere euismod a vitae ipsum. Vivamus ac erat vitae tellus vulputate consequat vitae ac risus. Nam urna sapien, fermentum non lobortis sed, tincidunt id dui. Morbi ut mauris nulla, et pulvinar lectus. Nunc commodo sollicitudin suscipit. Maecenas eu ante leo, in ultricies urna. Praesent ut hendrerit magna. Sed risus diam, elementum ut vehicula nec, tempor at enim. Aliquam erat volutpat.
+
+Sed quis est nisi. Donec consectetur egestas tempor. Proin rutrum interdum iaculis. Fusce vestibulum arcu ac urna pretium sed convallis sapien cursus. Sed et nulla nunc. Morbi neque massa, molestie sed porta ut, elementum id mauris. Donec auctor lobortis metus a ornare. Nam in mauris mi, eget fringilla ipsum. Duis pellentesque convallis velit, eu vestibulum dui adipiscing bibendum. Integer porta feugiat ligula. Donec eget nulla in libero accumsan dictum. Maecenas sapien augue, eleifend nec dictum ut, luctus vitae urna. Vestibulum ac libero viverra nisi accumsan cursus id quis leo.
+
+Suspendisse pulvinar condimentum justo, et egestas elit rhoncus a. Etiam elit metus, hendrerit quis scelerisque id, dictum et sapien. Etiam non augue sit amet ligula tincidunt scelerisque. Nulla blandit, tellus in malesuada vulputate, lorem libero hendrerit augue, non pulvinar lectus turpis non tortor. Vivamus in est leo. Quisque congue ante eget magna elementum suscipit. Morbi eu ante ipsum, ac pulvinar dui. Donec id tellus eget magna faucibus vestibulum ac at lacus. Morbi fringilla ultrices risus vitae rhoncus. In mollis auctor nibh vel faucibus. Curabitur accumsan commodo nibh, eu tincidunt sapien aliquam vel.
+
+Curabitur dolor lorem, condimentum eu molestie a, malesuada tempor tortor. Morbi sed nisl ut sapien semper viverra ut non nisi. Nunc fermentum congue lorem eu tristique. Phasellus dapibus faucibus nisi, vel dignissim dui porta sed. Vivamus ultrices commodo blandit. Vestibulum semper tempus arcu. Nulla vitae diam diam. Aenean dictum urna sit amet urna bibendum mollis sed a nisi. Suspendisse non tortor orci. Donec nulla est, faucibus vitae sagittis nec, condimentum ut est.
+
+\end{document}
+

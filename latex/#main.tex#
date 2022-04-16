@@ -1,0 +1,32 @@
+\documentclass[11pt]{iopart}
+\usepackage{graphicx}
+\usepackage{iopams}
+
+% Fixing iopams poor centering of equations:
+\expandafter\let\csname equation*\endcsname\relax
+\expandafter\let\csname endequation*\endcsname\relax
+\usepackage{amsmath}
+%
+
+
+\begin{document}
+
+\title[]{FYP}
+
+\author{Donovan Webb}
+
+\address{Department of Physics,
+University of Bath, Bath BA2 7AY, United Kingdom}
+\ead{dw711@bath.ac.uk}
+
+\begin{abstract}
+\end{abstract}
+
+\section{Section}
+
+\begin{equation}
+  y=x
+  \end{equation}
+
+\end{document}
+
