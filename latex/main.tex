@@ -1,11 +1,12 @@
 \documentclass[11pt]{iopart}
 \usepackage{graphicx}
 \usepackage{iopams}
+
+% Fixing iopams poor centering of equations:
 \expandafter\let\csname equation*\endcsname\relax
-
 \expandafter\let\csname endequation*\endcsname\relax
-
 \usepackage{amsmath}
+%
 
 
 \begin{document}
@@ -21,11 +22,199 @@ University of Bath, Bath BA2 7AY, United Kingdom}
 \begin{abstract}
 \end{abstract}
 
-\section{Section}
+\section{Introduction}
 
 \begin{equation}
   y=x
   \end{equation}
+
+\begin{figure}
+  \caption{Caption?}
+  \end{figure}
+
+%% - Motivation and overview brief description of power transfer problem
+\subsection{Maxwell equations}
+\subsection{Transformation Optics and Metamaterials}
+%% - Wireless power transfer - lit review
+%% - Discussion on circuitary, RLC (could leave to methods?)
+%% - Where this work fits in overall field
+
+\section{Methods}
+\subsection{DC Magnetic Fields}
+Helmholtz coils were powered by a constant DC current to create a
+uniform magnetic field within their center. A commercially available
+XXX Hall probe was zeroed by using a MuMetal cannister, and then
+placed at the center of the Helmholtz coils.  A Hall probe relates a
+measured Hall voltage, $V_H$, to a surrounding magnetic field, $B$
+\cite{XXX} as
+\begin{equation}
+  V_H = \frac{IB}{net}.
+\end{equation}
+The probe maintains constant current supply $I$, and material
+paramaters $n$ (charge carrier density), $e$ (charge of electron) and
+$t$ (thickness of probe) meaning a calibrated probe may give accurate
+readings for magnetic fields.\\
+
+The magnetic field, $B$, produced at the center of Helmholtz coils
+with radius $R$, seperated by a distance $R$ should follow,
+\begin{equation}
+  B = \frac{8}{5\sqrt{5}}\frac{\mu_0 nI}{R},
+  \label{eqn:helm}
+\end{equation}
+where $I$ is the current supplied to the coils and $n$ is the number of
+turns of wire. This equation follows directly from the Biot-Savart law
+\cite{XXX} and the relative geometry of the coils as seen in
+figure~\ref{fig:helm}. From equation~\ref{eqn:helm} it can be seen that
+the magnetic field should increase linearly with supplied
+current. Using the Hall probe we ensured this was the case and found
+the relationship of current supplied to magnetic field produced for
+our paticular Helmholtz arrangement.\\ Now, with the capability to
+produce known external magnetic fields, the described field
+concentrating shells may be placed within this field and the Hall
+probe may be placed within their inner radius to measure concentrated
+field.
+
+\subsection{AC characterization}
+Initially the Helmholtz arrangement was repeated for exploration of
+the concentrating shells behaviour in alternating magnetic
+fields. However, instead of a Hall probe, a small solenoid was used to
+detect the oscillating field. From Faraday's law, a voltage will be
+induced in a wire loop due to a time dependent magnetic field. A
+series of loops constituting a small solenoid will respond to a
+sinuisoidal magnetic field, $B = B_0\cos{wt}$, with the relationship,
+\begin{equation}
+  V = -NAB_0\omega\sin{\omega t},
+\end{equation}
+where $A$ is the area of one loop and $N$ is the number of loops,
+$\omega$ is the angular frequency of the alternating magnetic field
+and $t$ is time.\\ As $\omega$ is known and all other parameters
+except external field are kept constant, the voltage across the
+solenoid may be measured experimentally to find the relative magnetic
+field strength.\\
+The solenoid must however be characterized in order to find the
+absolute magnetic field values. This was done by measurement of the
+self inductance, $L$, of the solenoid as, XXX
+\begin{equation}
+  L = \mu_0\mu_rN^2A/l
+\end{equation}
+XXX
+
+Due to the induced voltage across the inductor being small and background noise being high, a lock-in amplifier was used to select only the desired signal frequency. This substantially reduced noise in our readings allowing higher frequency and lower magnetic field strength experiments.\\
+
+Use of solenoid, limitations of Helmholtz and pick up.
+Use of RLC circuitary.
+
+\subsection{COMSOL}
+Expleen
+%% - Do not gloss over too many details
+%% - Do discuss calibration of devices
+%% - How to make shell
+%% - Helmholtz and Hall probe(skip?)
+%% - Circuitary for both DC, AC and power transfer.
+%% - RLC parallel tuning
+
+\section{Results}
+%% - Key results only!
+%% - Discuss observed trends
+%%     - Concentration factor
+%%     - Power transfer
+%% - Discuss sources and magnitude of errors
+%% - Simulations
+\subsection{DC Magnetic Fields}
+\begin{figure}
+  \caption{}
+  \label{fig:DC_graph}
+\end{figure}
+
+Using the DC Helmholtz set up as described in Methods, we observed
+constant concentration factors for different shell constructions in an
+external magnetic field ranging from $1$ to $22 G$. No shell, 18
+MuMetal, 36 MuMetal, 18 Copper and 18 MuMetal + 18 Copper shells were
+used and their behaviour with field may be seen in
+figure~\ref{fig:DC_graph}.\\ It was found that the shell contruction of 36
+MuMetal thin sheets gave the optimum concentration of $C = 2.38$ with
+minimal error ($0.1\%$) at higher field strengths and a maximum error
+of $4.0\%$ at an external field of $1.4$~G. This increase in error at
+low magnetic fields is due to limited sensitivity of our Hall probe
+and current measurements over the Helmholtz coils.\\ Similar error
+relationships are observed for the other constructions. It should be
+noted that we assume the dipole has been placed in the same position
+and orientation in all experiments and so errors due to placement are
+excluded here.\\ The copper only shell showed no concentration of
+internal field as expected. This is due to copper having a relative
+permeability similar to air, $\mu_r = 1.0$, and so negligible field
+guiding properties. Furthermore, in the DC regime copper will not
+shield XXangularXX fields as required by the optimal TO
+concentrator.\\
+
+
+\subsection{AC characterization}
+\begin{figure}
+  \caption{}
+  \label{fig:AC_helm_graph}
+\end{figure}
+
+The Helmholtz coils were supplied with an alternating current in order
+to create an alternating magnetic field.  Now using the voltage
+induced across solenoid to detect alternating magnetic field strength
+as decribed in Methods, the concentration of various shell
+arrangements were explored.\\
+
+The concentration factors between $0.5$ and $30$~kHz can be seen in
+figure~\ref{fig:AC_helm_graph}. It was found that a mixed shell of
+alternating $18$ copper and $18$ MuMetal sheets had the optimum
+concentration factor of $C = 3.12$ at $5$~kHz.\\ Here we can see that
+the copper sheets now have a modest concentrating effect as frequency
+increases. This behaviour is expected as copper will shield
+perpendicular alternating magnetic fields which is desired for the
+optimal TO concentrator. However, it is suprising that this shielding
+occurs at such low frequencies, i.e. Much less than skin depth of
+copper.XXX
+We found that the copper shell increases in efficacy from $C = 1.0$ at
+$50$~Hz until $C = 1.3$ (2SF) at $10$~kHz and does not increase
+substantially more as frequency is increased. This suggests that the
+shielding effect of the copper depends on frequency but saturates
+early.\\ Supporting work done on COMSOL (see Methods) suggests a similar observed
+effect where 36 copper sheets increase rapidly in concentration factor
+from $C = 1$ at $0$~Hz to $C = 1.5$ (2SF) at $10$~kHz.\\
+
+The strong linear decay of field concentration after $5-10$ kHz for
+all but the copper only shell is also a suprising result which,
+although could be explained by the MuMetal permeability frequency
+response, also appears to occur at too low a frequency.\\ COMSOL work
+does not show this relationship and so the source may be either not
+modelled appropriately within COMSOL or be a fault in this
+experimental design.\\
+
+Apart from instrument and measurement reading errors which constitute
+only a small error (XXX\%), we observed errors due to high pick-up in
+cables connecting the solenoid to the lock-in amplifier. This source
+of noise was at the same frequency as our desired signal and so is
+difficult to remove other than careful cable placement and using
+shielding. We believe this pick-up was worsened by the fact the
+Helmholtz coils must be driven with high voltage and current to
+create a useful magnetic field and that the magnetic field was not
+localised to just our solenoid and shell but also was subject to the
+cabling and any nearby detectors. This prompted a decision to focus on
+two dipole coupling experiments as this pick-up error can be greatly
+reduced.\\
+
+\subsection{Power transfer}
+\subsection{Other COMSOL}
+
+
+\section{Discussion}
+%% - Tee and Pi circuit analysis
+%% - Models
+%% - Overall trends matching simulation, analysis and Experimental
+%% - Comparison with other published results
+%% - Contextualize findings in light of other work
+
+\section{Conclusions}
+
+%ref
+\section{References}
+
 
 \end{document}
 
