@@ -104,6 +104,46 @@ Due to the induced voltage across the inductor being small and background noise 
 Use of solenoid, limitations of Helmholtz and pick up.
 Use of RLC circuitary.
 
+\subsection{Power Transfer}
+Power transfer experiments measure power dropped across a load
+resistor in a receiving circuit verses power lost in the transmitting
+circuit's inductor. The receiving circuit, seen in
+figure~\ref{fig:pt_circuit}, has multiple arrangements to optimise
+power transfer. The simplest of which is the load resistor in series
+with the receiving inductor. In this case the optimal load resistance
+is $R = \omega*L$, where $\omega$ is the angular frequency of the
+oscillating magnetic field and $L$ is the circuit inductance.\\
+To maximise power transfer an RLC circuit is constructed on the
+receiving circuit. Ideally in an RLC circuit the complex impedance of
+the inductance and capacitance cancel leaving only the load
+resistance. Our inductance is set by the solenoid we chose to use and
+so for exploring power transfer at various frequencies, a capacitance
+can be found to satisfy the resonance condition. If inductance, $L$, does not
+vary then capacitance, $C$, is easily found
+by,
+\begin{equation}
+  C = \frac{1}{w^2L}.
+\end{equation}
+However, we need not assume that inductance is constant. A series RLC
+circuit can be constructed as seen in figure~\ref{fig:RLC_series} to
+ensure resonance is met. Resonance occurs in this circuit when $V_A$
+is exactly in phase with $V_B$. In this case any imaginary impedances
+are cancelled and only real resistance remains. \\ For maximal power
+transfer a parallel RLC circuit is preferable however due to the
+restraints of the experiement a non-ideal version must be made as seen
+in figure~\ref{fig:RLC_parallel}. The resonant condition found by the
+series RLC is a close approximation to this more complicated parallel
+circuit. \\
+
+To maximise power transfer in the series RLC case, a familiar idea of
+impedance matching occurs, i.e. Power is maximised when the load
+resistance is equal to any internal resistances of the
+components~\cite{XXX}. As internal resistances are difficult to
+measure and may depend on current XXX, this was found experimentally
+by measuring voltage and current over the load resistance whilst
+varying load resistance. \\
+For the parallel RLC case
+
 \subsection{COMSOL}
 Expleen
 %% - Do not gloss over too many details
@@ -154,6 +194,7 @@ concentrator.\\
   \label{fig:AC_helm_graph}
 \end{figure}
 
+\subsection{Helmholtz}
 The Helmholtz coils were supplied with an alternating current in order
 to create an alternating magnetic field.  Now using the voltage
 induced across solenoid to detect alternating magnetic field strength
@@ -199,7 +240,69 @@ cabling and any nearby detectors. This prompted a decision to focus on
 two dipole coupling experiments as this pick-up error can be greatly
 reduced.\\
 
+%To further explore Cu 0--5 kHz retest gave very flat line
+
+
 \subsection{Power transfer}
+First we show the simplest power transfer experiment where the load
+resistance is in series with the receiving
+inductor. Figure~\ref{fig:RL} shows the relative PTE versus load
+resistance for various frequencies. The peaks of these curves confirm
+the expected optimum load resistance of $R = \omega
+L$. \\
+An Oscillating magnetic field, $B$, produced from a solenoid and
+concentrated by a shell follows,
+$$B = CI\mu_0n\cos{\omega t},$$
+where $C$ is the concentration factor, $I$ is the current through the
+solenoid and $n$ is the number of turns of the solenoid.  If a second
+solenoid is placed within the field of the first, as shown in
+figure~\ref{fig:dipole-dipole}, then voltage will be induced across it
+according to Faraday's law,
+$$V = -NA\frac{dB}{dt},$$
+$$V = C\omega I NA\mu_0n\sin{\omega t},$$
+where $N$ is the number of turns of the solenoid and $A$ is the area
+of one turn.
+The power dropped across a resistor with magnitude $\omega L$ in
+series with this inductor will then be described by,
+$$ P = V^2/R $$
+$$ P = \frac{C^2wI^2k}{L}\sin{\omega t}^2$$
+where $k$ is the collection of constant coefficients that will remain
+constant between different shells.  Max power received in the second
+circuit is therefore proportional to $w$, $\frac{C^2}{L}$ and
+$I^2$. Plotting $\frac{P}{I^2}$ against angular frequency $w$
+therefore gives $\frac{C^2k}{L}$ as shown in XX
+figure~\ref{fig:RL_freq}. Assuming the coefficients in $k$ remain
+constant, comparisons of this gradient between a concentrating shell
+with inductance $L_s$ and no shell with inductance $L_0$ and $C_0 = 1$
+yields $\kappa = \frac{C^2L_0}{L_s}$. Figure XXX~\ref{fig:RL_freq}
+shows how $\kappa$ depends on frequency for various shell
+configurations.\\
+As observed in the Helmholtz driven field case, we see that the copper
+sheets begin to have a concentrating effect between $0$ and $10$
+kHz. The Copper only shell increases to around $\kappa = 2$ which, if
+it is assumed that $L_0 = L_s$, corresponds to a power transfer
+increase of $2$x or a corresponding field concentration of $\sqrt{2}$
+within the shell's cavity. It can be seen that using only MuMetal
+sheets gives a power transfer increase of $6$x and a concentration of
+field that is independent of field oscillation frequency for the range
+$0 - 30$ kHz. This differs from the previous Helmholtz result where a
+steady drop off of concentration factor was observed as frequency
+increased past $10$ kHz.\\
+The mixed shell of 18 MuMetal sheets and 18 Copper sheets was found to
+have the best power transfer increase of $9$x after the copper sheet
+effectively shields the angular field at $10$ kHz. This power increase
+corresponds to a magentic field concentration of $3$ within the shells
+cavity.\\
+
+Figure~\ref{fig:RL_freq} XXX shows the optimal PTE for a range of
+frequencies with different shell constructions around the receiving
+inductor.  Assuming the inductance value remains constant with
+different shell configurations (an exploration of this assumption is
+considered in DiscussionXXX), absolute power transfer can be
+calculated as described in Methods.  Table~\ref{table:RL_freq} gives
+the maximal power transfer for different arrangements of shells.\\
+
+
 \subsection{Other COMSOL}
 
 

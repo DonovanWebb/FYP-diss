@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2022.1.16)  18 APR 2022 14:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2022.1.16)  19 APR 2022 15:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -230,60 +230,106 @@ Underfull \hbox (badness 10000) in paragraph at lines 102--103
  []
 
 
-LaTeX Warning: Reference `fig:DC_graph' on page 2 undefined on input line 131.
+LaTeX Warning: Reference `fig:pt_circuit' on page 2 undefined on input line 111
+.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 126--146
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 154--159
-
- []
+LaTeX Warning: Reference `fig:RLC_series' on page 2 undefined on input line 128
+.
 
 
-LaTeX Warning: Reference `fig:AC_helm_graph' on page 2 undefined on input line 
-161.
+LaTeX Warning: Reference `fig:RLC_parallel' on page 2 undefined on input line 1
+34.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 160--170
+Underfull \hbox (badness 10000) in paragraph at lines 126--137
 
  []
+
+
+LaTeX Warning: Citation `XXX' on page 2 undefined on input line 141.
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 176--188
+Underfull \hbox (badness 10000) in paragraph at lines 169--189
 
  []
 
-[3] (./main.aux)
+
+Underfull \hbox (badness 10000) in paragraph at lines 198--203
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 204--221
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 222--229
+
+ []
+
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 230--242
+
+ []
+
+
+LaTeX Warning: Reference `fig:RL' on page 4 undefined on input line 249.
+
+
+LaTeX Warning: Reference `fig:dipole-dipole' on page 4 undefined on input line 
+259.
+
+
+LaTeX Warning: Reference `fig:RL_freq' on page 4 undefined on input line 274.
+
+
+LaTeX Warning: Reference `fig:RL_freq' on page 4 undefined on input line 277.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 268--296
+
+ []
+
+
+LaTeX Warning: Reference `fig:RL_freq' on page 4 undefined on input line 297.
+
+
+LaTeX Warning: Reference `table:RL_freq' on page 4 undefined on input line 302.
+
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 297--304
+
+ []
+
+[4] [5] (./main.aux)
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
- 3371 strings out of 478353
- 49194 string characters out of 5854635
- 353759 words of memory out of 5000000
- 21466 multiletter control sequences out of 15000+600000
+ 3378 strings out of 478353
+ 49299 string characters out of 5854635
+ 355775 words of memory out of 5000000
+ 21473 multiletter control sequences out of 15000+600000
  409814 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  60i,6n,67p,319b,373s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/s
-hare/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmtt10.pfb>
-Output written on main.pdf (3 pages, 122461 bytes).
+c/amsfonts/cm/cmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/
+share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmti10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on main.pdf (5 pages, 148584 bytes).
 PDF statistics:
- 59 PDF objects out of 1000 (max. 8388607)
- 35 compressed objects within 1 object stream
+ 75 PDF objects out of 1000 (max. 8388607)
+ 45 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
