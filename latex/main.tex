@@ -48,10 +48,6 @@ focus on improving efficiency of wireless power transmission.
 
 \end{abstract}
 \section*{Introduction To Physics}
-%% Background Physics use about two pages. This is the literature review too!
-%% \subsection*{Maxwells equations --- Magnetism}
-%% $$\nabla\times \textbf{H} = jw[\epsilon]\textbf{E}$$
-%% $$\nabla\times \textbf{E} = -jw[\mu]\textbf{H}$$
 \subsection*{Transformation Optics and Metamaterials}
 Transformation optics has enabled the design and development of many
 new devices such as magnetic cloaks~\cite{Sun2017}, rotators~\cite{Sun2017}, hoses~\cite{Navau2014}, perfect lenses~\cite{Pendry2000} and
@@ -59,18 +55,18 @@ magnetic concentrators~\cite{Navau2012}\cite{N2014}. By exploiting the form inva
 equations, any spatial coordinate transformation may instead be expressed by
 the permeability and permittivity of an inserted material~\cite{Pendry2006}. This is shown schematically in figure~\ref{TO}, where $a$ is a ray in free space, $b$ is a ray in a transformed space and $c$ is again in free space but with a specific material inserted. \\
 In the static case, this may be described by rearranging,
-%% \begin{equation}
-%%   \label{ME1}
-%%   \hspace{2cm} \nabla'\times \textbf{E'} = -jw[\mu_0]\textbf{H'},
-%% \end{equation}
+\begin{equation}
+  \label{ME1}
+  \nabla'\times \textbf{E'} = -jw[\mu_0]\textbf{H'},
+\end{equation}
 where Faraday's law expressed in a
 transformed coordinate space $x'(x, y, z), y'(x,
 y, z), z'(x, y, z)$ and $[\mu_0]$ is the permeability of free space,
 to
-%% \begin{equation}
-%%   \label{ME2}
-%%   \hspace{2cm} \nabla\times \textbf{E} = -jw[\mu']\textbf{H},
-%% \end{equation}
+\begin{equation}
+  \label{ME2}
+  \nabla\times \textbf{E} = -jw[\mu']\textbf{H},
+\end{equation}
 where we are now in Cartesian space $x,y,z$
 and $[\mu']$ is a non-free space permeability. A similar method may be used for the other Maxwell equations to find permittivity.\\
 \begin{figure}[!t] \centering
@@ -80,10 +76,10 @@ and $[\mu']$ is a non-free space permeability. A similar method may be used for 
 
 \noindent This process can be simplified as the required permittivity and permeability may
 be found if the Jacobian describing transformation from free space to the transformed space is known. This is described by
-%% \begin{equation}
-%%   \label{J}
-%%   \hspace{2cm} \mu'=\frac{A\mu_0 A^T}{|A|}~~~~~~~~and~~~~~~~~~\epsilon'=\frac{A\epsilon_0 A^T}{|A|}
-%% \end{equation}
+\begin{equation}
+  \label{J}
+  \mu'=\frac{A\mu_0 A^T}{|A|}~~~~~~~~and~~~~~~~~~\epsilon'=\frac{A\epsilon_0 A^T}{|A|}
+\end{equation}
 where $A$ is the Jacobian matrix and $\epsilon$ is relative permittivity. \\
 
 \noindent Resulting permeabilities may be anisotropic, negative and
@@ -118,23 +114,21 @@ empty region $A$. The limit of $\xi \rightarrow 0$ is taken to
 concentrate all of region $B$ into $A$. \\
 This process may be described by the following coordinate transforms
 where $\theta' = \theta$, $z' = z$, and $\rho'$ is given by
-%% \begin{equation}
-%%   \label{transform}
-%%   \begin{align}
-%% \rho' = \frac{R_1}{R_2-\xi}\rho,~~~~~~~~\rho'\in[0,~R_2-\xi)~~\\
-%% \rho' = R_2^{1-k}\rho^k.~~~~~~~~~\rho'\in[R_2-\xi,~R_2)
-%%   \end{align}
-%% \end{equation}
+\begin{equation}
+  \label{transform}
+\rho' = \frac{R_1}{R_2-\xi}\rho,~~~~~~~~\rho'\in[0,~R_2-\xi)~~\\
+\rho' = R_2^{1-k}\rho^k.~~~~~~~~~\rho'\in[R_2-\xi,~R_2)
+\end{equation}
 Finding the Jacobians of these transforms and utilising
 equation~\ref{J} we find that the following matrices describe the
 required relative permeabilities of an inserted material,
-%% \begin{equation}
-%%   \label{mat}
-%%   \begin{split}
-%%  \mu' = \begin{pmatrix}1&0&0\\0&1&0\\0&0&(\frac{R_2-\xi}{R_1})^2\end{pmatrix}~~~~~~~~~~~~~\rho'\in[0,~R_1)~~\\
-%% ~~~~~~\mu' = \begin{pmatrix}k&0&0\\0&1/k&0\\0&0&\frac{1}{k}(\frac{\rho'}{R_2})^{2/k-2}\end{pmatrix}~~~~~\rho'\in[R_1,~R_2)
-%%   \end{split}
-%% \end{equation}
+\begin{equation}
+  \label{mat}
+  \begin{split}
+ \mu' = \begin{pmatrix}1&0&0\\0&1&0\\0&0&(\frac{R_2-\xi}{R_1})^2\end{pmatrix}~~~~~~~~~~~~~\rho'\in[0,~R_1)~~\\
+~~~~~~\mu' = \begin{pmatrix}k&0&0\\0&1/k&0\\0&0&\frac{1}{k}(\frac{\rho'}{R_2})^{2/k-2}\end{pmatrix}~~~~~\rho'\in[R_1,~R_2)
+  \end{split}
+\end{equation}
 By matching boundary conditions at $R_2-\xi$ and taking the limit
 $\xi\rightarrow 0$ we find $k \rightarrow \infty$. The $z$ reliance on
 $\mu'$ may be ignored as we assume the infinite tube to be invariant
@@ -481,6 +475,8 @@ found to be $1.01\%$.\\
 
 % INCLUDE? A summary of PTE and field concentration factors is shown in the table~\fig{table:summary}.\\
 
+\subsection{Distance}
+Experimentally we found that power drops off as $r^{-5.6}$ which is in close agreement to the theoretical $r^{-6}$.\\
 
 \subsection{Other COMSOL}
 
@@ -492,6 +488,10 @@ found to be $1.01\%$.\\
 %% - Overall trends matching simulation, analysis and Experimental
 %% - Comparison with other published results
 %% - Contextualize findings in light of other work
+Use laminated AC inductor. \\
+Eddy currents\\
+Better coupling for given distance. See p.51 pratt. \\
+can use a smaller solenoid, plot spider graphs in python\\
 %}}}
 %CONCLUSIONS{{{
 \section{Conclusions}
