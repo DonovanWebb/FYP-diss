@@ -1,3 +1,4 @@
+%SETTINGS{{{
 \documentclass[11pt]{iopart}
 \usepackage{graphicx}
 \usepackage{iopams}
@@ -7,10 +8,9 @@
 \expandafter\let\csname endequation*\endcsname\relax
 \usepackage{amsmath}
 %
-
-
+%}}}
 \begin{document}
-
+%TITLE_ABS{{{
 \title[]{FYP}
 
 \author{Donovan Webb}
@@ -21,24 +21,170 @@ University of Bath, Bath BA2 7AY, United Kingdom}
 
 \begin{abstract}
 \end{abstract}
-
+%}}}
+%INTRO{{{
 \section{Introduction}
-
-\begin{equation}
-  y=x
-  \end{equation}
-
-\begin{figure}
-  \caption{Caption?}
-  \end{figure}
-
 %% - Motivation and overview brief description of power transfer problem
+
 \subsection{Maxwell equations}
 \subsection{Transformation Optics and Metamaterials}
+\subsection{Wireless Power Transfer}
 %% - Wireless power transfer - lit review
 %% - Discussion on circuitary, RLC (could leave to methods?)
 %% - Where this work fits in overall field
+%%%--------------------------------------------------------------------
+%PREV{{{
+\begin{abstract}
 
+A device capable of uniformly concentrating a magnetic fields inside of
+a free space cavity will increase the efficiency of many magnetic
+devices and sensors.  This project shall look at a proposed design for
+a magnetic field concentrator informed by the transformation optic
+technique. A metamaterial shell comprised of high and low permeability
+sections alternating in the angular direction has been shown to
+approximate the designed concentrator\cite{N2014}. The ability of the shell acting
+as a concentrator will be explored in various regimes with a specific
+focus on improving efficiency of wireless power transmission.
+
+\end{abstract}
+\section*{Introduction To Physics}
+%% Background Physics use about two pages. This is the literature review too!
+%% \subsection*{Maxwells equations --- Magnetism}
+%% $$\nabla\times \textbf{H} = jw[\epsilon]\textbf{E}$$
+%% $$\nabla\times \textbf{E} = -jw[\mu]\textbf{H}$$
+\subsection*{Transformation Optics and Metamaterials}
+Transformation optics has enabled the design and development of many
+new devices such as magnetic cloaks~\cite{Sun2017}, rotators~\cite{Sun2017}, hoses~\cite{Navau2014}, perfect lenses~\cite{Pendry2000} and
+magnetic concentrators~\cite{Navau2012}\cite{N2014}. By exploiting the form invariance of Maxwell's
+equations, any spatial coordinate transformation may instead be expressed by
+the permeability and permittivity of an inserted material~\cite{Pendry2006}. This is shown schematically in figure~\ref{TO}, where $a$ is a ray in free space, $b$ is a ray in a transformed space and $c$ is again in free space but with a specific material inserted. \\
+In the static case, this may be described by rearranging,
+%% \begin{equation}
+%%   \label{ME1}
+%%   \hspace{2cm} \nabla'\times \textbf{E'} = -jw[\mu_0]\textbf{H'},
+%% \end{equation}
+where Faraday's law expressed in a
+transformed coordinate space $x'(x, y, z), y'(x,
+y, z), z'(x, y, z)$ and $[\mu_0]$ is the permeability of free space,
+to
+%% \begin{equation}
+%%   \label{ME2}
+%%   \hspace{2cm} \nabla\times \textbf{E} = -jw[\mu']\textbf{H},
+%% \end{equation}
+where we are now in Cartesian space $x,y,z$
+and $[\mu']$ is a non-free space permeability. A similar method may be used for the other Maxwell equations to find permittivity.\\
+\begin{figure}[!t] \centering
+  %% \noindent\includegraphics[height=0.25\linewidth]{tran_opt.png}
+  \caption{\label{TO} Schematic of the methodology of transformation optics. $a)$ Ray in free Cartesian space. $b)$ Ray in free transformed coordinate system. $c)$ Ray in Cartesian space with material inserted with permeabilities and permittivities found by transformation optics. Figure taken from~\cite{Thesis}.}
+  \end{figure}
+
+\noindent This process can be simplified as the required permittivity and permeability may
+be found if the Jacobian describing transformation from free space to the transformed space is known. This is described by
+%% \begin{equation}
+%%   \label{J}
+%%   \hspace{2cm} \mu'=\frac{A\mu_0 A^T}{|A|}~~~~~~~~and~~~~~~~~~\epsilon'=\frac{A\epsilon_0 A^T}{|A|}
+%% \end{equation}
+where $A$ is the Jacobian matrix and $\epsilon$ is relative permittivity. \\
+
+\noindent Resulting permeabilities may be anisotropic, negative and
+have arbitrary magnitude when using this method. As bulk materials
+often do not have these properties, electromagnetic metamaterials are
+often employed.  Metamaterials are materials engineered to have
+properties not observed naturally by utilising structures of a scale
+much smaller than the wavelength of an interacting field. This results
+in an apparent homogeneous material with unusual refractive
+indices. Metamaterials with anisotropic and negative~\cite{Pendry2000}
+permeabilities and permittivities have been realized.
+
+The focus of this research will be on magnetic concentrators. It is
+well known[ref] that ferromagnetic materials concentrate magnetic
+fields within their bulk. However this has only limited applications
+due to the concentrated region being within a material.
+Employing
+transformation optics we may solve for an optimised field concentrator
+where all the energy of a chosen region $A$ is confined to a
+region of free space, $B$. The proposed geometry of such a device is
+shown in figure~\ref{conc} $a$.
+A cylindrical shell is constructed with inner radius $R_1$ and outer
+radius $R_2$ where $A$ is the area between $R_1$ and $R_2$, and $B$ is
+the inner region confined by $R_1$. It is assumed that this shell is
+infinite along the $z$ direction.  Employing transformation optics we
+apply two coordinate transforms: First the region $\rho < R_2 - \xi$
+is linearly compressed to region $\rho < R_1$, where $\rho$ is the
+radial dimension and $\xi$ is a positive constant.  To ensure the
+continuity of our transformed space, a high ($k$th) order polynomial
+expansion of a ``skin'' of width $\xi$ is expanded to fill the now
+empty region $A$. The limit of $\xi \rightarrow 0$ is taken to
+concentrate all of region $B$ into $A$. \\
+This process may be described by the following coordinate transforms
+where $\theta' = \theta$, $z' = z$, and $\rho'$ is given by
+%% \begin{equation}
+%%   \label{transform}
+%%   \begin{align}
+%% \rho' = \frac{R_1}{R_2-\xi}\rho,~~~~~~~~\rho'\in[0,~R_2-\xi)~~\\
+%% \rho' = R_2^{1-k}\rho^k.~~~~~~~~~\rho'\in[R_2-\xi,~R_2)
+%%   \end{align}
+%% \end{equation}
+Finding the Jacobians of these transforms and utilising
+equation~\ref{J} we find that the following matrices describe the
+required relative permeabilities of an inserted material,
+%% \begin{equation}
+%%   \label{mat}
+%%   \begin{split}
+%%  \mu' = \begin{pmatrix}1&0&0\\0&1&0\\0&0&(\frac{R_2-\xi}{R_1})^2\end{pmatrix}~~~~~~~~~~~~~\rho'\in[0,~R_1)~~\\
+%% ~~~~~~\mu' = \begin{pmatrix}k&0&0\\0&1/k&0\\0&0&\frac{1}{k}(\frac{\rho'}{R_2})^{2/k-2}\end{pmatrix}~~~~~\rho'\in[R_1,~R_2)
+%%   \end{split}
+%% \end{equation}
+By matching boundary conditions at $R_2-\xi$ and taking the limit
+$\xi\rightarrow 0$ we find $k \rightarrow \infty$. The $z$ reliance on
+$\mu'$ may be ignored as we assume the infinite tube to be invariant
+in $z$.  This results in the permeability within $B$ being satisfied
+by free space and a material with $\mu_{\rho} \rightarrow \infty,~
+\mu_{\theta} \rightarrow 0$ satisfies the requirements for region $A$.\\
+This is where transformation optics ends and the exploration of
+metamaterials satisfying these equations begins. It was proposed~\cite{Navau2012}
+that the guiding of field lines by ferromagnetic material ($\mu >> 1$)
+and exclusion of field lines by SC material ($\mu \rightarrow 0$) can
+be arranged as shown in figure~\ref{conc} $b$ to approximate such a material with
+high radial and near zero angular permeability.\\ In a uniform
+external field the theoretical shell should increase field within
+region $B$ by a factor of $R_2/R_1$, however the approximated shell,
+shown in figure~\ref{conc}, was shown experimentally to only yield a
+concentration factor of $2.7$ ($R_2/R_1=4$). This suggests that the
+approximation is far from optimised. \\ If an internal magnetic field
+is considered using a dipole, all flux within $A$ is concentrated to
+the outside of the shell. The magnetic moment of the dipole appears to
+be increased by a factor of $R_2/R_1$ to an observer at $\rho>R_2$.
+\subsection*{Magnetic Concentrators}
+\begin{figure}[!tb] \centering
+  %% \noindent\includegraphics[width=0.75\linewidth]{shells.pdf}
+  \caption{\label{conc} $a)$ The geometry of the described problem. All of magnetic energy in region $A$ will be concentrated into region $B$. $b)$ An approximation to the required permeabilities described in equation~\ref{mat}. MuMetal provides large radial permeability whilst superconducting sheets (SC) restrict angular permeability.}
+\end{figure}
+
+\subsection*{Coupling --- Wireless charging}
+Wireless power transmission is needed for powering devices which are
+inconvenient or dangerous to power with wires. Examples include mobile
+phones and implanted medical devices. \\
+It was suggested~\ref{} that two of the above described shells may be utilised for power
+transfer due to the ability to increase coupling of two solenoids
+within the inner radii of the shells. One solenoid is supplied with an
+alternating current to create an alternating magnetic field. This
+field is then concentrated by the second shell and a current is
+induced in the second solenoid.\\
+Two assumptions must be made: first, the metamaterials
+act appropriately at the required frequency in an AC field and second, that the transformation optic
+approach is still relevant in non-static fields.\\
+
+\noindent In the case of wireless power transfer there may be a set distance, $d$,
+where no material may exist. Shells take up physical space and so it
+is worth considering if such shells still offer greater coupling in
+this regime compared to bringing the dipoles $d$ apart. As the shell increases the dipoles apparent magnetic moment by $R_2/R_1$, the shell at a distance $d+R_2$ is shown to provide an advantage over bare
+dipoles when $\frac{R_2}{R_1} > 1+\frac{R_2}{d}$. For a given $R_2$ this means that $R_1$ may always be reduced to satisfy this inequality.
+%%%--------------------------------------------------------------------
+%}}}
+
+%}}}
+%METHODS{{{ 
 \section{Methods}
 \subsection{DC Magnetic Fields}
 Helmholtz coils were powered by a constant DC current to create a
@@ -139,10 +285,14 @@ To maximise power transfer in the series RLC case, a familiar idea of
 impedance matching occurs, i.e. Power is maximised when the load
 resistance is equal to any internal resistances of the
 components~\cite{XXX}. As internal resistances are difficult to
-measure and may depend on current XXX, this was found experimentally
+measure and may depend on current XXX, this could also be found experimentally
 by measuring voltage and current over the load resistance whilst
 varying load resistance. \\
-For the parallel RLC case
+For the parallel RLC case, a more complicated expression for optimal
+load resistance was found which depends non trivially on a combination
+of internal resistances. A model is proposed below, however,
+experimentally locating the optimal resistances was chosen as
+measuring internal resistances proved difficult and time consuming.\\
 
 \subsection{COMSOL}
 Expleen
@@ -152,7 +302,8 @@ Expleen
 %% - Helmholtz and Hall probe(skip?)
 %% - Circuitary for both DC, AC and power transfer.
 %% - RLC parallel tuning
-
+%}}}
+%RESULTS{{{
 \section{Results}
 %% - Key results only!
 %% - Discuss observed trends
@@ -302,22 +453,51 @@ considered in DiscussionXXX), absolute power transfer can be
 calculated as described in Methods.  Table~\ref{table:RL_freq} gives
 the maximal power transfer for different arrangements of shells.\\
 
+Parallel RLC circuits are more fitting for optimising power
+transfer~\cite{XXX}. For the arrangement described in
+figure~\ref{fig:Parallel_RLC}, a shell comprised of $18$ MuMetal and $18$
+Copper sheets was explored. The optimal load resistance was found by
+taking voltage measurements across a range of load resistance. An
+example power versus load resistance curve for $30$ kHz can be seen in
+XXX figure~\ref{fig:parallel_R}.\\
+Optimal load resistances were found for a range of frequencies and PTE
+were calculated as shown in XXX figure~\ref{fig:parallel_R}. Figure
+XX~\ref{fig:parallel_R} shows the ratio of shell present versus no
+shell present for the range of frequenies. It can be seen that the
+increase of ratio between $0$ and $10$ Hz is still present, however
+due to the high error and few data points, other trends are hard to
+distinguish. In this arrangement, with the coils seperated by a
+distance of XXX mm, maximum observed power transfer is XX $0.05\%$.\\
+
+To further explore PTE, the distance between the two coils was
+varied. With a distance of XXX mm and a full shell around the
+receiving coil, a PTE of XXX\% was achieved.\\
+
+It was expected that a shell around the transmitting coil would
+further increase the field incident on the receiving coil. Therefore
+the arrangement described in Methods Figure~\ref{fig:two_shell} was
+constructed and the peak power transfer observed at $30510$ kHz was
+found to be $1.01\%$.\\
+
+% INCLUDE? A summary of PTE and field concentration factors is shown in the table~\fig{table:summary}.\\
+
 
 \subsection{Other COMSOL}
 
-
+%}}}
+%DISCUSSION{{{
 \section{Discussion}
 %% - Tee and Pi circuit analysis
 %% - Models
 %% - Overall trends matching simulation, analysis and Experimental
 %% - Comparison with other published results
 %% - Contextualize findings in light of other work
-
+%}}}
+%CONCLUSIONS{{{
 \section{Conclusions}
-
-%ref
+%}}}
+%REF{{{
 \section{References}
-
-
+%}}}
 \end{document}
 
