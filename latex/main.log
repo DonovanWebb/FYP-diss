@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2022.1.16)  22 APR 2022 22:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2022.1.16)  25 APR 2022 11:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -445,65 +445,92 @@ Underfull \hbox (badness 10000) in paragraph at lines 570--572
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 581--585
+LaTeX Warning: Citation `XXX' on page 9 undefined on input line 603.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 583--606
 
  []
 
-[9]
-Underfull \hbox (badness 10000) in paragraph at lines 586--590
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 591--595
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 596--597
+[9] [10 <./images/RLC-P.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 616--619
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 598--611
-
- []
-
-[10 <./images/RLC-P.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 612--615
-
- []
+LaTeX Warning: Citation `XXX' on page 11 undefined on input line 621.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 617--620
+Underfull \hbox (badness 10000) in paragraph at lines 620--622
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 621--626
+LaTeX Warning: Reference `table:L' on page 11 undefined on input line 629.
+
+
+LaTeX Warning: Reference `eqn:XXX' on page 11 undefined on input line 636.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 624--639
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 627--630
+Underfull \hbox (badness 10000) in paragraph at lines 642--644
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 631--635
+Underfull \hbox (badness 10000) in paragraph at lines 645--649
 
  []
 
-[11] (./main.aux)
+
+Underfull \hbox (badness 10000) in paragraph at lines 650--651
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 652--665
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 666--669
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 671--674
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 675--680
+
+ []
+
+[11]
+Underfull \hbox (badness 10000) in paragraph at lines 681--684
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 685--689
+
+ []
+
+[12] (./main.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 3446 strings out of 478353
- 50455 string characters out of 5854635
+ 3448 strings out of 478353
+ 50473 string characters out of 5854635
  361847 words of memory out of 5000000
- 21531 multiletter control sequences out of 15000+600000
+ 21533 multiletter control sequences out of 15000+600000
  412134 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  60i,22n,67p,224b,409s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -519,10 +546,10 @@ m/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></
 usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-dist/fonts/ty
 pe1/public/amsfonts/cm/cmtt10.pfb>
-Output written on main.pdf (11 pages, 449586 bytes).
+Output written on main.pdf (12 pages, 453373 bytes).
 PDF statistics:
- 155 PDF objects out of 1000 (max. 8388607)
- 102 compressed objects within 2 object streams
+ 158 PDF objects out of 1000 (max. 8388607)
+ 104 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  26 words of extra memory for PDF output out of 10000 (max. 10000000)
 

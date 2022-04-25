@@ -578,15 +578,69 @@ close agreement to the theoretical $r^{-6}$.\\
 %% - Overall trends matching simulation, analysis and Experimental
 %% - Comparison with other published results
 %% - Contextualize findings in light of other work
-DC: Non ideal behaviour \\
-- more sheets better approximation - COMSOL \\
-- no SC to block field - COMSOL \\
-- further explanation on error source in placement \\
 
-AC:
-Coppers increase in efficiency \\
-- COMSOL \\
-- Suggested model with eddy currents.\\
+% Non ideal behaviour \\
+For the constructed shells used in these experiments, their $R_2/R_1$
+ratio was $40 \pm 2$ mm. From the theoretical TO work, it is predicted
+that the field should be concentrated by the perfect shell by
+$R_2/R_1$. We found a range of concentrations for both static, $C =
+2.25 - 2.38$ XeX and oscillating, $C = 2 - 3.1$ XeX, external fields
+whose maximum concentration factors are still well below the expected
+theoretical concentration factor of $4.0 \pm 0.2$. This is likely
+explained by our approach to approximating the perfect TO designed
+anisotropic shells with shells comprised of discrete sections of high
+and low permeability.  In both static and oscillating fields, we found
+that 36 MuMetal sheets performed better than 18 MuMetal sheets which
+suggests that finer discretization of the proposed shells gives
+concentrations closer to the theoretical value. In the static field
+experiments, only air was used to approximate the zero relative
+angular permeability. Air has a permeability of $\mu = 1$, which
+although is far less than the MuMetal's $\mu = XXX$, is likely still a
+poor approximation. This can be seen by the increase in performance in
+the oscillating external field experiments where copper sheets are
+introduced in order to effectively screen out angular field density by
+the production of Eddy currents. Eddy current screening is
+proportional to frequency of the oscillating field~\cite{XXX}, and
+therefore, it can be seen that the concentration factor for shells
+with copper present increase with frequency. \\
+
+Eddy currents may be modelled as a wire loop perpendicular to an
+oscillating magenetic field. A current is produced within the loop
+which is proportional to frequency of the field and, due to Lenz's
+law, flows in a direction to oppose the change in field density. The
+induced current in the loop is
+$$ I = \frac{A}{R}\omega (B - B'), $$
+and the field produced by the current is,
+$$ B' = -I \mu_0 r. $$
+Combining these equations give,
+$$ B' = \frac{\omega B}{1+\omega}, $$
+which may be seen plotted with the COMSOL and experimental results for
+a copper only shell.\\
+
+XwX Superconducting material has been suggested to effectively screen
+angular field in the static case~\cite{XXX}... \\
+
+% How L changes
+For many results we have assumed that the inductance of the solenoid
+was independent of the shell surrounding it. Here we shall reexplore
+some results without this assumption. \\ For the resonant condition of
+a series RLC circuit, $\omega = 1/LC$, and so we may use the known
+capacitance, $C$ and measured frequency peak, $\omega$, to calculate
+an effective inductance, $L$, for the solenoid. Table~\ref{table:L}
+summarises the observed inductances for the various shell
+configurations. It should be noted that the inductance of the coils
+used does have a dependency on current, however for the range of
+currents used in the series RLC experiment, this change in inductance
+with current was negligible compared with the observed change in
+inductances with different surrounding shells. From
+equation~\ref{eqn:XXX} it can be seen that the effective power
+concentration, $\eta$, is dependent on both field concentration and
+effective inductance of the solenoid. \\
+
+%%%%
+
+DC:  \\
+- further explanation on error source in placement \\
 
 Linear decay of coil in non RLC \\
 - Due to pick up that is proportional to $w^2$? \\
