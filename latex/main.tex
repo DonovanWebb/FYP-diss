@@ -38,27 +38,38 @@ focus on improving efficiency of wireless power transmission.
 \section{Introduction}
 %% - Motivation and overview brief description of power transfer problem
 
-The manipulation of magnetic fields is critical for many modern
-technologies~\cite{REVIEW_MAGNETISM}. Magnetic devices often have
-efficiencies dependent on the strength of interaction with an external
-magnetic field. Examples include energy harvesting from magnetic
-fields~\cite{HARVESTING} to brain activity scans by locating small
-magnetic gradients~\cite{BRAIN}. These devices may have increased
-efficiency by concentrating the desired magnetic field within the area
-of sensing or harvesting. \\
-Magnetic field may be described by Maxwell's equations~\cite{MAXWELL}
-and are guided by materials due to their optical properties, such as
-permitivity and permeability~\cite{OPTICAL PROPERITES}. XpX Fermat's
-principle of least time allowed the design of many optical devices
-using geometrical lenses~\cite{FERMAT}, however, with the maturation
-of fabrication techniques, many materials may be produced with exotic
-anisotropic optical properties~\cite{META} prompting the development
-of transformation optics (TO) -- a modern approach to optical device
-design.\\
-Here we describe one such TO designed deviceXpX; The magnetic
-concentrator, with a paticular focus on its efficacy in wireless power
-transmission. \\
-XeXCould expand on Wireless power transmission.
+The manipulation of magnetic fields is a critical tool for many modern
+technologies. Magnetic devices often have efficiencies dependent on
+the strength of interaction with an external magnetic field. Examples
+include energy harvesting from magnetic fields~\cite{HARVESTING} to
+brain activity scans by locating small magnetic
+gradients~\cite{BRAIN}. These devices may have increased efficiency by
+concentrating the desired magnetic field within the area of sensing or
+harvesting. \\ Magnetic fields may be described by Maxwell's
+equations~\cite{MAXWELL} and are guided by materials due to their
+optical properties, such as permitivity and permeability~\cite{OPTICAL
+  PROPERITES}. Fermat's principle of least time allowed the design
+of many optical devices using geometrical lenses~\cite{FERMAT},
+however, with the maturation of fabrication techniques, many materials
+may be produced with exotic anisotropic optical properties~\cite{META}
+prompting the development of transformation optics (TO) --- a modern
+approach to optical device design.\\ Here we describe one such TO
+designed device; The magnetic concentrator~\cite{PRATT}, with a particular focus
+on its efficacy in wireless power transmission. \\ 
+
+\begin{figure}
+  \begin{center}
+   \noindent\includegraphics[width=0.75\linewidth]{images/trans_Opt_edit.pdf}
+  \label{fig:TO}
+  \end{center}
+  \caption{The steps of Transformation Optics. a) A ray (red)
+    travelling in untransformed spatial coordinates (black grid)
+    follows the path of least time. b) A spatial coordinate
+    transformation $A$ is applied to guide the ray along a desired
+    path. c) A material (blue) is insterted into the untransformed
+    space with corresponding permeability and permitivity which mimics
+    the spatial coordinate transform $A$ for the ray. }
+\end{figure}
 
 \subsection{Transformation Optics and Metamaterials}
 TO informed the design of many new devices such as perfect
@@ -69,14 +80,14 @@ spatial coordinate transform is equivalent to the insertion of a
 material with specific permeabilities and permitivities. This is shown
 conceptually by the three steps of the schematic shown in
 figure~\ref{fig:TO}. First a ray is considered in free cartesian space
-in panel 1, which due to Fermat's principle will be perfectly
-straight. The space is then transformed arbitrarily in panel 2 so that
-the ray adopts the desired path for the final device. The
-transformation required to morph the ray now informs the optical
-properties for the specific inserted material of panel 3, which is
-once again located in cartesian space.\\
-The form invariance of Faraday's law is described by the equivalent
-expressions
+in panel $a$, which due to Fermat's principle of least time will be
+following the horizontal spatial grid lines.  The space is then
+transformed arbitrarily in panel $b$ so that the ray adopts the
+desired path for the final device. The transformation required, $A$,
+to morph the ray now informs the optical properties for the specific
+inserted material of panel $c$, which is once again located in
+untransformed space.\\ The form invariance of Faraday's law is
+described by the equivalent expressions
 
 \begin{equation}
   \label{ME1}
@@ -101,17 +112,17 @@ The required permeability and permittivity is found by,
 \end{equation}
 
 where $A$ is the Jacobian matrix describing the transformation of
-coordinate systems (e.g. between panel 1 and panel 2 in
+coordinate systems (e.g. between panel $a$ and panel $b$ in
 figure~\ref{fig:TO}). \\
 The resulting calculated optical properties may be anisotropic, have
-arbitrary magnitude and even be negative. As bulk materials rarely, if
+arbitrary magnitude and even be negative~\cite{}. As bulk materials rarely, if
 ever, show these properties, optical metamaterials are often
 required~\cite{META3}. \\
 Metamaterials are often comprised of repeating units whose dimensions
 are much smaller than the wavelength of the interacting
 radiation~\cite{META2}. The individual units may have specific
 geometery, orientation and optical properties to selectively interact
-with the waves so that the net effect of the material mimics a bulk
+with incident waves so that the net effect of the material mimics a bulk
 substance with different optical properties than its substituent
 parts.\\
 
@@ -180,56 +191,49 @@ the field outside of the shell will be increased by a factor of
 $R_2/R_1$. Therefore for an observer at $\rho > R_2$ it will appear
 that a dipole with magnetic moment $m\cdot R_2/R_1$ is present at the
 origin.\\
-Comparison to other conc. techniques:
+
+(Comparison to other conc. techniques:
 It is known that ferromagnetic materials concentrate magnetic fields
 within their bulk~\cite{ferro} however, concentration of the field
-into a free space cavity may be required.
+into a free space cavity may be required.)
+
+\begin{figure}
+  \begin{center}
+   \noindent\includegraphics[width=0.75\linewidth]{images/WPT.pdf}
+  \label{fig:WPT}
+  \end{center}
+  \caption{Wireless power transmission by inductive coupling. a)
+    Simple circuitary for coupling $L1$ and $L2$ coils. The useful
+    power transmitted is across load resistance $R$ whilst power lost
+    is internal resistance of coils, $r1$ and $r2$. b) The receiving
+    inductor is now part of a resonant RLC circuit. c) A series RLC
+    circuit --- when voltage at $x$ and $y$ are in phase, the resonant
+    condition is met.}
+\end{figure}
 
 \subsection{Wireless Power Transfer}
-Why is WPT useful -- what are current techniques. \\
-Strong drop off of power transferred with distance.\\
+The ability to transfer power between devices that are not connected
+by wires is useful in many settings: for convenince, e.g. mobile
+phones; for safety, e.g. implanted medical devices; or for
+practicallity, e.g. satellites.\\ We shall focus on near field power
+transmission by the use of inductive coupling. Inductive coupling
+transfers power between two coils of wire by an oscillating magnetic
+field as seen in figure~\ref{fig:WPT}~$a$. The transmitting coil is
+supplied with an alternating current, which by Ampere's law creates an
+oscillating magnetic field. The receiving coil is placed within this
+magnetic field, so that a current is induced as described by Faraday's
+law.\\ This strategy for power transfer is highly sensitive to
+distance as the magnetic field of a dipole drops off with distance
+cubed.  The overall efficiency therefore suffers with distance as the
+non-ideal resistive losses in the primary coil remain constant with
+distance. To somewhat counteract this sharp drop off of efficinency
+with distance, concentrating shells may be used to magnify the
+transmitted field and locally concentrate the field around the
+receiving solenoid. \\
+
 %% - Wireless power transfer - lit review
 %% - Where this work fits in overall field
 %%%--------------------------------------------------------------------
-
-%PREV{{{
-
-\subsection*{Magnetic Concentrators}
-\begin{figure}[!tb] \centering
-  %% \noindent\includegraphics[width=0.75\linewidth]{shells.pdf}
-  \caption{\label{conc} $a)$ The geometry of the described
-    problem. All of magnetic energy in region $A$ will be concentrated
-    into region $B$. $b)$ An approximation to the required
-    permeabilities described in equation~\ref{mat}. MuMetal provides
-    large radial permeability whilst superconducting sheets (SC)
-    restrict angular permeability.}
-\end{figure}
-
-\subsection*{Coupling --- Wireless charging}
-Wireless power transmission is needed for powering devices which are
-inconvenient or dangerous to power with wires. Examples include mobile
-phones and implanted medical devices. \\ It was suggested~\ref{} that
-two of the above described shells may be utilised for power transfer
-due to the ability to increase coupling of two solenoids within the
-inner radii of the shells. One solenoid is supplied with an
-alternating current to create an alternating magnetic field. This
-field is then concentrated by the second shell and a current is
-induced in the second solenoid.\\ Two assumptions must be made: first,
-the metamaterials act appropriately at the required frequency in an AC
-field and second, that the transformation optic approach is still
-relevant in non-static fields.\\
-
-\noindent In the case of wireless power transfer there may be a set
-distance, $d$, where no material may exist. Shells take up physical
-space and so it is worth considering if such shells still offer
-greater coupling in this regime compared to bringing the dipoles $d$
-apart. As the shell increases the dipoles apparent magnetic moment by
-$R_2/R_1$, the shell at a distance $d+R_2$ is shown to provide an
-advantage over bare dipoles when $\frac{R_2}{R_1} >
-1+\frac{R_2}{d}$. For a given $R_2$ this means that $R_1$ may always
-be reduced to satisfy this inequality.
-%%%--------------------------------------------------------------------
-%}}}
 
 %}}}
 %METHODS{{{ 
@@ -309,7 +313,7 @@ Use of RLC circuitary.\\
 Power transfer experiments measure power dropped across a load
 resistor in a receiving circuit verses power lost in the transmitting
 circuit's inductor. The receiving circuit, seen in
-figure~\ref{fig:pt_circuit}, has multiple arrangements to optimise
+figure~\ref{fig:WPT}~$a$, has multiple arrangements to optimise
 power transfer. The simplest of which is the load resistor in series
 with the receiving inductor. In this case the optimal load resistance
 is $R = \omega*L$, where $\omega$ is the angular frequency of the
@@ -325,13 +329,13 @@ does not vary then capacitance, $C$, is easily found by,
   C = \frac{1}{w^2L}.
 \end{equation}
 However, we need not assume that inductance is constant. A series RLC
-circuit can be constructed as seen in figure~\ref{fig:RLC_series} to
-ensure resonance is met. Resonance occurs in this circuit when $V_A$
-is exactly in phase with $V_B$. In this case any imaginary impedances
+circuit can be constructed as seen in figure~\ref{fig:WPT}~$c$ to
+ensure resonance is met. Resonance occurs in this circuit when $V_x$
+is exactly in phase with $V_y$. In this case any imaginary impedances
 are cancelled and only real resistance remains. \\ For maximal power
 transfer a parallel RLC circuit is preferable however due to the
 restraints of the experiement a non-ideal version must be made as seen
-in figure~\ref{fig:RLC_parallel}. The resonant condition found by the
+in figure~\ref{fig:WPT}~$b$. The resonant condition found by the
 series RLC is a close approximation to this more complicated parallel
 circuit. \\
 To maximise power transfer in the series RLC case, a familiar idea of
@@ -542,7 +546,7 @@ the maximal power transfer for different arrangements of shells.\\
 
 Parallel RLC circuits are more fitting for optimising power
 transfer~\cite{XXX}. For the arrangement described in
-figure~\ref{fig:Parallel_RLC}, a shell comprised of $18$ MuMetal and
+figure~\ref{fig:WPT}~$b$, a shell comprised of $18$ MuMetal and
 $18$ Copper sheets was explored. The optimal load resistance was found
 by taking voltage measurements across a range of load resistance. An
 example power versus load resistance curve for $30$ kHz can be seen in

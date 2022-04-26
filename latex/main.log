@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2022.1.16)  25 APR 2022 11:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2022.1.16)  26 APR 2022 12:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -200,11 +200,7 @@ e
 LaTeX Warning: Citation `N2014' on page 1 undefined on input line 31.
 
 
-LaTeX Warning: Citation `REVIEW_MAGNETISM' on page 1 undefined on input line 42
-.
-
-
-LaTeX Warning: Citation `HARVESTING' on page 1 undefined on input line 45.
+LaTeX Warning: Citation `HARVESTING' on page 1 undefined on input line 44.
 
 
 LaTeX Warning: Citation `BRAIN' on page 1 undefined on input line 46.
@@ -217,20 +213,34 @@ LaTeX Warning: Citation `OPTICAL PROPERITES' on page 1 undefined on input line
 51.
 
 
-LaTeX Warning: Citation `FERMAT' on page 1 undefined on input line 53.
+LaTeX Warning: Citation `FERMAT' on page 1 undefined on input line 52.
 
 
-LaTeX Warning: Citation `META' on page 1 undefined on input line 55.
+LaTeX Warning: Citation `META' on page 1 undefined on input line 54.
 
 
-LaTeX Warning: Reference `fig:TO' on page 1 undefined on input line 71.
+LaTeX Warning: Citation `PRATT' on page 1 undefined on input line 57.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 81.
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--59
+
+ []
+
+
+
+pdfTeX warning: pdflatex (file ./images/trans_opt_edit.pdf): PDF inclusion: fou
+nd PDF version <1.6>, but at most version <1.5> allowed
+<images/trans_Opt_edit.pdf, id=1, 371.02393pt x 134.29701pt>
+File: images/trans_Opt_edit.pdf Graphic file (type pdf)
+<use images/trans_Opt_edit.pdf>
+Package pdftex.def Info: images/trans_Opt_edit.pdf  used on input line 62.
+(pdftex.def)             Requested size: 360.0pt x 130.31302pt.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 71.
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 81.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 71.
 
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
@@ -239,285 +249,266 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 
-LaTeX Warning: Reference `fig:TO' on page 2 undefined on input line 105.
+LaTeX Warning: Citation `META3' on page 2 undefined on input line 120.
 
 
-LaTeX Warning: Citation `META3' on page 2 undefined on input line 109.
+LaTeX Warning: Citation `META2' on page 2 undefined on input line 123.
 
 
-LaTeX Warning: Citation `META2' on page 2 undefined on input line 112.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 103--117
+Underfull \hbox (badness 10000) in paragraph at lines 114--128
 
  []
 
 
-LaTeX Warning: Reference `fig:shell' on page 2 undefined on input line 125.
+LaTeX Warning: Reference `fig:shell' on page 2 undefined on input line 136.
 
 
-LaTeX Warning: Reference `fig:shell_TO' on page 2 undefined on input line 126.
+LaTeX Warning: Reference `fig:shell_TO' on page 2 undefined on input line 137.
+
+[2 <./images/trans_opt_edit.pdf>]
+
+LaTeX Warning: Citation `PRATT' on page 3 undefined on input line 176.
 
 
-LaTeX Warning: Citation `PRATT' on page 2 undefined on input line 165.
+LaTeX Warning: Citation `MUMETAL' on page 3 undefined on input line 179.
 
 
-LaTeX Warning: Citation `MUMETAL' on page 2 undefined on input line 168.
+LaTeX Warning: Citation `Meissner' on page 3 undefined on input line 182.
 
 
-LaTeX Warning: Citation `Meissner' on page 2 undefined on input line 171.
+LaTeX Warning: Reference `fig:shell' on page 3 undefined on input line 183.
 
 
-LaTeX Warning: Reference `fig:shell' on page 2 undefined on input line 172.
-
-
-LaTeX Warning: Citation `ferro' on page 2 undefined on input line 185.
-
-[2]
-Underfull \hbox (badness 10000) in paragraph at lines 189--194
+Underfull \hbox (badness 10000) in paragraph at lines 165--194
 
  []
 
 
-LaTeX Warning: Reference `mat' on page 3 undefined on input line 205.
+LaTeX Warning: Citation `ferro' on page 3 undefined on input line 197.
 
 
-LaTeX Warning: Reference `' on page 3 undefined on input line 211.
 
+pdfTeX warning: pdflatex (file ./images/WPT.pdf): PDF inclusion: found PDF vers
+ion <1.6>, but at most version <1.5> allowed
+<images/WPT.pdf, id=38, 422.52342pt x 241.5639pt>
+File: images/WPT.pdf Graphic file (type pdf)
+<use images/WPT.pdf>
+Package pdftex.def Info: images/WPT.pdf  used on input line 202.
+(pdftex.def)             Requested size: 360.0pt x 205.82787pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 209--221
+Underfull \hbox (badness 10000) in paragraph at lines 215--233
 
  []
 
 
-LaTeX Warning: Reference `fig:shells' on page 3 undefined on input line 239.
+LaTeX Warning: Reference `fig:shells' on page 3 undefined on input line 243.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 238--240
+Underfull \hbox (badness 10000) in paragraph at lines 242--244
 
  []
 
 [3]
 
-LaTeX Warning: Citation `XXX' on page 4 undefined on input line 247.
+LaTeX Warning: Citation `XXX' on page 4 undefined on input line 251.
 
 
-LaTeX Warning: Citation `XXX' on page 4 undefined on input line 263.
+LaTeX Warning: Citation `XXX' on page 4 undefined on input line 267.
 
 
-LaTeX Warning: Reference `fig:helm' on page 4 undefined on input line 264.
+LaTeX Warning: Reference `fig:helm' on page 4 undefined on input line 268.
+
+[4 <./images/WPT.pdf>]
+
+LaTeX Warning: Citation `XXX' on page 5 undefined on input line 344.
 
 
-LaTeX Warning: Reference `fig:pt_circuit' on page 4 undefined on input line 312
-.
-
-[4]
-
-LaTeX Warning: Reference `fig:RLC_series' on page 5 undefined on input line 328
-.
-
-
-LaTeX Warning: Reference `fig:RLC_parallel' on page 5 undefined on input line 3
-34.
-
-
-LaTeX Warning: Citation `XXX' on page 5 undefined on input line 340.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 326--350
-
- []
-
-
-
-pdfTeX warning: pdflatex (file ./images/DC-graph.pdf): PDF inclusion: found PDF
- version <1.7>, but at most version <1.5> allowed
-<images/DC-graph.pdf, id=28, 845.07718pt x 597.55246pt>
-File: images/DC-graph.pdf Graphic file (type pdf)
-<use images/DC-graph.pdf>
-Package pdftex.def Info: images/DC-graph.pdf  used on input line 369.
-(pdftex.def)             Requested size: 360.0pt x 254.55365pt.
-
-LaTeX Warning: Citation `PRATT' on page 5 undefined on input line 401.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 375--402
+Underfull \hbox (badness 10000) in paragraph at lines 330--354
 
  []
 
 [5]
 
-pdfTeX warning: pdflatex (file ./images/AC-Helm.pdf): PDF inclusion: found PDF 
-version <1.7>, but at most version <1.5> allowed
-<images/AC-Helm.pdf, id=32, 845.07718pt x 597.55246pt>
-File: images/AC-Helm.pdf Graphic file (type pdf)
-<use images/AC-Helm.pdf>
-Package pdftex.def Info: images/AC-Helm.pdf  used on input line 407.
+pdfTeX warning: pdflatex (file ./images/DC-graph.pdf): PDF inclusion: found PDF
+ version <1.7>, but at most version <1.5> allowed
+<images/DC-graph.pdf, id=58, 845.07718pt x 597.55246pt>
+File: images/DC-graph.pdf Graphic file (type pdf)
+<use images/DC-graph.pdf>
+Package pdftex.def Info: images/DC-graph.pdf  used on input line 373.
 (pdftex.def)             Requested size: 360.0pt x 254.55365pt.
 
-LaTeX Warning: Reference `fig:COMSOL_CU' on page 6 undefined on input line 436.
+LaTeX Warning: Citation `PRATT' on page 6 undefined on input line 405.
 
 
-
-LaTeX Warning: Reference `fig:Noise' on page 6 undefined on input line 453.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 415--460
+Underfull \hbox (badness 10000) in paragraph at lines 379--406
 
  []
 
 [6 <./images/DC-graph.pdf>]
 
+pdfTeX warning: pdflatex (file ./images/AC-Helm.pdf): PDF inclusion: found PDF 
+version <1.7>, but at most version <1.5> allowed
+<images/AC-Helm.pdf, id=70, 845.07718pt x 597.55246pt>
+File: images/AC-Helm.pdf Graphic file (type pdf)
+<use images/AC-Helm.pdf>
+Package pdftex.def Info: images/AC-Helm.pdf  used on input line 411.
+(pdftex.def)             Requested size: 360.0pt x 254.55365pt.
+
+LaTeX Warning: Reference `fig:COMSOL_CU' on page 7 undefined on input line 440.
+
+
+
+LaTeX Warning: Reference `fig:Noise' on page 7 undefined on input line 457.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 419--464
+
+ []
+
+[7 <./images/AC-Helm.pdf>]
+
 pdfTeX warning: pdflatex (file ./images/RL-R.pdf): PDF inclusion: found PDF ver
 sion <1.7>, but at most version <1.5> allowed
-<images/RL-R.pdf, id=44, 845.07718pt x 597.55246pt>
+<images/RL-R.pdf, id=83, 845.07718pt x 597.55246pt>
 File: images/RL-R.pdf Graphic file (type pdf)
 <use images/RL-R.pdf>
-Package pdftex.def Info: images/RL-R.pdf  used on input line 465.
+Package pdftex.def Info: images/RL-R.pdf  used on input line 469.
 (pdftex.def)             Requested size: 360.0pt x 254.55365pt.
 
 
 pdfTeX warning: pdflatex (file ./images/RL-F.pdf): PDF inclusion: found PDF ver
 sion <1.7>, but at most version <1.5> allowed
-<images/RL-F.pdf, id=45, 845.07718pt x 597.55246pt>
+<images/RL-F.pdf, id=84, 845.07718pt x 597.55246pt>
 File: images/RL-F.pdf Graphic file (type pdf)
 <use images/RL-F.pdf>
-Package pdftex.def Info: images/RL-F.pdf  used on input line 474.
+Package pdftex.def Info: images/RL-F.pdf  used on input line 478.
 (pdftex.def)             Requested size: 360.0pt x 254.55365pt.
 
-LaTeX Warning: Reference `fig:dipole-dipole' on page 7 undefined on input line 
-491.
+LaTeX Warning: Reference `fig:dipole-dipole' on page 8 undefined on input line 
+495.
 
-[7 <./images/AC-Helm.pdf>] [8 <./images/RL-R.pdf> <./images/RL-F.pdf
+[8 <./images/RL-R.pdf>]
 
-pdfTeX warning: pdflatex (file ./images/RL-F.pdf): PDF inclusion: multiple pdfs
- with page group included in a single page
->]
-
-LaTeX Warning: Reference `table:RL_freq' on page 9 undefined on input line 531.
+LaTeX Warning: Reference `table:RL_freq' on page 9 undefined on input line 535.
 
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 500--533
+Underfull \hbox (badness 10000) in paragraph at lines 504--537
 
  []
 
-
+[9 <./images/RL-F.pdf>]
 
 pdfTeX warning: pdflatex (file ./images/RLC-P.pdf): PDF inclusion: found PDF ve
 rsion <1.7>, but at most version <1.5> allowed
-<images/RLC-P.pdf, id=76, 845.07718pt x 597.55246pt>
+<images/RLC-P.pdf, id=108, 845.07718pt x 597.55246pt>
 File: images/RLC-P.pdf Graphic file (type pdf)
 <use images/RLC-P.pdf>
-Package pdftex.def Info: images/RLC-P.pdf  used on input line 536.
+Package pdftex.def Info: images/RLC-P.pdf  used on input line 540.
 (pdftex.def)             Requested size: 360.0pt x 254.55365pt.
 
-LaTeX Warning: Citation `XXX' on page 9 undefined on input line 544.
+LaTeX Warning: Citation `XXX' on page 10 undefined on input line 548.
 
 
-LaTeX Warning: Reference `fig:Parallel_RLC' on page 9 undefined on input line 5
-45.
+LaTeX Warning: Reference `fig:parallel_R' on page 10 undefined on input line 55
+3.
 
 
-LaTeX Warning: Reference `fig:parallel_R' on page 9 undefined on input line 549
+LaTeX Warning: Reference `fig:parallel_R' on page 10 undefined on input line 55
+5.
+
+
+LaTeX Warning: Reference `fig:parallel_R' on page 10 undefined on input line 55
+5.
+
+
+LaTeX Warning: Reference `fig:two_shell' on page 10 undefined on input line 567
 .
 
 
-LaTeX Warning: Reference `fig:parallel_R' on page 9 undefined on input line 551
-.
-
-
-LaTeX Warning: Reference `fig:parallel_R' on page 9 undefined on input line 551
-.
-
-
-LaTeX Warning: Reference `fig:two_shell' on page 9 undefined on input line 563.
-
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 543--566
+Underfull \hbox (badness 10000) in paragraph at lines 547--570
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 570--572
+Underfull \hbox (badness 10000) in paragraph at lines 574--576
 
  []
 
 
-LaTeX Warning: Citation `XXX' on page 9 undefined on input line 603.
+LaTeX Warning: Citation `XXX' on page 10 undefined on input line 607.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 583--606
-
- []
-
-[9] [10 <./images/RLC-P.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 616--619
+Underfull \hbox (badness 10000) in paragraph at lines 587--610
 
  []
 
-
-LaTeX Warning: Citation `XXX' on page 11 undefined on input line 621.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 620--622
+[10 <./images/RLC-P.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 620--623
 
  []
 
 
-LaTeX Warning: Reference `table:L' on page 11 undefined on input line 629.
+LaTeX Warning: Citation `XXX' on page 11 undefined on input line 625.
 
 
-LaTeX Warning: Reference `eqn:XXX' on page 11 undefined on input line 636.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 624--639
+Underfull \hbox (badness 10000) in paragraph at lines 624--626
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 642--644
+LaTeX Warning: Reference `table:L' on page 11 undefined on input line 633.
+
+
+LaTeX Warning: Reference `eqn:XXX' on page 11 undefined on input line 640.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 628--643
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 645--649
+Underfull \hbox (badness 10000) in paragraph at lines 646--648
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 650--651
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 652--665
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 666--669
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 671--674
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 675--680
+Underfull \hbox (badness 10000) in paragraph at lines 649--653
 
  []
 
 [11]
-Underfull \hbox (badness 10000) in paragraph at lines 681--684
+Underfull \hbox (badness 10000) in paragraph at lines 654--655
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 685--689
+Underfull \hbox (badness 10000) in paragraph at lines 656--669
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 670--673
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 675--678
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 679--684
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 685--688
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 689--693
 
  []
 
@@ -525,15 +516,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 685--689
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 3448 strings out of 478353
- 50473 string characters out of 5854635
- 361847 words of memory out of 5000000
- 21533 multiletter control sequences out of 15000+600000
+ 3456 strings out of 478353
+ 50770 string characters out of 5854635
+ 359857 words of memory out of 5000000
+ 21539 multiletter control sequences out of 15000+600000
  412134 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,22n,67p,224b,409s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,22n,67p,224b,419s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/publi
@@ -546,10 +540,10 @@ m/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></
 usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-dist/fonts/ty
 pe1/public/amsfonts/cm/cmtt10.pfb>
-Output written on main.pdf (12 pages, 453373 bytes).
+Output written on main.pdf (12 pages, 480997 bytes).
 PDF statistics:
- 158 PDF objects out of 1000 (max. 8388607)
- 104 compressed objects within 2 object streams
+ 186 PDF objects out of 1000 (max. 8388607)
+ 122 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 36 words of extra memory for PDF output out of 10000 (max. 10000000)
 
