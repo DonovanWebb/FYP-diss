@@ -509,8 +509,12 @@ I^2$. Plotting $\frac{P}{I^2}$ against angular frequency $w$ therefore
 gives $\frac{C^2k}{L}$ as shown in XX figure~\ref{fig:RL-F}. Assuming
 the coefficients in $k$ remain constant, comparisons of this gradient
 between a concentrating shell with inductance $L_s$ and no shell with
-inductance $L_0$ and $C_0 = 1$ yields $\eta = \frac{C^2L_0}{L_s}$, the
-effective concentration factor for power transfer. Figure
+inductance $L_0$ and $C_0 = 1$ yields,
+\begin{equation}
+  \eta = \frac{C^2L_0}{L_s},
+  \label{eqn:eta}
+\end{equation}
+the effective concentration factor for power transfer. Figure
 XXX~\ref{fig:RL-F} shows how $\eta$ depends on frequency for various
 shell configurations.\\ As observed in the Helmholtz driven field
 case, we see that the copper sheets increase in concentrating effect
@@ -526,9 +530,9 @@ observed as frequency increased past $10$ kHz.\\ The mixed shell of 18
 MuMetal sheets and 18 Copper sheets was found to have the best power
 transfer increase of $9$x after the copper sheet effectively shields
 the angular field at $10$ kHz. This power increase corresponds to a
-magentic field concentration of $3$ within the shells cavity.\\
-Figure~\ref{fig:RL-F} XXX shows the optimal PTE for a range of
-frequencies with different shell constructions around the receiving
+magentic field concentration of $3$ within the shells
+cavity.\\ Figure~\ref{fig:RL-F} XXX shows the optimal PTE for a range
+of frequencies with different shell constructions around the receiving
 inductor.  Assuming the inductance value remains constant with
 different shell configurations (an exploration of this assumption is
 considered in DiscussionXXX), absolute power transfer can be
@@ -625,21 +629,49 @@ XwX Superconducting material has been suggested to effectively screen
 angular field in the static case~\cite{XXX}... \\
 
 % How L changes
+\begin{figure}
+  \begin{center}
+   \noindent\includegraphics[width=0.75\linewidth]{images/inductance.pdf}
+  \end{center}
+  \caption{}\label{fig:inductance}
+\end{figure}
 For many results we have assumed that the inductance of the solenoid
 was independent of the shell surrounding it. Here we shall reexplore
-some results without this assumption. \\ For the resonant condition of
-a series RLC circuit, $\omega = 1/LC$, and so we may use the known
-capacitance, $C$ and measured frequency peak, $\omega$, to calculate
-an effective inductance, $L$, for the solenoid. Table~\ref{table:L}
-summarises the observed inductances for the various shell
-configurations. It should be noted that the inductance of the coils
-used does have a dependency on current, however for the range of
-currents used in the series RLC experiment, this change in inductance
-with current was negligible compared with the observed change in
-inductances with different surrounding shells. From
-equation~\ref{eqn:XXX} it can be seen that the effective power
-concentration, $\eta$, is dependent on both field concentration and
-effective inductance of the solenoid. \\
+some results without this assumption. \\ The resonant condition of a
+series RLC circuit,
+\begin{equation}
+  \label{eqn:RLC}
+  \omega = 1/\sqrt{LC},
+\end{equation}
+allows the calculation of effective inductance $L$ using the known
+capacitance, $C$ and measured frequency peak,
+$\omega$. Figure~\ref{fig:inductance} shows $\omega^{-1}$ against
+$\sqrt{C}$ to find inductance $L$. The observed inductances for the
+two shell configurations are not sensitive to frequency however, it
+should be noted that the inductance of the coils used does have a
+dependency on current. For the range of currents used in the series
+RLC experiment, this change in inductance with current was negligible
+compared with the observed change in inductances with different
+surrounding shells. It was found that the inductance when surrounded
+by the full shell is $1.25\pm0.01$~mH whilst the bare solenoid and the
+copper only shell give an inductance of $1.02\pm0.02$~mH. This
+increase in inductance could be understood by the fact that the high
+permeability MuMetal in the shell is located near to the coil,
+increasing the relative permeability of space in the vicinity of the
+coil. From equation~\ref{eqn:eta} it can be seen that the effective
+power concentration, $\eta$, for the RL circuit is dependent on both
+field concentration and effective inductance of the solenoid and in
+fact the increase in effective inductance reduces the increase in
+power transfer. The use of a tuned RLC setup within the receiving
+circuit can counteract this loss of power concentration with increased
+inductance as the load resistance no longer needs to match $\omega L$,
+as discussed in Methods.\\
+
+Due to the sharp drop off of power transfer with distance, the
+greatest PTE found was $1.01\%$ XeX at a seperation of $48.7$~mm with
+both the transmitting and receiving coil surrounded by a concentrating
+shell. The reason for this poor efficiency is largely due to the
+non-ideal real resistive component of the transmitting coil.
 
 %%%%
 
@@ -650,8 +682,6 @@ Linear decay of coil in non RLC \\
 - Due to pick up that is proportional to $w^2$? \\
 - Expected drop off due to magnetic saturation? or other reasons for
 MuMetal failure. - COMSOL MU thickness \\
-
-RLC How L changed with the shell construction. \\
 
 Power transfer \\
 - Generally low PTE due to high loss of inductor.  Could have used
