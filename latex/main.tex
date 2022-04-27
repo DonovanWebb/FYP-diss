@@ -572,6 +572,47 @@ the arrangement described in Methods Figure~\ref{fig:two_shell} was
 constructed and the peak power transfer observed at $30510$ kHz was
 found to be $1.01\%$.\\
 
+% ------------------------------
+
+\begin{figure}
+  \begin{center}
+   \noindent\includegraphics[width=0.75\linewidth]{images/temp-equiv_circ.png}
+  \label{fig:RLC-eqcirc}
+  \end{center}
+  \caption{}
+\end{figure}
+
+\begin{figure}
+  \begin{center}
+   \noindent\includegraphics[width=0.75\linewidth]{images/Is_vs_Ip_RLC.pdf}
+  \label{fig:RLC-IvI}
+  \end{center}
+  \caption{}
+\end{figure}
+
+\begin{figure}
+  \begin{center}
+   \noindent\includegraphics[width=0.75\linewidth]{images/parallel_RLC_Mrel.pdf}
+  \label{fig:RLC-Mrel}
+  \end{center}
+  \caption{}
+\end{figure}
+
+Parallel RLC coupled to coil can be considered as
+figure~\ref{fig:RLC-eqcirc}.  The voltage across $R_{load}$ is equal
+to,
+$$ V_s = j\omega MI_p - j\omega L_sI_s.$$
+$I_s$ can be found by,
+$$ I_s = j\omega MI_p / z_s $$
+where $z_s$ is the total impedance of circuit 2...
+$$ V_s = \frac{MR}{L_s}I_p. $$
+Therefore a plot of $V_s / R$ against $I_p$ will yield a gradient of
+$M/L_s$ as seen in figure~\ref{fig:RLC-IvI}.  Furthermore, $M =
+M(\omega)$ for shells with copper present, and so a plot of
+$(M/L_s)/(M^0/L_s^0)$ gives the relative increase in $M/L_s$ with
+frequency as seen in figure~\ref{fig:RLC-Mrel}.\\
+
+
 % INCLUDE? A summary of PTE and field concentration factors is shown in the table~\fig{table:summary}.\\
 
 \subsection{Distance}

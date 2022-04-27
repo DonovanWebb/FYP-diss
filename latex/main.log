@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2022.1.16)  26 APR 2022 16:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2022.1.16)  27 APR 2022 22:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -430,30 +430,70 @@ Underfull \hbox (badness 10000) in paragraph at lines 551--574
 
  []
 
+<images/temp-equiv_circ.png, id=108, 503.63156pt x 422.32782pt>
+File: images/temp-equiv_circ.png Graphic file (type png)
+<use images/temp-equiv_circ.png>
+Package pdftex.def Info: images/temp-equiv_circ.png  used on input line 579.
+(pdftex.def)             Requested size: 360.0pt x 301.88477pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 578--580
+
+pdfTeX warning: pdflatex (file ./images/Is_vs_Ip_RLC.pdf): PDF inclusion: found
+ PDF version <1.6>, but at most version <1.5> allowed
+<images/Is_vs_Ip_RLC.pdf, id=110, 1347.52249pt x 830.36523pt>
+File: images/Is_vs_Ip_RLC.pdf Graphic file (type pdf)
+<use images/Is_vs_Ip_RLC.pdf>
+Package pdftex.def Info: images/Is_vs_Ip_RLC.pdf  used on input line 587.
+(pdftex.def)             Requested size: 360.0pt x 221.83224pt.
+
+
+pdfTeX warning: pdflatex (file ./images/parallel_RLC_Mrel.pdf): PDF inclusion: 
+found PDF version <1.6>, but at most version <1.5> allowed
+<images/parallel_RLC_Mrel.pdf, id=111, 1330.22324pt x 747.53926pt>
+File: images/parallel_RLC_Mrel.pdf Graphic file (type pdf)
+<use images/parallel_RLC_Mrel.pdf>
+Package pdftex.def Info: images/parallel_RLC_Mrel.pdf  used on input line 595.
+(pdftex.def)             Requested size: 360.0pt x 202.30595pt.
+
+LaTeX Warning: Reference `fig:RLC-eqcirc' on page 10 undefined on input line 60
+2.
+
+[10 <./images/RLC-P.pdf>] [11 <./images/temp-equiv_circ.png> <./images/Is_vs_Ip
+_RLC.pdf>]
+
+LaTeX Warning: Reference `fig:RLC-IvI' on page 12 undefined on input line 610.
+
+
+LaTeX Warning: Reference `fig:RLC-Mrel' on page 12 undefined on input line 613.
+
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 608--614
 
  []
 
-[10 <./images/RLC-P.pdf>]
 
-LaTeX Warning: Citation `XXX' on page 11 undefined on input line 611.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 591--614
+Underfull \hbox (badness 10000) in paragraph at lines 619--621
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 624--627
+LaTeX Warning: Citation `XXX' on page 12 undefined on input line 652.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 632--655
+
+ []
+
+[12 <./images/parallel_RLC_Mrel.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 665--668
 
  []
 
 
-LaTeX Warning: Citation `XXX' on page 11 undefined on input line 629.
+LaTeX Warning: Citation `XXX' on page 13 undefined on input line 670.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 628--630
+Underfull \hbox (badness 10000) in paragraph at lines 669--671
 
  []
 
@@ -461,66 +501,69 @@ Underfull \hbox (badness 10000) in paragraph at lines 628--630
 
 pdfTeX warning: pdflatex (file ./images/inductance.pdf): PDF inclusion: found P
 DF version <1.6>, but at most version <1.5> allowed
-<images/inductance.pdf, id=119, 1244.40973pt x 748.30751pt>
+<images/inductance.pdf, id=153, 1244.40973pt x 748.30751pt>
 File: images/inductance.pdf Graphic file (type pdf)
 <use images/inductance.pdf>
-Package pdftex.def Info: images/inductance.pdf  used on input line 634.
+Package pdftex.def Info: images/inductance.pdf  used on input line 675.
 (pdftex.def)             Requested size: 360.0pt x 216.47838pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 645--669
+Underfull \hbox (badness 10000) in paragraph at lines 686--710
 
  []
 
-[11]
-Underfull \hbox (badness 10000) in paragraph at lines 678--680
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 681--685
+[13 <./images/inductance.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 719--721
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 686--699
-
- []
-
-[12 <./images/inductance.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 700--703
+Underfull \hbox (badness 10000) in paragraph at lines 722--726
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 705--708
+Underfull \hbox (badness 10000) in paragraph at lines 727--740
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 709--714
+Underfull \hbox (badness 10000) in paragraph at lines 741--744
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 715--718
+Underfull \hbox (badness 10000) in paragraph at lines 746--749
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 719--723
+Underfull \hbox (badness 10000) in paragraph at lines 750--755
 
  []
 
-[13] (./main.aux)
+
+Underfull \hbox (badness 10000) in paragraph at lines 756--759
+
+ []
+
+[14]
+Underfull \hbox (badness 10000) in paragraph at lines 760--764
+
+ []
+
+[15] (./main.aux)
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 3464 strings out of 478353
- 50981 string characters out of 5854635
+ 3489 strings out of 478353
+ 51687 string characters out of 5854635
  359885 words of memory out of 5000000
- 21546 multiletter control sequences out of 15000+600000
+ 21567 multiletter control sequences out of 15000+600000
  412134 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  60i,22n,67p,224b,419s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -535,10 +578,10 @@ blic/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmsy6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></
 usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on main.pdf (13 pages, 486246 bytes).
+Output written on main.pdf (15 pages, 570455 bytes).
 PDF statistics:
- 193 PDF objects out of 1000 (max. 8388607)
- 127 compressed objects within 2 object streams
+ 227 PDF objects out of 1000 (max. 8388607)
+ 148 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 56 words of extra memory for PDF output out of 10000 (max. 10000000)
 
