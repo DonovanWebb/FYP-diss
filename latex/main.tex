@@ -145,8 +145,10 @@ transformations,
 
 \begin{equation}
   \label{transform}
+  \begin{split}
 \rho' = \frac{R_1}{R_2-\xi}\rho,~~~~~~~~\rho'\in[0,~R_2-\xi)~~\\
-\rho' = R_2^{1-k}\rho^k.~~~~~~~~~\rho'\in[R_2-\xi,~R_2)
+\rho' = R_2^{1-k}\rho^k~~~~~~~~~\rho'\in[R_2-\xi,~R_2).
+  \end{split}
 \end{equation}
 
 By symmetry we see that $\theta$ and $z$ remain unchanged through the
@@ -309,18 +311,60 @@ strength experiments.\\
 Use of solenoid, limitations of Helmholtz and pick up.
 
 \subsection{Power Transfer}
-Use of RLC circuitary.\\
 Power transfer experiments measure power dropped across a load
-resistor in a receiving circuit verses power lost in the transmitting
+resistor in a receiving circuit versus power lost in the transmitting
 circuit's inductor. The receiving circuit, seen in
-figure~\ref{fig:WPT}~$a$, has multiple arrangements to optimise
-power transfer. The simplest of which is the load resistor in series
-with the receiving inductor. In this case the optimal load resistance
-is $R = \omega*L$, where $\omega$ is the angular frequency of the
-oscillating magnetic field and $L$ is the circuit inductance.\\ To
-maximise power transfer an RLC circuit is constructed on the receiving
-circuit. Ideally in an RLC circuit the complex impedance of the
-inductance and capacitance cancel leaving only the load
+figure~\ref{fig:WPT}, has multiple arrangements to optimise power
+transfer, the simplest of which is the load resistor in series with
+the receiving inductor forming an RL circuit. If at the operating
+frequency, $\omega$, the non-ideal real resistances of the coil, is
+assumed to be $r_2 << \omega L$, then the optimal load resistance for
+power transfer is found as,
+\vspace{-1em}
+\begin{equation}
+  \begin{split}
+  V_s = I_s (j\omega L_2 + R),  \\
+  P_s = |I_s|^2R = \frac{V_s^2R}{\omega^2L_2^2 + R^2},
+  \label{eqn:RL-max}
+  \end{split}
+\end{equation}
+and by differentiating, we find a maxima occurs in $P_s$ occurs at
+\begin{equation}
+  R = \omega L_2.
+\end{equation}
+The EMF induced in the receiving coil of a coupled inductance system may be found by Faraday's law,
+\vspace{-0.5em}
+\begin{equation}
+  \varepsilon = -\frac{d\phi_{21}}{dt},
+\end{equation}
+where $\phi_{21}$ is the magnetic flux through coil 2 due
+to the current of coil 1.  By defining a mutual inductance between two
+coils as,
+\vspace{-0.5em}
+\begin{equation}
+  M = \frac{\phi_{21}}{I_1},
+\end{equation}
+we find the equivalent expression for Faraday's law,
+\vspace{-0.5em}
+\begin{equation}
+  \varepsilon = -M\frac{dI_{1}}{dt}.
+  \label{eqn:M}
+\end{equation}
+If the current in coil 1 is alternating sinuisoidally, then the
+maximum EMF induced in coil 2 will be $M I_1 \omega$. Changes in mutual
+inductance for different shell constructions is a useful metric for
+field concentration as it is proportional to the magnetic flux present
+in coil 2. It may also be readily calculated if current in coil one is
+known and the voltage across the load resistance in circuit 2 is
+measured when $R = \omega L$ as,
+\begin{equation}
+  V_s = \frac{MI_1\omega}{\sqrt{2}}.
+  \label{eqn:MVs}
+\end{equation}
+
+To maximise power transfer an RLC circuit is constructed on the
+receiving circuit. Ideally in an RLC circuit the complex impedance of
+the inductance and capacitance cancel leaving only the load
 resistance. Our inductance is set by the solenoid we chose to use and
 so for exploring power transfer at various frequencies, a capacitance
 can be found to satisfy the resonance condition. If inductance, $L$,
@@ -466,55 +510,74 @@ reduced.\\
 
 \begin{figure}
   \begin{center}
-   \noindent\includegraphics[width=0.75\linewidth]{images/RL-R.pdf}
+   \noindent\includegraphics[width=0.75\linewidth]{images/RL-Rpeaks.pdf}
   \end{center}
-  \caption{How power transfer efficiency depends on load resistance in
-    a coupled inductive circuit for various
-    frequencies. \label{fig:RL-R}}
+  \caption{Experimentally found relative power transfer efficiencies
+    dependence on load resistance in a coupled RL inductive circuit for
+    various frequencies. Theory line is found using
+    equation~\ref{eqn:RL-max}. \label{fig:RL-R}}
 \end{figure}
 
 \begin{figure}
   \begin{center}
-   \noindent\includegraphics[width=0.75\linewidth]{images/RL-F.pdf}
+   \noindent\includegraphics[width=0.85\linewidth]{images/RL-graphs.pdf}
   \end{center}
-  \caption{How power transfer efficiency depends on frequency in a
-    coupled inductive circuit.}\label{fig:RL-F}
+  \caption{Exploring the behaviour of shells when the secondary
+    receiving circuit is in the RL configuration. LHS: Finding mutual
+    inductance, $M$, between two coils at a fixed distance for various
+    shell configurations.  The gradient is equivalent to $M/\sqrt{2}$
+    (equation~\ref{eqn:MVs}). RHS: The shell's effect on mutual
+    inductance is found by the ratio of ($M$ with shell)/($M$ bare
+    coil). An increase in mutual inductance corresponds to an increase
+    in magnetic field density within the shell and is shown to be
+    dependant on frequency for shells with copper
+    present.}\label{fig:RL-F}
 \end{figure}
 
-First we show the simplest power transfer experiment where the load
-resistance is in series with the receiving inductor -- an RL
-circuit. Figure~\ref{fig:RL-R} shows the relative PTE versus load
-resistance for various frequencies. The peaks of these curves confirm
-the expected optimum load resistance of $R = \omega L$. \\ An
-Oscillating magnetic field, $B$, produced from a solenoid and
-concentrated by a shell follows,
-$$B = CI\mu_0n\cos{\omega t},$$
-where $C$ is the concentration factor, $I$ is the current through the
-solenoid and $n$ is the number of turns of the solenoid.  If a second
-solenoid is placed within the field of the first, as shown in
-figure~\ref{fig:dipole-dipole}, then voltage will be induced across it
-according to Faraday's law,
-$$V = -NA\frac{dB}{dt},$$
-$$V = C\omega I NA\mu_0n\sin{\omega t},$$
-where $N$ is the number of turns of the solenoid and $A$ is the area
-of one turn.
-The power dropped across a resistor with magnitude $\omega L$ in
-series with this inductor will then be described by,
-$$ P = V^2/R $$
-$$ P = \frac{C^2wI^2k}{L}\sin{\omega t}^2$$
-where $k$ is the collection of constant coefficients that will remain
-constant between different shells.  Max power received in the second
-circuit is therefore proportional to $w \cdot \frac{C^2}{L} \cdot
-I^2$. Plotting $\frac{P}{I^2}$ against angular frequency $w$ therefore
-gives $\frac{C^2k}{L}$ as shown in XX figure~\ref{fig:RL-F}. Assuming
-the coefficients in $k$ remain constant, comparisons of this gradient
-between a concentrating shell with inductance $L_s$ and no shell with
-inductance $L_0$ and $C_0 = 1$ yields,
-\begin{equation}
-  \eta = \frac{C^2L_0}{L_s},
-  \label{eqn:eta}
-\end{equation}
-the effective concentration factor for power transfer. Figure
+\subsection*{RL}
+
+
+Power is transferred from the primary circuit to a load resistor in
+the secondary circuit as explained in Methods XXX. This may be simply
+performed by placing a load resistor in parallel with the receiving
+inductor $L_s$ forming an RL circuit as seen in XfX
+figure~\ref{fig:WPT}. To maximise power transferred, the optimal load
+resistance was matched to $R = \omega L$ (see Methods
+equation~\ref{eqn:RL-max}). \\ Figure~\ref{fig:RL-R} shows the
+relative PTE versus load resistance for various frequencies confirming
+the expected optimum load resistance of $R = \omega L$. \\
+
+%% An
+%% Oscillating magnetic field, $B$, produced from a solenoid and
+%% concentrated by a shell follows,
+%% $$B = CI\mu_0n\cos{\omega t},$$ where $C$ is the concentration factor,
+%% $I$ is the current through the solenoid and $n$ is the number of turns
+%% of the solenoid.  If a second solenoid is placed within the field of
+%% the first, as shown in figure~\ref{fig:dipole-dipole}, then voltage
+%% will be induced across it according to Faraday's law,
+%% $$V = -NA\frac{dB}{dt},$$
+%% $$V = C\omega I NA\mu_0n\sin{\omega t},$$
+%% where $N$ is the number of turns of the solenoid and $A$ is the area
+%% of one turn.
+%% The power dropped across a resistor with magnitude $\omega L$ in
+%% series with this inductor will then be described by,
+%% $$ P = V^2/R $$
+%% $$ P = \frac{C^2wI^2k}{L}\sin{\omega t}^2$$
+%% where $k$ is the collection of constant coefficients that will remain
+%% constant between different shells.  Max power received in the second
+%% circuit is therefore proportional to $w \cdot \frac{C^2}{L} \cdot
+%% I^2$. Plotting $\frac{P}{I^2}$ against angular frequency $w$ therefore
+%% gives $\frac{C^2k}{L}$ as shown in XX figure~\ref{fig:RL-F}. Assuming
+%% the coefficients in $k$ remain constant, comparisons of this gradient
+%% between a concentrating shell with inductance $L_s$ and no shell with
+%% inductance $L_0$ and $C_0 = 1$ yields,
+%% \begin{equation}
+%%   \eta = \frac{C^2L_0}{L_s},
+%%   \label{eqn:eta}
+%% \end{equation}
+%% the effective concentration factor for power transfer.
+
+Figure
 XXX~\ref{fig:RL-F} shows how $\eta$ depends on frequency for various
 shell configurations.\\ As observed in the Helmholtz driven field
 case, we see that the copper sheets increase in concentrating effect
@@ -547,6 +610,8 @@ the maximal power transfer for different arrangements of shells.\\
   \caption{How the increase in power transfer efficiency depends on
     frequency in a coupled parallel RLC circuit.}
 \end{figure}
+
+\subsection*{Resonant --- RLC}
 
 Parallel RLC circuits are more fitting for optimising power
 transfer~\cite{XXX}. For the arrangement described in

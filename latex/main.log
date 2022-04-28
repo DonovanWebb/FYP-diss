@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2022.1.16)  27 APR 2022 22:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2022.1.16)  28 APR 2022 21:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -267,24 +267,24 @@ LaTeX Warning: Reference `fig:shell_TO' on page 2 undefined on input line 137.
 
 [2 <./images/trans_opt_edit.pdf>]
 
-LaTeX Warning: Citation `PRATT' on page 3 undefined on input line 176.
+LaTeX Warning: Citation `PRATT' on page 3 undefined on input line 178.
 
 
-LaTeX Warning: Citation `MUMETAL' on page 3 undefined on input line 179.
+LaTeX Warning: Citation `MUMETAL' on page 3 undefined on input line 181.
 
 
-LaTeX Warning: Citation `Meissner' on page 3 undefined on input line 182.
+LaTeX Warning: Citation `Meissner' on page 3 undefined on input line 184.
 
 
-LaTeX Warning: Reference `fig:shell' on page 3 undefined on input line 183.
+LaTeX Warning: Reference `fig:shell' on page 3 undefined on input line 185.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 165--194
+Underfull \hbox (badness 10000) in paragraph at lines 167--196
 
  []
 
 
-LaTeX Warning: Citation `ferro' on page 3 undefined on input line 197.
+LaTeX Warning: Citation `ferro' on page 3 undefined on input line 199.
 
 
 
@@ -293,207 +293,199 @@ ion <1.6>, but at most version <1.5> allowed
 <images/WPT.pdf, id=38, 422.52342pt x 241.5639pt>
 File: images/WPT.pdf Graphic file (type pdf)
 <use images/WPT.pdf>
-Package pdftex.def Info: images/WPT.pdf  used on input line 202.
+Package pdftex.def Info: images/WPT.pdf  used on input line 204.
 (pdftex.def)             Requested size: 360.0pt x 205.82787pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 215--233
+Underfull \hbox (badness 10000) in paragraph at lines 217--235
 
  []
 
 
-LaTeX Warning: Reference `fig:shells' on page 3 undefined on input line 243.
+LaTeX Warning: Reference `fig:shells' on page 3 undefined on input line 245.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 242--244
+Underfull \hbox (badness 10000) in paragraph at lines 244--246
 
  []
 
 [3]
 
-LaTeX Warning: Citation `XXX' on page 4 undefined on input line 251.
+LaTeX Warning: Citation `XXX' on page 4 undefined on input line 253.
 
 
-LaTeX Warning: Citation `XXX' on page 4 undefined on input line 267.
+LaTeX Warning: Citation `XXX' on page 4 undefined on input line 269.
 
 
-LaTeX Warning: Reference `fig:helm' on page 4 undefined on input line 268.
+LaTeX Warning: Reference `fig:helm' on page 4 undefined on input line 270.
 
-[4 <./images/WPT.pdf>]
+[4 <./images/WPT.pdf>] [5]
 
-LaTeX Warning: Citation `XXX' on page 5 undefined on input line 344.
+LaTeX Warning: Citation `XXX' on page 6 undefined on input line 388.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 330--354
+Underfull \hbox (badness 10000) in paragraph at lines 374--398
 
  []
 
-[5]
+
 
 pdfTeX warning: pdflatex (file ./images/DC-graph.pdf): PDF inclusion: found PDF
  version <1.7>, but at most version <1.5> allowed
 <images/DC-graph.pdf, id=58, 845.07718pt x 597.55246pt>
 File: images/DC-graph.pdf Graphic file (type pdf)
 <use images/DC-graph.pdf>
-Package pdftex.def Info: images/DC-graph.pdf  used on input line 373.
+Package pdftex.def Info: images/DC-graph.pdf  used on input line 417.
 (pdftex.def)             Requested size: 360.0pt x 254.55365pt.
 
-LaTeX Warning: Citation `PRATT' on page 6 undefined on input line 405.
+LaTeX Warning: Citation `PRATT' on page 6 undefined on input line 449.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 379--406
+Underfull \hbox (badness 10000) in paragraph at lines 423--450
 
  []
 
-[6 <./images/DC-graph.pdf>]
+[6]
 
 pdfTeX warning: pdflatex (file ./images/AC-Helm.pdf): PDF inclusion: found PDF 
 version <1.7>, but at most version <1.5> allowed
-<images/AC-Helm.pdf, id=70, 845.07718pt x 597.55246pt>
+<images/AC-Helm.pdf, id=62, 845.07718pt x 597.55246pt>
 File: images/AC-Helm.pdf Graphic file (type pdf)
 <use images/AC-Helm.pdf>
-Package pdftex.def Info: images/AC-Helm.pdf  used on input line 411.
+Package pdftex.def Info: images/AC-Helm.pdf  used on input line 455.
 (pdftex.def)             Requested size: 360.0pt x 254.55365pt.
 
-LaTeX Warning: Reference `fig:COMSOL_CU' on page 7 undefined on input line 440.
+LaTeX Warning: Reference `fig:COMSOL_CU' on page 7 undefined on input line 484.
 
 
 
-LaTeX Warning: Reference `fig:Noise' on page 7 undefined on input line 457.
+LaTeX Warning: Reference `fig:Noise' on page 7 undefined on input line 501.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 419--464
+Underfull \hbox (badness 10000) in paragraph at lines 463--508
 
  []
 
-[7 <./images/AC-Helm.pdf>]
+[7 <./images/DC-graph.pdf>]
 
-pdfTeX warning: pdflatex (file ./images/RL-R.pdf): PDF inclusion: found PDF ver
-sion <1.7>, but at most version <1.5> allowed
-<images/RL-R.pdf, id=83, 845.07718pt x 597.55246pt>
-File: images/RL-R.pdf Graphic file (type pdf)
-<use images/RL-R.pdf>
-Package pdftex.def Info: images/RL-R.pdf  used on input line 469.
-(pdftex.def)             Requested size: 360.0pt x 254.55365pt.
-
-
-pdfTeX warning: pdflatex (file ./images/RL-F.pdf): PDF inclusion: found PDF ver
-sion <1.7>, but at most version <1.5> allowed
-<images/RL-F.pdf, id=84, 845.07718pt x 597.55246pt>
-File: images/RL-F.pdf Graphic file (type pdf)
-<use images/RL-F.pdf>
-Package pdftex.def Info: images/RL-F.pdf  used on input line 478.
-(pdftex.def)             Requested size: 360.0pt x 254.55365pt.
-
-LaTeX Warning: Reference `fig:dipole-dipole' on page 8 undefined on input line 
-495.
-
-[8 <./images/RL-R.pdf>]
-
-LaTeX Warning: Reference `table:RL_freq' on page 9 undefined on input line 539.
+pdfTeX warning: pdflatex (file ./images/RL-Rpeaks.pdf): PDF inclusion: found PD
+F version <1.6>, but at most version <1.5> allowed
+<images/RL-Rpeaks.pdf, id=75, 1235.41861pt x 840.20988pt>
+File: images/RL-Rpeaks.pdf Graphic file (type pdf)
+<use images/RL-Rpeaks.pdf>
+Package pdftex.def Info: images/RL-Rpeaks.pdf  used on input line 513.
+(pdftex.def)             Requested size: 360.0pt x 244.83412pt.
 
 
+pdfTeX warning: pdflatex (file ./images/RL-graphs.pdf): PDF inclusion: found PD
+F version <1.6>, but at most version <1.5> allowed
+<images/RL-graphs.pdf, id=76, 2037.10352pt x 747.53926pt>
+File: images/RL-graphs.pdf Graphic file (type pdf)
+<use images/RL-graphs.pdf>
+Package pdftex.def Info: images/RL-graphs.pdf  used on input line 523.
+(pdftex.def)             Requested size: 408.00293pt x 149.71051pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 516--541
+Underfull \hbox (badness 10000) in paragraph at lines 540--549
 
  []
 
-[9 <./images/RL-F.pdf>]
+[8 <./images/AC-Helm.pdf>]
+
+LaTeX Warning: Reference `table:RL_freq' on page 9 undefined on input line 602.
+
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 580--604
+
+ []
+
+[9 <./images/RL-Rpeaks.pdf> <./images/RL-graphs.pdf
+
+pdfTeX warning: pdflatex (file ./images/RL-graphs.pdf): PDF inclusion: multiple
+ pdfs with page group included in a single page
+>]
 
 pdfTeX warning: pdflatex (file ./images/RLC-P.pdf): PDF inclusion: found PDF ve
 rsion <1.7>, but at most version <1.5> allowed
-<images/RLC-P.pdf, id=107, 845.07718pt x 597.55246pt>
+<images/RLC-P.pdf, id=114, 845.07718pt x 597.55246pt>
 File: images/RLC-P.pdf Graphic file (type pdf)
 <use images/RLC-P.pdf>
-Package pdftex.def Info: images/RLC-P.pdf  used on input line 544.
+Package pdftex.def Info: images/RLC-P.pdf  used on input line 607.
 (pdftex.def)             Requested size: 360.0pt x 254.55365pt.
 
-LaTeX Warning: Citation `XXX' on page 10 undefined on input line 552.
+LaTeX Warning: Citation `XXX' on page 10 undefined on input line 617.
 
 
-LaTeX Warning: Reference `fig:parallel_R' on page 10 undefined on input line 55
-7.
+LaTeX Warning: Reference `fig:parallel_R' on page 10 undefined on input line 62
+2.
 
 
-LaTeX Warning: Reference `fig:parallel_R' on page 10 undefined on input line 55
-9.
+LaTeX Warning: Reference `fig:parallel_R' on page 10 undefined on input line 62
+4.
 
 
-LaTeX Warning: Reference `fig:parallel_R' on page 10 undefined on input line 55
-9.
+LaTeX Warning: Reference `fig:parallel_R' on page 10 undefined on input line 62
+4.
 
 
-LaTeX Warning: Reference `fig:two_shell' on page 10 undefined on input line 571
+LaTeX Warning: Reference `fig:two_shell' on page 10 undefined on input line 636
 .
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 551--574
+Underfull \hbox (badness 10000) in paragraph at lines 616--639
 
  []
 
-<images/temp-equiv_circ.png, id=108, 503.63156pt x 422.32782pt>
+<images/temp-equiv_circ.png, id=115, 503.63156pt x 422.32782pt>
 File: images/temp-equiv_circ.png Graphic file (type png)
 <use images/temp-equiv_circ.png>
-Package pdftex.def Info: images/temp-equiv_circ.png  used on input line 579.
+Package pdftex.def Info: images/temp-equiv_circ.png  used on input line 644.
 (pdftex.def)             Requested size: 360.0pt x 301.88477pt.
-
+[10 <./images/RLC-P.pdf>]
 
 pdfTeX warning: pdflatex (file ./images/Is_vs_Ip_RLC.pdf): PDF inclusion: found
  PDF version <1.6>, but at most version <1.5> allowed
-<images/Is_vs_Ip_RLC.pdf, id=110, 1347.52249pt x 830.36523pt>
+<images/Is_vs_Ip_RLC.pdf, id=128, 1347.52249pt x 830.36523pt>
 File: images/Is_vs_Ip_RLC.pdf Graphic file (type pdf)
 <use images/Is_vs_Ip_RLC.pdf>
-Package pdftex.def Info: images/Is_vs_Ip_RLC.pdf  used on input line 587.
+Package pdftex.def Info: images/Is_vs_Ip_RLC.pdf  used on input line 652.
 (pdftex.def)             Requested size: 360.0pt x 221.83224pt.
 
 
 pdfTeX warning: pdflatex (file ./images/parallel_RLC_Mrel.pdf): PDF inclusion: 
 found PDF version <1.6>, but at most version <1.5> allowed
-<images/parallel_RLC_Mrel.pdf, id=111, 1330.22324pt x 747.53926pt>
+<images/parallel_RLC_Mrel.pdf, id=129, 1330.22324pt x 747.53926pt>
 File: images/parallel_RLC_Mrel.pdf Graphic file (type pdf)
 <use images/parallel_RLC_Mrel.pdf>
-Package pdftex.def Info: images/parallel_RLC_Mrel.pdf  used on input line 595.
+Package pdftex.def Info: images/parallel_RLC_Mrel.pdf  used on input line 660.
 (pdftex.def)             Requested size: 360.0pt x 202.30595pt.
-
-LaTeX Warning: Reference `fig:RLC-eqcirc' on page 10 undefined on input line 60
-2.
-
-[10 <./images/RLC-P.pdf>] [11 <./images/temp-equiv_circ.png> <./images/Is_vs_Ip
-_RLC.pdf>]
-
-LaTeX Warning: Reference `fig:RLC-IvI' on page 12 undefined on input line 610.
-
-
-LaTeX Warning: Reference `fig:RLC-Mrel' on page 12 undefined on input line 613.
-
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 608--614
+[11 <./images/temp-equiv_circ.png> <./images/Is_vs_Ip_RLC.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 673--679
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 619--621
+Underfull \hbox (badness 10000) in paragraph at lines 684--686
 
  []
 
 
-LaTeX Warning: Citation `XXX' on page 12 undefined on input line 652.
+LaTeX Warning: Citation `XXX' on page 12 undefined on input line 717.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 632--655
+Underfull \hbox (badness 10000) in paragraph at lines 697--720
 
  []
 
 [12 <./images/parallel_RLC_Mrel.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 665--668
+Underfull \hbox (badness 10000) in paragraph at lines 730--733
 
  []
 
 
-LaTeX Warning: Citation `XXX' on page 13 undefined on input line 670.
+LaTeX Warning: Citation `XXX' on page 13 undefined on input line 735.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 669--671
+Underfull \hbox (badness 10000) in paragraph at lines 734--736
 
  []
 
@@ -501,69 +493,69 @@ Underfull \hbox (badness 10000) in paragraph at lines 669--671
 
 pdfTeX warning: pdflatex (file ./images/inductance.pdf): PDF inclusion: found P
 DF version <1.6>, but at most version <1.5> allowed
-<images/inductance.pdf, id=153, 1244.40973pt x 748.30751pt>
+<images/inductance.pdf, id=160, 1244.40973pt x 748.30751pt>
 File: images/inductance.pdf Graphic file (type pdf)
 <use images/inductance.pdf>
-Package pdftex.def Info: images/inductance.pdf  used on input line 675.
+Package pdftex.def Info: images/inductance.pdf  used on input line 740.
 (pdftex.def)             Requested size: 360.0pt x 216.47838pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 686--710
+LaTeX Warning: Reference `eqn:eta' on page 13 undefined on input line 767.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 751--775
 
  []
 
 [13 <./images/inductance.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 719--721
+Underfull \hbox (badness 10000) in paragraph at lines 784--786
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 722--726
+Underfull \hbox (badness 10000) in paragraph at lines 787--791
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 727--740
+Underfull \hbox (badness 10000) in paragraph at lines 792--805
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 741--744
+Underfull \hbox (badness 10000) in paragraph at lines 806--809
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 746--749
+Underfull \hbox (badness 10000) in paragraph at lines 811--814
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 750--755
+Underfull \hbox (badness 10000) in paragraph at lines 815--820
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 756--759
+Underfull \hbox (badness 10000) in paragraph at lines 821--824
 
  []
 
-[14]
-Underfull \hbox (badness 10000) in paragraph at lines 760--764
+
+Underfull \hbox (badness 10000) in paragraph at lines 825--829
 
  []
 
-[15] (./main.aux)
+[14] [15] (./main.aux)
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
- 3489 strings out of 478353
- 51687 string characters out of 5854635
- 359885 words of memory out of 5000000
- 21567 multiletter control sequences out of 15000+600000
+ 3491 strings out of 478353
+ 51766 string characters out of 5854635
+ 359936 words of memory out of 5000000
+ 21569 multiletter control sequences out of 15000+600000
  412134 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  60i,22n,67p,224b,419s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -578,10 +570,10 @@ blic/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmsy6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></
 usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on main.pdf (15 pages, 570455 bytes).
+Output written on main.pdf (15 pages, 500096 bytes).
 PDF statistics:
- 227 PDF objects out of 1000 (max. 8388607)
- 148 compressed objects within 2 object streams
+ 234 PDF objects out of 1000 (max. 8388607)
+ 149 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  56 words of extra memory for PDF output out of 10000 (max. 10000000)
 
