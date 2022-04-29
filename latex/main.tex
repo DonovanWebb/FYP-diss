@@ -125,16 +125,16 @@ than its substituent parts.\\
 As described above, a device capable of magnetic field concentration
 can increase the efficiency of sensors and energy harvesters.
 Utilising TO we may design an optimal field concentrator which fulfils
-the criteria: The magnetic field within a region $A$ is concentrated into
-a cavity $B$ where $B$ is free space only. A possible geometry for this
-device that has cylindrical symmetry is shown on LHS of
-figure~\ref{fig:d_motiv}.  To satisy these conditions two coordinate transforms are applied: First
-the region $\rho < R_2 - \eta$ is radially and linearly compressed to
-the region $\rho < R_1$; Second, to ensure the continuity of our
-transformed space, a high ($k^{th}$) order polynomial radial expansion
-of $R_2 - \eta < \rho < R_2$ to the region $R_1 < \rho < R_2$ is
-made. These transformations are described by the coordinate
-transformations,
+the criteria: The magnetic field within a region $A$ is concentrated
+into a cavity $B$ where $B$ is free space only. A possible geometry
+for this device that has cylindrical symmetry is shown on LHS of
+figure~\ref{fig:d_motiv}.  To satisy these conditions two coordinate
+transforms are applied: First the region $\rho < R_2 - \eta$ is
+radially and linearly compressed to the region $\rho < R_1$; Second,
+to ensure the continuity of our transformed space, a high ($k^{th}$)
+order polynomial radial expansion of $R_2 - \eta < \rho < R_2$ to the
+region $R_1 < \rho < R_2$ is made. These transformations are described
+by the coordinate transformations,
 \begin{equation}
   \label{eqn:transform}
   \begin{split}
@@ -236,24 +236,25 @@ by wires is useful in many settings: for convenince, e.g. mobile
 phones; for safety, e.g. implanted medical devices; or for
 practicallity, e.g. satellites. We shall focus on near field power
 transmission by the use of inductive coupling. Inductive coupling
-transfers power between two coils of wire (two inductors) by an oscillating magnetic
-field.  The transmitting coil is
-supplied with an alternating current, which by Ampere's law creates an
-oscillating magnetic field. The receiving coil is placed within this
-magnetic field so that a current is induced as described by Faraday's
-law. A schematic of these two coupled circuits can be seen in figure~\ref{fig:WPT}~$a, b,$ and $d$. This strategy for power transfer is highly sensitive to
-distance as the magnetic field of a dipole drops off with distance
-cubed, $r^{-3}$, therefore the power is proportional to
-$r^{-6}$ if the dipole is driven at a fixed frequency and current.
-The power transfer efficiency, PTE, also suffers with distance as the
-non-ideal resistive losses in the primary coil remain (relatively)
-constant with distance. To somewhat counteract this sharp drop off of
-efficiency with distance, concentrating shells may be used to magnify
-the transmitted field and locally concentrate the field around the
-receiving solenoid. The concentrating shell is larger than the coil by
-necessity, however the presence of a shell is always advantageous when
-the free space distance between the power transmitting and power
-receiving device is greater than $k$, where
+transfers power between two coils of wire (two inductors) by an
+oscillating magnetic field.  The transmitting coil is supplied with an
+alternating current, which by Ampere's law creates an oscillating
+magnetic field. The receiving coil is placed within this magnetic
+field so that a current is induced as described by Faraday's law. A
+schematic of these two coupled circuits can be seen in
+figure~\ref{fig:WPT}~$a, b,$ and $d$. This strategy for power transfer
+is highly sensitive to distance as the magnetic field of a dipole
+drops off with distance cubed, $r^{-3}$, therefore the power is
+proportional to $r^{-6}$ if the dipole is driven at a fixed frequency
+and current.  The power transfer efficiency, PTE, also suffers with
+distance as the non-ideal resistive losses in the primary coil remain
+(relatively) constant with distance. To somewhat counteract this sharp
+drop off of efficiency with distance, concentrating shells may be used
+to magnify the transmitted field and locally concentrate the field
+around the receiving solenoid. The concentrating shell is larger than
+the coil by necessity, however the presence of a shell is always
+advantageous when the free space distance between the power
+transmitting and power receiving device is greater than $k$, where
 \begin{equation}
 k = \frac{R_2}{\sqrt[3]{R}-1}
 \end{equation}
@@ -288,7 +289,7 @@ into $21$~mm by $30$~mm rectangular sheets.  Plastic supports for
 holding $36$ sheets of either MuMetal or copper were 3D printed to
 produce the shells seen in figure~\ref{fig:shells}. The inner radius
 $R_1$ and outer radius $R_2$ were $7$ and $21$~mm respectively to give
-an $R_2/R_1$ ratio of 4. The ``full shell'' contains $36$ sheets of
+an $R_2/R_1$ ratio of 4. The ``Full shell'' contains $36$ sheets of
 alternating copper and MuMetal, whilst the ``No shell'' scenario
 contains no metal. \\
 
@@ -305,7 +306,7 @@ the coils, and $n$ is the number of turns of wire.  A Hall probe
 placed at the center of the Helmholtz coils will have a Hall voltage
 induced which is proportional to the magnetic field. Once calibrated
 the Hall probe can be used to measure the absolute value of the
-magnetic field present. A concentrating shell may now be placed around
+magnetic field present. A concentrating shell may now be placed 
 at the center of the Helmholtz coils and the Hall probe placed within
 the $R_1$ section of the shells to explore field concentration.
 
@@ -336,52 +337,58 @@ resistor in a receiving circuit versus power lost in the transmitting
 circuit's inductor. The receiving circuit, seen in
 figure~\ref{fig:WPT}, has multiple arrangements to optimise power
 transfer, the simplest of which is the load resistor in series with
-the receiving inductor forming an RL circuit. If at the operating
-frequency, $\omega$, the non-ideal real resistances of the coil, is
-assumed to be $r_2 << \omega L$, then the optimal load resistance for
-power transfer is found as,
-\vspace{-1em}
+the receiving inductor forming an RL circuit. Assuming the non-ideal
+real resistances of the coil is $r_2 << \omega L$, then the optimal
+load resistance for power transfer at some frequency $\omega$ is found
+by,
+\vspace{-0.5em}
+\begin{center}
+\begin{minipage}{0.4\linewidth}
 \begin{equation}
-  \begin{split}
-  V_s = I_s (j\omega L_2 + R),  \\
-  P_s = |I_s|^2R = \frac{V_s^2R}{\omega^2L_2^2 + R^2},
+  V_2 = I_2 (j\omega L_2 + R),  
+\end{equation}
+\begin{equation}
+  P_R = |I_2|^2R = \frac{V_2^2R}{\omega^2L_2^2 + R^2},
+\end{equation}
+\end{minipage}
+~~
+\vrule
+\begin{minipage}{0.4\linewidth}
+  $$\text{and setting\quad} \frac{dP_R}{dR} = 0,$$ 
+\begin{equation}
+  \Rightarrow R = \omega L_2.
   \label{eqn:RL-max}
-  \end{split}
 \end{equation}
-and by differentiating, we find a maxima occurs in $P_s$ occurs at
-\begin{equation}
-  R = \omega L_2.
-\end{equation}
-The EMF induced in the receiving coil of a coupled inductance system may be found by Faraday's law,
+\end{minipage}
+\end{center}
+The EMF induced in the receiving coil of a coupled inductance system
+may be found by Faraday's law,
 \vspace{-0.5em}
 \begin{equation}
-  \varepsilon = -\frac{d\phi_{21}}{dt},
-\end{equation}
-where $\phi_{21}$ is the magnetic flux through coil 2 due
-to the current of coil 1.  By defining a mutual inductance between two
-coils as,
-\vspace{-0.5em}
-\begin{equation}
-  M = \frac{\phi_{21}}{I_1},
-\end{equation}
-we find the equivalent expression for Faraday's law,
-\vspace{-0.5em}
-\begin{equation}
-  \varepsilon = -M\frac{dI_{1}}{dt}.
+  \varepsilon = -\frac{d\phi_{21}}{dt},~~~\text{or}~~~\varepsilon = -M\frac{dI_{1}}{dt},
   \label{eqn:M}
 \end{equation}
+where $\phi_{21}$ is the magnetic flux through coil 2 due to the
+current of coil 1 and $M$ is the equivalent mutual inductance between
+two coils.
+%% \begin{equation}
+%%   M = \frac{\phi_{21}}{I_1},
+%% \end{equation}
 If the current in coil 1 is alternating sinuisoidally, then the
-maximum EMF induced in coil 2 will be $M I_1 \omega$. Changes in mutual
-inductance for different shell constructions is a useful metric for
-field concentration as it is proportional to the magnetic flux present
-in coil 2. It may also be readily calculated if current in coil one is
-known and the voltage across the load resistance in circuit 2 is
-measured when $R = \omega L$ as,
+maximum EMF induced in coil 2 will be $M I_1 \omega$. Changes in
+mutual inductance for different shell constructions is a useful metric
+for field concentration as it is proportional to the magnetic flux
+present in coil 2. It may also be readily calculated if the current in
+coil one is known and the voltage across the load resistance in
+circuit 2 is measured at the optimal load resistance
+(equation~\ref{eqn:RL-max}). This simple relationship of voltage
+measurement $V_2$ to mutual inductance $M$ is described by,
 \begin{equation}
-  V_s = \frac{MI_1\omega}{\sqrt{2}}.
-  \label{eqn:MVs}
+  V_2 = \frac{MI_1\omega}{\sqrt{2}}.
+\label{eqn:MVs}
 \end{equation}
 
+%XXX
 Parallel RLC coupled to coil can be considered as
 figure~\ref{fig:RLC-eqcirc}.  The voltage across $R_{load}$ is equal
 to,
@@ -469,35 +476,21 @@ XXTheory of Rload dependence on power transfer. \\
 Using Helmholtz coils powered in DC to create a static external
 magnetic field (see Methods), we observed constant field concentration
 factors within the $R_1$ cavity for various shell constructions. No
-shell, 18 MuMetal, 36 MuMetal, 18 Copper and 18 MuMetal + 18 Copper
-shells were used and their concentration factor with field may be seen
-in figure~\ref{fig:DC_RL}$a$, where concentration factor is defined as
-(Internal Field)/(External Field). \\ It was found that the shell
-contruction of 36 MuMetal thin sheets gave the optimum concentration
-factor of $C = 2.38$ with minimal error ($0.1\%$) at higher field
-strengths and a maximum error of $4.0\%$ at an external field of
-$1.4$~G. This increase in error at low magnetic fields is due to
-limited sensitivity of our Hall probe and current measurements over
-the Helmholtz coils.\\ Similar error relationships are observed for
-the other constructions. It should be noted that we assume the dipole
-has been placed in the same position and orientation in all
-experiments and so errors due to placement are excluded here.\\ It is
-expected that the copper will have no effect on a static magnetic
-field and this was confirmed by the $18$ copper shell displaying no
-concentration of internal field.  This is due to copper having a
-relative permeability similar to air, $\mu_r = 1.0$, and so negligible
-field guiding properties. In the oscillating magnetic field regime
-copper is expected to shield angular fields due to the production of
-eddy currents. Only air-gaps are used to block the angular component
-of a static magnetic field within our shells to simplify the
-experimental set up, however superconducting sheets in a similar shell
-have been shown to improve the concentration of static
-fields~\cite{PRATT}.\\
+shell, 18 MuMetal, and 36 MuMetal shells were used and their
+concentration factor with field may be seen in
+figure~\ref{fig:DC_RL}$a$, where concentration factor, $C$, is defined
+as (Magnetic field within shell's cavity)/(external field produced by
+Helmholtz coils). It was found that the shell construction of $36$
+MuMetal thin sheets gave the optimum concentration factor of $C =
+(2.43\pm0.04)$ with errors likely due to the sensitivity of dipole
+orientation within the field. The $18$ MuMetal shell gave a magnetic
+concentration factor of $C = (2.31\pm0.04)$, which suggests that the
+shell behaves more ideally with a greater number of sheets. Simulation
+work performed on COMSOL further supports this as shown in figureXXX
+where more sheets corresponded to more ideal behaviour.
 %}}}
 
 \subsection{Power transfer}
-
-
 
 \subsection*{RL}
 %removed{{{
@@ -532,24 +525,26 @@ fields~\cite{PRATT}.\\
 %% the effective concentration factor for power transfer.
 %}}}
 Power is transferred from the primary circuit to a load resistor in
-the secondary circuit as explained in Methods XXX. This may be simply
-performed by placing a load resistor in parallel with the receiving
-inductor $L_s$ forming an RL circuit as seen in XfX
-figure~\ref{fig:WPT}. To maximise power transferred, the optimal load
-resistance was matched to $R = \omega L$ (see Methods
-equation~\ref{eqn:RL-max}). \\ Figure~\ref{fig:DC_RL}$b$ shows the
+the secondary circuit in a coupled inductive arrangement as explained
+in Methods. This may be simply performed by placing a load resistor in
+parallel with the receiving inductor $L_2$ forming an RL circuit as
+seen in figure~\ref{fig:WPT}~$a$. To maximise power transferred, the
+optimal load resistance was matched to $R = \omega L$ (see Methods
+equation~\ref{eqn:RL-max}). Figure~\ref{fig:DC_RL}~$b$ shows the
 relative PTE versus load resistance for various frequencies confirming
-the expected optimum load resistance of $R = \omega L$. \\ Mutual
-inductances between the coils at a set distance of $59$~mm were found
-by measuring the voltage across the load resistor in the secondary RL
-circuit and the current driving the primary circuit. The copper only,
-MuMetal only, and full copper plus MuMetal shells all showed a
-concentrating effect by their relative increases in mutual inductance
-between the two coils as shown in figure~\ref{fig:DC_RL}$c$. The full
-shell showed an increase of mutual inductance (magnetic field) by a
-factor of $3.0\pm0.1$. The frequency dependance on the relative
+the expected optimum load resistance. \\ Mutual inductances between
+the coils at a set distance of $59$~mm were found by measuring the
+voltage across the load resistor in the secondary RL circuit and the
+current driving the primary circuit and using
+equation~\ref{eqn:MVs}. The copper only, MuMetal only, and full copper
+plus MuMetal shells all showed a concentrating effect by their
+relative increases in mutual inductance between the two coils as shown
+in figure~\ref{fig:DC_RL}~$c$. The full shell showed an increase of
+mutual inductance (magnetic field) by a factor of $(3.0\pm0.1)$, which
+is nearing the theoretical result from TO of $R_2/R_1 = 4$ despite
+only containing $36$ sheets. The frequency dependance on the relative
 increase in mutual inductance is shown in
-figure~\ref{fig:DC_RL}$d$. The two shell configurations containing
+figure~\ref{fig:DC_RL}~$d$. The two shell configurations containing
 copper are shown to have concentrating effects dependant on
 frequency. The concentrating effect rises steeply within the first
 $10$~kHz and then plateaus for high frequencies.  This expected
@@ -562,14 +557,13 @@ shell.  Supporting work done on COMSOL (figure~\ref{fig:COMSOL_CU})
 shows a similar observed effect where 36 copper sheets increases the
 concentration factor rapidly from $C = 1$ at $0$~Hz to $C = 1.5$ (2SF)
 by $10$~kHz and then only a small further increase in efficacy at
-higher frequencies.\\
-Apart from errors due to instrument, measurement reading, and coil
-placement, we observed noise due to stray magnetic fields inducing
-pick-up within cables connecting the solenoid to the lock-in
-amplifier. This source of noise is highly frequency dependent and is
-at the same frequency as our desired signal, so could not be removed by
-the use of a lock-in amplifier. To supress this noise careful cable
-placement and shielding was installed. \\
+higher frequencies.\\ Apart from errors due to instrument, measurement
+reading, and coil placement, we observed noise due to stray magnetic
+fields inducing pick-up within cables connecting the solenoid to the
+lock-in amplifier. This source of noise is highly frequency dependent
+and is at the same frequency as our desired signal, so could not be
+removed by the use of a lock-in amplifier. To supress this noise
+careful cable placement and shielding was installed. \\
 
 \subsection*{Resonant --- RLC}
 
@@ -585,7 +579,7 @@ placement and shielding was installed. \\
     the gradients of $I_2$ against $I_1$ for the case when a shell is
     present to when one is not presents gives the factor increase of
     mutual inductance which is equivalent to the concentration of the
-    field within the shell.  \label{eqn:RLC-M}
+    field within the shell.  
     \textbf{C)}~The shell's effect on mutual inductance in an RLC circuit is
     found by the ratio of ($M$ with shell)/($M$ bare coil). As with
     the RL circuit, the concentration of field is dependant on
@@ -601,27 +595,27 @@ placement and shielding was installed. \\
 
 Parallel RLC circuits are more fitting for optimising power
 transfer~\cite{XXX} as explained in Methods. For the arrangement
-described in figure~\ref{fig:WPT}$b$, a shell comprised of $18$
-MuMetal and $18$ Copper sheets was explored. The optimal load
+described in figure~\ref{fig:WPT}~$b$, a full shell comprised of $18$
+MuMetal and $18$ copper sheets was explored. The optimal load
 resistances were found experimentally by measuring power for a sweep
-of resistances. An example of which is shown in
-figure~\ref{fig:cpdRLC}$a$ for a field frequency of $30$~kHz.\\
+of resistances, an example of which is shown in
+figure~\ref{fig:cpdRLC}~$a$ for a field frequency of $30$~kHz.\\
 From equation~\ref{eqn:RLC-M} the voltage measured across the load
 resistor is proportional to the mutual inductance between the two
 coils when the optimal load resistor is used and the resonance
-condition for the RLC circuit is met. Figure~\ref{fig:cpdRLC}$b$
+condition for the RLC circuit is met. Figure~\ref{fig:cpdRLC}~$b$
 confirms this relationship and shows an increase of mutual inductance
 when the full concentrating shell is present. The gradient was found
-to be increased by a factor of $2.6 \pm 0.2$ corresponding to a field
+to be increased by a factor of $(2.6 \pm 0.2)$ corresponding to a field
 concentration of the same factor if the inductance of $L_2$ is assumed
 to remain constant. \\
 The frequency dependance on concentration factor is shown in
-figure~\ref{fig:cpdRLC}$c$ and it can be seen that, as with the RL and
+figure~\ref{fig:cpdRLC}~$c$ and it can be seen that, as with the RL and
 simulated experiments, the presence of copper in the shell leads to a
 low initial concentration which increases with frequency until around
 $10$~kHz at which point the concentration factor plateaus.\\
 The PTE for RL and RLC, no shell and full shell arrangements are
-compared in figure~\ref{fig:cpdRLC}$d$. It can be seen that the shell
+compared in figure~\ref{fig:cpdRLC}~$d$. It can be seen that the shell
 increases the efficiency in both cases by a similar factor and that
 the parallel resonant RLC arrangement gives a much greater efficiency
 than using the simpler RL circuitary. \\
@@ -653,9 +647,9 @@ than using the simpler RL circuitary. \\
 
 % Non ideal behaviour \\
 For the constructed shells used in these experiments, their $R_2/R_1$
-ratio was $40 \pm 2$ mm. From the theoretical TO work, it is predicted
-that the field should be concentrated by the perfect shell by
-$R_2/R_1$. We found a range of concentrations for both static, $C =
+ratio was $(4.0\pm0.2)$ . From the theoretical TO work, it is
+predicted that the field should be concentrated by the perfect shell
+by $R_2/R_1$. We found a range of concentrations for both static, $C =
 2.25 - 2.38$ XeX and oscillating, $C = 2 - 3.1$ XeX, external fields
 whose maximum concentration factors are still well below the expected
 theoretical concentration factor of $4.0 \pm 0.2$. This is likely
@@ -666,12 +660,12 @@ that 36 MuMetal sheets performed better than 18 MuMetal sheets which
 suggests that finer discretization of the proposed shells gives
 concentrations closer to the theoretical value. In the static field
 experiments, only air was used to approximate the zero relative
-angular permeability. Air has a permeability of $\mu = 1$, which
-although is far less than the MuMetal's $\mu = XXX$, is likely still a
-poor approximation. This can be seen by the increase in performance in
-the oscillating external field experiments where copper sheets are
-introduced in order to effectively screen out angular field density by
-the production of Eddy currents. Eddy current screening is
+angular permeability. Air has a permeability of $\mu_r = 1$, which
+although is far less than the MuMetal's $\mu_r = 55,000-75,000 $, is
+likely still a poor approximation. This can be seen by the increase in
+performance in the oscillating external field experiments where copper
+sheets are introduced in order to effectively screen out angular field
+density by the production of Eddy currents. Eddy current screening is
 proportional to frequency of the oscillating field~\cite{XXX}, and
 therefore, it can be seen that the concentration factor for shells
 with copper present increase with frequency. \\
@@ -691,9 +685,10 @@ with copper present increase with frequency. \\
 %% a copper only shell.\\
 %}}}
 
-XwX Superconducting material has been suggested to effectively screen
-angular field in the static case~\cite{XXX}... \\
-
+Previous work by Pratt et. al.\cite{} included the exploration of
+MuMetal and superconducting shells for concentrating static magnetic
+fields. This work quoted a concentration factor of XXX at T<Tc and XXX
+at T>Tc.\\
 % How L changes
 %% \begin{figure}
 %%   \begin{center}
@@ -727,17 +722,12 @@ Due to the sharp drop off of power transfer with distance, the
 greatest PTE found was $1.01\%$ XeX at a seperation of $48.7$~mm with
 both the transmitting and receiving coil surrounded by a concentrating
 shell. The reason for this poor efficiency is largely due to the
-non-ideal real resistive component of the transmitting coil.
+non-ideal real resistive component of the transmitting coil...
 
 %%%%
 
 DC:  \\
 - further explanation on error source in placement \\
-
-Linear decay of coil in non RLC \\
-- Due to pick up that is proportional to $w^2$? \\
-- Expected drop off due to magnetic saturation? or other reasons for
-MuMetal failure. - COMSOL MU thickness \\
 
 Power transfer \\
 - Generally low PTE due to high loss of inductor.  Could have used
@@ -757,8 +747,6 @@ Comparison of RL, series RLC and parallel RLC circuitary: \\
 - models \\
 - expected efficiency \\
 
-
-can use a smaller solenoid, plot spider graphs in python\\
 %}}}
 %CONCLUSIONS{{{
 \section{Conclusions}

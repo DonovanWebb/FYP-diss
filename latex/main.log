@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2022.1.16)  29 APR 2022 23:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2022.1.16)  30 APR 2022 00:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -122,11 +122,7 @@ LaTeX Info: Redefining \] on input line 2939.
 File: l3backend-pdftex.def 2021-12-14 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count270
 \l__pdf_internal_box=\box52
-) (./main.aux
-
-LaTeX Warning: Label `eqn:RLC-M' multiply defined.
-
-)
+) (./main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
@@ -143,7 +139,8 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
 LaTeX Font Info:    ... okay on input line 12.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
 LaTeX Font Info:    ... okay on input line 12.
- (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+
+(/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count271
 \scratchdimen=\dimen150
@@ -292,171 +289,141 @@ File: images/WPT.pdf Graphic file (type pdf)
 Package pdftex.def Info: images/WPT.pdf  used on input line 219.
 (pdftex.def)             Requested size: 311.99707pt x 147.3832pt.
 [3 <./images/free_space.pdf> <./images/dist_motiv.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 259--262
+Underfull \hbox (badness 10000) in paragraph at lines 260--263
 
  []
 
 <images/shells.png, id=60, 471.2004pt x 622.9674pt>
 File: images/shells.png Graphic file (type png)
 <use images/shells.png>
-Package pdftex.def Info: images/shells.png  used on input line 274.
+Package pdftex.def Info: images/shells.png  used on input line 275.
 (pdftex.def)             Requested size: 151.20117pt x 199.90497pt.
 <images/helm.png, id=62, 1674.255pt x 1255.69125pt>
 File: images/helm.png Graphic file (type png)
 <use images/helm.png>
-Package pdftex.def Info: images/helm.png  used on input line 277.
+Package pdftex.def Info: images/helm.png  used on input line 278.
 (pdftex.def)             Requested size: 265.43701pt x 199.07532pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 286--294
+Underfull \hbox (badness 10000) in paragraph at lines 287--295
 
  []
 
 [4 <./images/WPT.pdf>] [5 <./images/shells.png> <./images/helm.png>]
 
-LaTeX Warning: Reference `fig:RLC-eqcirc' on page 6 undefined on input line 386
+LaTeX Warning: Reference `fig:RLC-eqcirc' on page 6 undefined on input line 393
 .
 
 
-LaTeX Warning: Reference `fig:RLC-IvI' on page 6 undefined on input line 397.
+LaTeX Warning: Reference `fig:RLC-IvI' on page 6 undefined on input line 404.
 
 
-LaTeX Warning: Reference `fig:RLC-Mrel' on page 6 undefined on input line 400.
+LaTeX Warning: Reference `fig:RLC-Mrel' on page 6 undefined on input line 407.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 395--401
+Underfull \hbox (badness 10000) in paragraph at lines 402--408
+
+ []
+
+
+LaTeX Warning: Citation `XXX' on page 6 undefined on input line 433.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 419--443
 
  []
 
 
-LaTeX Warning: Citation `XXX' on page 6 undefined on input line 426.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 412--436
-
- []
-
-[6]
 
 pdfTeX warning: pdflatex (file ./images/compoundRL.pdf): PDF inclusion: found P
 DF version <1.7>, but at most version <1.5> allowed
-<images/compoundRL.pdf, id=98, 1135.24126pt x 679.53876pt>
+<images/compoundRL.pdf, id=95, 1135.24126pt x 679.53876pt>
 File: images/compoundRL.pdf Graphic file (type pdf)
 <use images/compoundRL.pdf>
-Package pdftex.def Info: images/compoundRL.pdf  used on input line 446.
+Package pdftex.def Info: images/compoundRL.pdf  used on input line 453.
 (pdftex.def)             Requested size: 480.0pt x 287.32259pt.
+[6]
 
-LaTeX Warning: Citation `PRATT' on page 7 undefined on input line 495.
+LaTeX Warning: Reference `fig:COMSOL_CU' on page 7 undefined on input line 556.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 469--497
+
+Underfull \hbox (badness 10000) in paragraph at lines 527--567
 
  []
 
 [7 <./images/compoundRL.pdf>]
-
-LaTeX Warning: Reference `fig:COMSOL_CU' on page 8 undefined on input line 561.
-
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 534--573
-
- []
-
-
 
 pdfTeX warning: pdflatex (file ./images/compoundRLC.pdf): PDF inclusion: found 
 PDF version <1.7>, but at most version <1.5> allowed
 <images/compoundRLC.pdf, id=134, 1194.98447pt x 845.07724pt>
 File: images/compoundRLC.pdf Graphic file (type pdf)
 <use images/compoundRLC.pdf>
-Package pdftex.def Info: images/compoundRLC.pdf  used on input line 578.
+Package pdftex.def Info: images/compoundRLC.pdf  used on input line 572.
 (pdftex.def)             Requested size: 480.0pt x 339.44334pt.
 
-LaTeX Warning: Citation `XXX' on page 8 undefined on input line 603.
+LaTeX Warning: Citation `XXX' on page 8 undefined on input line 597.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 602--637
+Underfull \hbox (badness 10000) in paragraph at lines 596--631
+
+ []
+
+
+LaTeX Warning: Citation `XXX' on page 8 undefined on input line 669.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 649--672
 
  []
 
 [8]
 
-LaTeX Warning: Citation `XXX' on page 9 undefined on input line 675.
+LaTeX Warning: Reference `eqn:eta' on page 9 undefined on input line 715.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 655--678
+Underfull \hbox (badness 10000) in paragraph at lines 688--720
 
  []
 
 [9 <./images/compoundRLC.pdf>]
-
-LaTeX Warning: Citation `XXX' on page 10 undefined on input line 695.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 694--696
+Underfull \hbox (badness 10000) in paragraph at lines 729--731
 
  []
 
 
-LaTeX Warning: Reference `eqn:eta' on page 10 undefined on input line 720.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 704--725
+Underfull \hbox (badness 10000) in paragraph at lines 732--745
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 734--736
+Underfull \hbox (badness 10000) in paragraph at lines 746--749
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 737--741
+Underfull \hbox (badness 10000) in paragraph at lines 753--758
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 742--755
-
- []
-
-[10]
-Underfull \hbox (badness 10000) in paragraph at lines 756--759
+Underfull \hbox (badness 10000) in paragraph at lines 759--762
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 761--764
+Underfull \hbox (badness 10000) in paragraph at lines 763--767
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 765--770
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 771--774
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 775--779
-
- []
-
-[11] (./main.aux)
+[10] (./main.aux)
 
 LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
  3459 strings out of 478353
  50941 string characters out of 5854635
- 359905 words of memory out of 5000000
+ 359867 words of memory out of 5000000
  21540 multiletter control sequences out of 15000+600000
  412134 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -474,10 +441,10 @@ sr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-
 dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type
 1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfo
 nts/cm/cmtt10.pfb>
-Output written on main.pdf (11 pages, 8972055 bytes).
+Output written on main.pdf (10 pages, 8971286 bytes).
 PDF statistics:
- 212 PDF objects out of 1000 (max. 8388607)
- 113 compressed objects within 2 object streams
+ 209 PDF objects out of 1000 (max. 8388607)
+ 111 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
