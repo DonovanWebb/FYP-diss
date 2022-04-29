@@ -201,8 +201,7 @@ into a free space cavity may be required.)
 
 \begin{figure}
   \begin{center}
-   \noindent\includegraphics[width=0.75\linewidth]{images/WPT.pdf}
-  \label{fig:WPT}
+   \noindent\includegraphics[width=0.5\linewidth]{images/WPT.pdf}
   \end{center}
   \caption{Wireless power transmission by inductive coupling. a)
     Simple circuitary for coupling $L1$ and $L2$ coils. The useful
@@ -210,28 +209,57 @@ into a free space cavity may be required.)
     is internal resistance of coils, $r1$ and $r2$. b) The receiving
     inductor is now part of a resonant RLC circuit. c) A series RLC
     circuit --- when voltage at $x$ and $y$ are in phase, the resonant
-    condition is met.}
+    condition is met.}\label{fig:WPT}
 \end{figure}
 
 \subsection{Wireless Power Transfer}
+
+\begin{figure}
+  \begin{center}
+   \noindent\includegraphics[width=0.35\linewidth]{images/free_space.pdf}
+   \noindent\includegraphics[width=0.45\linewidth]{images/dist_motiv.pdf}
+  \end{center}
+  \caption{Wireless power transmission by inductive coupling is
+    proportional to $r^{-6}$. A concentrating shell increases this power
+    transfer by $(R_2/R_1)^2$ but at the cost of less free space, $x$,
+    between the devices. However, at a critical distance $k$, the
+    shell provides an improvement over bare dipoles for a given free
+    space distance, $x$. LHS: The arrangement of two dipoles (boxes)
+    $L_1$ and $L_2$ with a fixed free space gap $x$, either with a
+    shell (Top) or without (Bottom). RHS: Theoretical power transfer
+    plots for these two arrangements when the shell has $R_2 = 40$~mm,
+    $R_1 = 10$~mm.}\label{fig:d_motiv}
+\end{figure}
+
 The ability to transfer power between devices that are not connected
 by wires is useful in many settings: for convenince, e.g. mobile
 phones; for safety, e.g. implanted medical devices; or for
-practicallity, e.g. satellites.\\ We shall focus on near field power
+practicallity, e.g. satellites. We shall focus on near field power
 transmission by the use of inductive coupling. Inductive coupling
 transfers power between two coils of wire by an oscillating magnetic
 field as seen in figure~\ref{fig:WPT}~$a$. The transmitting coil is
 supplied with an alternating current, which by Ampere's law creates an
 oscillating magnetic field. The receiving coil is placed within this
 magnetic field, so that a current is induced as described by Faraday's
-law.\\ This strategy for power transfer is highly sensitive to
+law. This strategy for power transfer is highly sensitive to
 distance as the magnetic field of a dipole drops off with distance
-cubed.  The overall efficiency therefore suffers with distance as the
-non-ideal resistive losses in the primary coil remain constant with
-distance. To somewhat counteract this sharp drop off of efficinency
-with distance, concentrating shells may be used to magnify the
-transmitted field and locally concentrate the field around the
-receiving solenoid. \\
+cubed, $r^{-3}$, therefore the power is proportional to
+$r^{-6}$.  The overall efficiency therefore suffers with distance as
+the non-ideal resistive losses in the primary coil remain (relatively)
+constant with distance. To somewhat counteract this sharp drop off of
+efficiency with distance, concentrating shells may be used to magnify
+the transmitted field and locally concentrate the field around the
+receiving solenoid. The concentrating shell is larger than the coil by necessity 
+however the presence of
+a shell is always advantageous when the free space distance between
+the power transmitting and power receiving device is greater than $k$,
+where
+\begin{equation}
+k = \frac{R_2}{\sqrt[3]{R}-1}
+\end{equation}
+and $R$ is the ratio $R_2/R_1$. This arrangement and the critical
+distance $k$ is shown in figure~\ref{fig:d_motiv}.\\
+
 
 %% - Wireless power transfer - lit review
 %% - Where this work fits in overall field
@@ -500,8 +528,8 @@ secondary RL circuit and the current driving the primary circuit. The
 copper only, MuMetal only, and full copper plus MuMetal shells all
 showed a concentrating effect by their relative increases in mutual
 inductance between the two coils as shown in the LHS of
-figure~\ref{fig:RL-F}. The full shell showed the greatest
-concentrating effect by an increase of $3.0\pm0.1$. The frequency
+figure~\ref{fig:RL-F}. The full shell showed an increase of mutual inductance (magnetic field) by
+a factor of $3.0\pm0.1$. The frequency
 dependance on the relative increase in mutual inductance is shown on
 the RHS of figure~\ref{fig:RL-F}. The two shell configurations
 containing copper are shown to have concentrating effects dependant on
@@ -510,24 +538,20 @@ $10$~kHz and then plateaus for high frequencies.
 This expected behaviour initially motivated the choice for copper sheets in the
 shells for AC power transfer. At higher frequencies the perpendicular
 component of alternating magnetic fields produce eddy currents within
-the copper which, due to Lenz's law, opposes the change of field
+the copper which, due to Lenz's law, oppose the change of field
 direction and effectively increases the angular permeability of the
 shell.  Supporting work done on COMSOL (figure~\ref{fig:COMSOL_CU})
 shows a similar observed effect where 36 copper sheets increases the
 concentration factor rapidly from $C = 1$ at $0$~Hz to $C = 1.5$ (2SF)
 by $10$~kHz and then only a small further increase in efficacy at higher
 frequencies.\\
-
-
-Apart from instrument and measurement reading errors which
-constitute only a small error (XXX\%), we observed errors due to stray
-magnetic fields inducing pick-up within cables connecting the solenoid
-to the lock-in amplifier. This source of noise is highly frequency
-dependent and is at the same frequency as our desired signal, so
-cannot be removed by the use of a lock-in amplifier. To supress this
-noise careful cable placement and shielding was installed however,
-from figure~\ref{fig:Noise} it can be seen that as current was
-reduced, the measured voltage was still non-zero.\\
+Apart from errors due to instrument, measurement reading, and coil
+placement, we observed noise due to stray magnetic fields inducing
+pick-up within cables connecting the solenoid to the lock-in
+amplifier. This source of noise is highly frequency dependent and is
+at the same frequency as our desired signal, so could not be removed by
+the use of a lock-in amplifier. To supress this noise careful cable
+placement and shielding was installed. \\
 
 \begin{figure}
   \begin{center}
