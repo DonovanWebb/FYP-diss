@@ -60,7 +60,6 @@ on its efficacy in wireless power transmission. \\
 \begin{figure}
   \begin{center}
    \noindent\includegraphics[width=0.75\linewidth]{images/trans_Opt_edit.pdf}
-  \label{fig:TO}
   \end{center}
   \caption{The steps of Transformation Optics. a) A ray (red)
     travelling in untransformed spatial coordinates (black grid)
@@ -69,6 +68,7 @@ on its efficacy in wireless power transmission. \\
     path. c) A material (blue) is insterted into the untransformed
     space with corresponding permeability and permitivity which mimics
     the spatial coordinate transform $A$ for the ray. }
+  \label{fig:TO}
 \end{figure}
 
 \subsection{Transformation Optics and Metamaterials}
@@ -144,7 +144,7 @@ made. These transformations are described by the coordinate
 transformations,
 
 \begin{equation}
-  \label{transform}
+  \label{eqn:transform}
   \begin{split}
 \rho' = \frac{R_1}{R_2-\xi}\rho,~~~~~~~~\rho'\in[0,~R_2-\xi)~~\\
 \rho' = R_2^{1-k}\rho^k~~~~~~~~~\rho'\in[R_2-\xi,~R_2).
@@ -201,15 +201,17 @@ into a free space cavity may be required.)
 
 \begin{figure}
   \begin{center}
-   \noindent\includegraphics[width=0.5\linewidth]{images/WPT.pdf}
+   \noindent\includegraphics[width=0.65\linewidth]{images/WPT.pdf}
   \end{center}
-  \caption{Wireless power transmission by inductive coupling. a)
-    Simple circuitary for coupling $L1$ and $L2$ coils. The useful
-    power transmitted is across load resistance $R$ whilst power lost
-    is internal resistance of coils, $r1$ and $r2$. b) The receiving
-    inductor is now part of a resonant RLC circuit. c) A series RLC
-    circuit --- when voltage at $x$ and $y$ are in phase, the resonant
-    condition is met.}\label{fig:WPT}
+  \caption{Wireless power transmission by inductive
+    coupling. a)~Simple circuitary for coupling $L_1$ and $L_2$
+    coils. The useful power transmitted is across load resistance $R$
+    whilst power lost is internal resistance of coils, $r_1$ and
+    $r_2$. b)~The receiving inductor is now part of a resonant RLC
+    circuit. c)~A series RLC circuit --- when voltage at $x$ and $y$
+    are in phase, the resonant condition is met. d)~An equivalent
+    circuit to the RLC arrangement but with explicit induced voltages
+    shown. }\label{fig:WPT}
 \end{figure}
 
 \subsection{Wireless Power Transfer}
@@ -217,7 +219,7 @@ into a free space cavity may be required.)
 \begin{figure}
   \begin{center}
    \noindent\includegraphics[width=0.35\linewidth]{images/free_space.pdf}
-   \noindent\includegraphics[width=0.45\linewidth]{images/dist_motiv.pdf}
+   \noindent\includegraphics[width=0.5\linewidth]{images/dist_motiv.pdf}
   \end{center}
   \caption{Wireless power transmission by inductive coupling is
     proportional to $r^{-6}$. A concentrating shell increases this power
@@ -236,7 +238,7 @@ by wires is useful in many settings: for convenince, e.g. mobile
 phones; for safety, e.g. implanted medical devices; or for
 practicallity, e.g. satellites. We shall focus on near field power
 transmission by the use of inductive coupling. Inductive coupling
-transfers power between two coils of wire by an oscillating magnetic
+transfers power between two coils of wire (two inductors) by an oscillating magnetic
 field as seen in figure~\ref{fig:WPT}~$a$. The transmitting coil is
 supplied with an alternating current, which by Ampere's law creates an
 oscillating magnetic field. The receiving coil is placed within this
@@ -268,42 +270,58 @@ distance $k$ is shown in figure~\ref{fig:d_motiv}.\\
 %}}}
 %METHODS{{{ 
 \section{Methods}
+\begin{figure}
+\begin{center}
+    \begin{minipage}{0.315\textwidth}
+        \noindent\includegraphics[width=\linewidth]{images/shells.png}
+    \end{minipage}
+    \begin{minipage}{0.553\textwidth}
+        \noindent\includegraphics[width=\linewidth]{images/helm.png}
+    \end{minipage}
+\caption{LHS: The constructed shells arranged in the power transfer
+  experiment. RHS: The shell within a pair of Helmholtz coils.}
+\label{fig:shells}
+\end{center}
+\end{figure}
+
 \subsection{Construction of shell}
-$0.X$~mm MuMetal XXX and $0.X$~mm copper was cut into $X$ by $X$ rectangular sheets. 
-A plastic support for holding the MuMetal and Copper sheets was 3D printed using an ultimaker XX to produce the shells seen in figure~\ref{fig:shells}, with an $R_2/R_1$ ratio of XXX.\\
+$0.15$~mm MuMetal (MSFHP from Thorlabs) and $0.3$~mm copper were cut
+into $21$~mm by $30$~mm rectangular sheets.  Plastic supports for
+holding $36$ sheets of either MuMetal or copper were 3D printed to
+produce the shells seen in figure~\ref{fig:shells}. The inner radius
+$R_1$ and outer radius $R_2$ were $7$ and $21$~mm respectively to give
+an $R_2/R_1$ ratio of 4. The ``full shell'' contains $36$ sheets of
+alternating copper and MuMetal, whilst the ``No shell'' scenario
+contains no metal. \\
 
 \subsection{DC Magnetic Fields}
-Helmholtz coils were powered by a constant DC current to create a
-uniform magnetic field within their center. A commercially available
-XXX Hall probe was zeroed by using a MuMetal cannister, and then
-placed at the center of the Helmholtz coils.  A Hall probe relates a
-measured Hall voltage, $V_H$, to a surrounding magnetic field, $B$
-\cite{XXX} as
-\begin{equation}
-  V_H = \frac{IB}{net}.
-\end{equation}
-The probe maintains constant current supply $I$, and material
-paramaters $n$ (charge carrier density), $e$ (charge of electron) and
-$t$ (thickness of probe) meaning a calibrated probe may give accurate
-readings for magnetic fields.\\
-The magnetic field, $B$, produced at the center of Helmholtz coils
-with radius $R$, seperated by a distance $R$ should follow,
+Helmholtz coils (figure~\ref{fig:shells}) were powered by a constant
+DC current to create a uniform magnetic field, $B$, within their
+center described by
 \begin{equation}
   B = \frac{8}{5\sqrt{5}}\frac{\mu_0 nI}{R},
   \label{eqn:helm}
 \end{equation}
-where $I$ is the current supplied to the coils and $n$ is the number of
-turns of wire. This equation follows directly from the Biot-Savart law
-\cite{XXX} and the relative geometry of the coils as seen in
-figure~\ref{fig:helm}. From equation~\ref{eqn:helm} it can be seen that
-the magnetic field should increase linearly with supplied
-current. Using the Hall probe we ensured this was the case and found
-the relationship of current supplied to magnetic field produced for
-our paticular Helmholtz arrangement.\\ Now, with the capability to
-produce known external magnetic fields, the described field
-concentrating shells may be placed within this field and the Hall
-probe may be placed within their inner radius to measure concentrated
-field.
+where $R$ is the radius of the coils, $I$ is the current supplied to
+the coils, and $n$ is the number of turns of wire.  A Hall probe
+placed at the center of the Helmholtz coils will have a Hall voltage
+induced which is proportional to the magnetic field. Once calibrated
+the Hall probe can be used to measure the absolute value of the
+magnetic field present. A concentrating shell may now be placed around
+at the center of the Helmholtz coils and the Hall probe placed within
+the $R_1$ section of the shells to explore field concentration.
+
+%%  This equation follows directly from the Biot-Savart law
+%% \cite{XXX} and the relative geometry of the coils as seen in
+%% figure~\ref{fig:helm}. From equation~\ref{eqn:helm} it can be seen that
+%% the magnetic field should increase linearly with supplied
+%% current. Using the Hall probe we ensured this was the case and found
+%% the relationship of current supplied to magnetic field produced for
+%% our paticular Helmholtz arrangement.\\ Now, with the capability to
+%% produce known external magnetic fields, the described field
+%% concentrating shells may be placed within this field and the Hall
+%% probe may be placed within their inner radius to measure concentrated
+%% field.
 
 \subsection{AC characterization}
 
@@ -365,14 +383,6 @@ measured when $R = \omega L$ as,
   V_s = \frac{MI_1\omega}{\sqrt{2}}.
   \label{eqn:MVs}
 \end{equation}
-
-\begin{figure}
-  \begin{center}
-   \noindent\includegraphics[width=0.75\linewidth]{images/temp-equiv_circ.png}
-  \label{fig:RLC-eqcirc}
-  \end{center}
-  \caption{}
-\end{figure}
 
 Parallel RLC coupled to coil can be considered as
 figure~\ref{fig:RLC-eqcirc}.  The voltage across $R_{load}$ is equal
@@ -436,17 +446,17 @@ XXTheory of Rload dependence on power transfer. \\
 \begin{figure}
   \begin{center}
    \noindent\includegraphics[width=0.75\linewidth]{images/DC-graph.pdf}
-  \label{fig:DC_graph}
   \end{center}
-  \caption{How concentration factor depends on frequency for a shell concentrating a static external field into its interior.}
+  \caption{The concentration of external static fields into the interior cavity of shells comprised of either $18$ or $36$ MuMetal sheets.}
+  \label{fig:DC_graph}
 \end{figure}
 
-Using the DC Helmholtz set up as described in Methods, we observed
-constant concentration factors for different shell constructions in an
-external magnetic field ranging from $1$~G to $22$~G. No shell, 18
-MuMetal, 36 MuMetal, 18 Copper and 18 MuMetal + 18 Copper shells were
-used and their concentration factor with field may be seen in
-figure~\ref{fig:DC_graph}, where concentration factor is defined as
+Using Helmholtz coils powered in DC to create a static external
+magnetic field (see Methods), we observed constant field concentration
+factors within the $R_1$ cavity for various shell constructions. No
+shell, 18 MuMetal, 36 MuMetal, 18 Copper and 18 MuMetal + 18 Copper
+shells were used and their concentration factor with field may be seen
+in figure~\ref{fig:DC_graph}, where concentration factor is defined as
 (Internal Field)/(External Field). \\ It was found that the shell
 contruction of 36 MuMetal thin sheets gave the optimum concentration
 factor of $C = 2.38$ with minimal error ($0.1\%$) at higher field
@@ -581,74 +591,73 @@ placement and shielding was installed. \\
 
 \begin{figure}
   \begin{center}
-   \noindent\includegraphics[width=0.75\linewidth]{images/Is_vs_Ip_RLC.pdf}
-  \label{fig:RLC-IvI}
-  \end{center}
-  \caption{}
-\end{figure}
-
-\begin{figure}
-  \begin{center}
-   \noindent\includegraphics[width=0.75\linewidth]{images/parallel_RLC_Mrel.pdf}
-  \label{fig:RLC-Mrel}
-  \end{center}
-  \caption{}
-\end{figure}
-
-\begin{figure}
-  \begin{center}
    \noindent\includegraphics[width=\linewidth]{images/compoundRLC.pdf}
-  \label{fig:PTE}
   \end{center}
-  \caption{How the increase in power transfer efficiency depends on
-    frequency in a coupled parallel RLC circuit.}
+  \caption{
+    \textbf{A)}~Locating the optimal load resistance for power transfer in a
+    parallel RLC receiving circuit at an AC frequency of $30$~kHz.
+    \textbf{B)}~The current across the optimal load resistor is proportional to
+    mutual inductance in the resonant parallel RLC circuit. Comparing
+    the gradients of $I_2$ against $I_1$ for the case when a shell is
+    present to when one is not presents gives the factor increase of
+    mutual inductance which is equivalent to the concentration of the
+    field within the shell.  \label{eqn:RLC-M}
+    \textbf{C)}~The shell's effect on mutual inductance in an RLC circuit is
+    found by the ratio of ($M$ with shell)/($M$ bare coil). As with
+    the RL circuit, the concentration of field is dependant on
+    frequency for the full shell which has copper present.
+    \textbf{D)}~A comparison of power transfer efficiencies (PTE) for both a
+    full shell (18 copper and 18 MuMetal sheet) and no shell in either
+    the RL and RLC case. PTE is given as a ratio of power dropped
+    across the load resistor against power lost in the transmitting
+    coil as explained in Methods.
+  }
+  \label{fig:cpdRLC}
 \end{figure}
 
 Parallel RLC circuits are more fitting for optimising power
 transfer~\cite{XXX} as explained in Methods. For the arrangement
-described in figure~\ref{fig:WPT}~$b$, a shell comprised of $18$
+described in figure~\ref{fig:WPT}$b$, a shell comprised of $18$
 MuMetal and $18$ Copper sheets was explored. The optimal load
 resistances were found experimentally by measuring power for a sweep
 of resistances. An example of which is shown in
-figure~\ref{fig:parallel_R} for a field frequency of $30$~kHz.\\
+figure~\ref{fig:cpdRLC}$a$ for a field frequency of $30$~kHz.\\
 From equation~\ref{eqn:RLC-M} the voltage measured across the load
 resistor is proportional to the mutual inductance between the two
 coils when the optimal load resistor is used and the resonance
-condition for the RLC circuit is met. Figure~\ref{fig:RLC-IvI}
+condition for the RLC circuit is met. Figure~\ref{fig:cpdRLC}$b$
 confirms this relationship and shows an increase of mutual inductance
 when the full concentrating shell is present. The gradient was found
 to be increased by a factor of $2.6 \pm 0.2$ corresponding to a field
 concentration of the same factor if the inductance of $L_2$ is assumed
 to remain constant. \\
 The frequency dependance on concentration factor is shown in
-figure~\ref{fig:M-rel} and it can be seen that, as with the RL and
+figure~\ref{fig:cpdRLC}$c$ and it can be seen that, as with the RL and
 simulated experiments, the presence of copper in the shell leads to a
 low initial concentration which increases with frequency until around
 $10$~kHz at which point the concentration factor plateaus.\\
-
 The PTE for RL and RLC, no shell and full shell arrangements are
-compared in figure~\ref{fig:PTE}. It can be seen that the shell
+compared in figure~\ref{fig:cpdRLC}$d$. It can be seen that the shell
 increases the efficiency in both cases by a similar factor and that
 the parallel resonant RLC arrangement gives a much greater efficiency
-than using the simper RL circuitary. \\
+than using the simpler RL circuitary. \\
+%distance{{{
+%% To further explore PTE, the distance between the two coils was
+%% varied. With a distance of XXX mm and a full shell around the
+%% receiving coil, a PTE of XXX\% was achieved.\\
+%% It was expected that a shell around the transmitting coil would
+%% further increase the field incident on the receiving coil. Therefore
+%% the arrangement described in Methods Figure~\ref{fig:two_shell} was
+%% constructed and the peak power transfer observed at $30510$ kHz was
+%% found to be $1.01\%$.\\
 
 
-To further explore PTE, the distance between the two coils was
-varied. With a distance of XXX mm and a full shell around the
-receiving coil, a PTE of XXX\% was achieved.\\
-It was expected that a shell around the transmitting coil would
-further increase the field incident on the receiving coil. Therefore
-the arrangement described in Methods Figure~\ref{fig:two_shell} was
-constructed and the peak power transfer observed at $30510$ kHz was
-found to be $1.01\%$.\\
+%% % INCLUDE? A summary of PTE and field concentration factors is shown in the table~\fig{table:summary}.\\
 
-
-% INCLUDE? A summary of PTE and field concentration factors is shown in the table~\fig{table:summary}.\\
-
-\subsection{Distance}
-Experimentally we found that power drops off as $r^{-5.6}$ which is in
-close agreement to the theoretical $r^{-6}$.\\
-
+%% \subsection{Distance}
+%% Experimentally we found that power drops off as $r^{-5.6}$ which is in
+%% close agreement to the theoretical $r^{-6}$.\\
+%}}}
 %}}}
 %DISCUSSION{{{
 \section{Discussion}
