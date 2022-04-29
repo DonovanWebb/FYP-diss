@@ -366,6 +366,32 @@ measured when $R = \omega L$ as,
   \label{eqn:MVs}
 \end{equation}
 
+\begin{figure}
+  \begin{center}
+   \noindent\includegraphics[width=0.75\linewidth]{images/temp-equiv_circ.png}
+  \label{fig:RLC-eqcirc}
+  \end{center}
+  \caption{}
+\end{figure}
+
+Parallel RLC coupled to coil can be considered as
+figure~\ref{fig:RLC-eqcirc}.  The voltage across $R_{load}$ is equal
+to,
+$$ V_s = j\omega MI_p - j\omega L_sI_s.$$
+$I_s$ can be found by,
+$$ I_s = j\omega MI_p / z_s $$
+where $z_s$ is the total impedance of circuit 2...
+\begin{equation}
+V_s = \frac{MR}{L_s}I_p.
+\label{eqn:RLC-M}
+\end{equation}
+Therefore a plot of $V_s / R$ against $I_p$ will yield a gradient of
+$M/L_s$ as seen in figure~\ref{fig:RLC-IvI}.  Furthermore, $M =
+M(\omega)$ for shells with copper present, and so a plot of
+$(M/L_s)/(M^0/L_s^0)$ gives the relative increase in $M/L_s$ with
+frequency as seen in figure~\ref{fig:RLC-Mrel}.\\
+
+
 To maximise power transfer an RLC circuit is constructed on the
 receiving circuit. Ideally in an RLC circuit the complex impedance of
 the inductance and capacitance cancel leaving only the load
@@ -443,8 +469,6 @@ experimental set up, however superconducting sheets in a similar shell
 have been shown to improve the concentration of static
 fields~\cite{PRATT}.\\
 %}}}
-
-
 
 \subsection{Power transfer}
 
@@ -553,50 +577,7 @@ at the same frequency as our desired signal, so could not be removed by
 the use of a lock-in amplifier. To supress this noise careful cable
 placement and shielding was installed. \\
 
-\begin{figure}
-  \begin{center}
-   \noindent\includegraphics[width=0.75\linewidth]{images/RLC-P.pdf}
-  \label{fig:RLC-P}
-  \end{center}
-  \caption{How the increase in power transfer efficiency depends on
-    frequency in a coupled parallel RLC circuit.}
-\end{figure}
-
 \subsection*{Resonant --- RLC}
-
-Parallel RLC circuits are more fitting for optimising power
-transfer~\cite{XXX}. For the arrangement described in
-figure~\ref{fig:WPT}~$b$, a shell comprised of $18$ MuMetal and
-$18$ Copper sheets was explored. The optimal load resistance was found
-by taking voltage measurements across a range of load resistance. An
-example power versus load resistance curve for $30$ kHz can be seen in
-XXX figure~\ref{fig:parallel_R}.\\ Optimal load resistances were found
-for a range of frequencies and PTE were calculated as shown in XXX
-figure~\ref{fig:parallel_R}. Figure XX~\ref{fig:parallel_R} shows the
-ratio of shell present versus no shell present for the range of
-frequencies. It can be seen that the increase of ratio between $0$ and
-$10$ Hz is still present, however due to the high error and few data
-points, other trends are hard to distinguish. In this arrangement,
-with the coils seperated by a distance of XXX mm, maximum observed
-power transfer is XX $0.05\%$.\\
-To further explore PTE, the distance between the two coils was
-varied. With a distance of XXX mm and a full shell around the
-receiving coil, a PTE of XXX\% was achieved.\\
-It was expected that a shell around the transmitting coil would
-further increase the field incident on the receiving coil. Therefore
-the arrangement described in Methods Figure~\ref{fig:two_shell} was
-constructed and the peak power transfer observed at $30510$ kHz was
-found to be $1.01\%$.\\
-
-% ------------------------------
-
-\begin{figure}
-  \begin{center}
-   \noindent\includegraphics[width=0.75\linewidth]{images/temp-equiv_circ.png}
-  \label{fig:RLC-eqcirc}
-  \end{center}
-  \caption{}
-\end{figure}
 
 \begin{figure}
   \begin{center}
@@ -614,19 +595,52 @@ found to be $1.01\%$.\\
   \caption{}
 \end{figure}
 
-Parallel RLC coupled to coil can be considered as
-figure~\ref{fig:RLC-eqcirc}.  The voltage across $R_{load}$ is equal
-to,
-$$ V_s = j\omega MI_p - j\omega L_sI_s.$$
-$I_s$ can be found by,
-$$ I_s = j\omega MI_p / z_s $$
-where $z_s$ is the total impedance of circuit 2...
-$$ V_s = \frac{MR}{L_s}I_p. $$
-Therefore a plot of $V_s / R$ against $I_p$ will yield a gradient of
-$M/L_s$ as seen in figure~\ref{fig:RLC-IvI}.  Furthermore, $M =
-M(\omega)$ for shells with copper present, and so a plot of
-$(M/L_s)/(M^0/L_s^0)$ gives the relative increase in $M/L_s$ with
-frequency as seen in figure~\ref{fig:RLC-Mrel}.\\
+\begin{figure}
+  \begin{center}
+   \noindent\includegraphics[width=\linewidth]{images/compoundRLC.pdf}
+  \label{fig:PTE}
+  \end{center}
+  \caption{How the increase in power transfer efficiency depends on
+    frequency in a coupled parallel RLC circuit.}
+\end{figure}
+
+Parallel RLC circuits are more fitting for optimising power
+transfer~\cite{XXX} as explained in Methods. For the arrangement
+described in figure~\ref{fig:WPT}~$b$, a shell comprised of $18$
+MuMetal and $18$ Copper sheets was explored. The optimal load
+resistances were found experimentally by measuring power for a sweep
+of resistances. An example of which is shown in
+figure~\ref{fig:parallel_R} for a field frequency of $30$~kHz.\\
+From equation~\ref{eqn:RLC-M} the voltage measured across the load
+resistor is proportional to the mutual inductance between the two
+coils when the optimal load resistor is used and the resonance
+condition for the RLC circuit is met. Figure~\ref{fig:RLC-IvI}
+confirms this relationship and shows an increase of mutual inductance
+when the full concentrating shell is present. The gradient was found
+to be increased by a factor of $2.6 \pm 0.2$ corresponding to a field
+concentration of the same factor if the inductance of $L_2$ is assumed
+to remain constant. \\
+The frequency dependance on concentration factor is shown in
+figure~\ref{fig:M-rel} and it can be seen that, as with the RL and
+simulated experiments, the presence of copper in the shell leads to a
+low initial concentration which increases with frequency until around
+$10$~kHz at which point the concentration factor plateaus.\\
+
+The PTE for RL and RLC, no shell and full shell arrangements are
+compared in figure~\ref{fig:PTE}. It can be seen that the shell
+increases the efficiency in both cases by a similar factor and that
+the parallel resonant RLC arrangement gives a much greater efficiency
+than using the simper RL circuitary. \\
+
+
+To further explore PTE, the distance between the two coils was
+varied. With a distance of XXX mm and a full shell around the
+receiving coil, a PTE of XXX\% was achieved.\\
+It was expected that a shell around the transmitting coil would
+further increase the field incident on the receiving coil. Therefore
+the arrangement described in Methods Figure~\ref{fig:two_shell} was
+constructed and the peak power transfer observed at $30510$ kHz was
+found to be $1.01\%$.\\
 
 
 % INCLUDE? A summary of PTE and field concentration factors is shown in the table~\fig{table:summary}.\\
