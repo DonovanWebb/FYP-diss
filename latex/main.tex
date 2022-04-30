@@ -269,7 +269,7 @@ distance $k$ is shown in figure~\ref{fig:d_motiv}.\\
 
 %}}}
 %METHODS{{{ 
-\section{Methods}
+\section{Methods and Circuitary}
 \begin{figure}
 \begin{center}
     \begin{minipage}{0.315\textwidth}
@@ -372,9 +372,6 @@ may be found by Faraday's law,
 where $\phi_{21}$ is the magnetic flux through coil 2 due to the
 current of coil 1 and $M$ is the equivalent mutual inductance between
 two coils.
-%% \begin{equation}
-%%   M = \frac{\phi_{21}}{I_1},
-%% \end{equation}
 If the current in coil 1 is alternating sinuisoidally, then the
 maximum EMF induced in coil 2 will be $M I_1 \omega$. Changes in
 mutual inductance for different shell constructions is a useful metric
@@ -388,60 +385,50 @@ measurement $V_2$ to mutual inductance $M$ is described by,
   V_2 = \frac{MI_1\omega}{\sqrt{2}}.
 \label{eqn:MVs}
 \end{equation}
-
-%XXX
-Parallel RLC coupled to coil can be considered as
-figure~\ref{fig:RLC-eqcirc}.  The voltage across $R_{load}$ is equal
-to,
-$$ V_s = j\omega MI_p - j\omega L_sI_s.$$
-$I_s$ can be found by,
-$$ I_s = j\omega MI_p / z_s $$
-where $z_s$ is the total impedance of circuit 2...
-\begin{equation}
-V_s = \frac{MR}{L_s}I_p.
-\label{eqn:RLC-M}
-\end{equation}
-Therefore a plot of $V_s / R$ against $I_p$ will yield a gradient of
-$M/L_s$ as seen in figure~\ref{fig:RLC-IvI}.  Furthermore, $M =
-M(\omega)$ for shells with copper present, and so a plot of
-$(M/L_s)/(M^0/L_s^0)$ gives the relative increase in $M/L_s$ with
-frequency as seen in figure~\ref{fig:RLC-Mrel}.\\
-
-
-To maximise power transfer an RLC circuit is constructed on the
-receiving circuit. Ideally in an RLC circuit the complex impedance of
-the inductance and capacitance cancel leaving only the load
-resistance. Our inductance is set by the solenoid we chose to use and
-so for exploring power transfer at various frequencies, a capacitance
-can be found to satisfy the resonance condition. If inductance, $L$,
-does not vary then capacitance, $C$, is easily found by,
+It is well known that a resonant RLC arrangement on the receiving
+circuit can greatly increase the power transferred in inductive
+coupling\cite{}.  At resonance the complex impedance of the inductance
+and capacitance cancel leaving only the load resistance. Our
+inductance is assumed to be identical between experiments as the same
+coils are used and the capacitance can be found to satisfy the
+resonance condition at a chosen operating frequency by the
+relationship
 \begin{equation}
   C = \frac{1}{w^2L}.
 \end{equation}
-However, we need not assume that inductance is constant. A series RLC
-circuit can be constructed as seen in figure~\ref{fig:WPT}~$c$ to
-ensure resonance is met. Resonance occurs in this circuit when $V_x$
-is exactly in phase with $V_y$. In this case any imaginary impedances
-are cancelled and only real resistance remains. \\ For maximal power
-transfer a parallel RLC circuit is preferable however due to the
-restraints of the experiement a non-ideal version must be made as seen
-in figure~\ref{fig:WPT}~$b$. The resonant condition found by the
-series RLC is a close approximation to this more complicated parallel
-circuit. \\
-To maximise power transfer in the series RLC case, a familiar idea of
-impedance matching occurs, i.e. Power is maximised when the load
-resistance is equal to any internal resistances of the
-components~\cite{XXX}. As internal resistances are difficult to
-measure and may depend on current XXX, this could also be found
-experimentally by measuring voltage and current over the load
-resistance whilst varying load resistance. \\ For the parallel RLC
-case, a more complicated expression for optimal load resistance was
-found which depends non trivially on a combination of internal
-resistances. A model is proposed below, however, experimentally
-locating the optimal resistances was chosen as measuring internal
-resistances proved difficult and time consuming.\\
-XXTheory of Rload dependence on power transfer. \\
-
+Practically the resonant frequency and required capacitance was found
+using a series RLC circuit as seen in
+figure~\ref{fig:WPT}~$c$. Resonance occurs in this circuit when $V_x$
+is in phase with $V_y$.\\
+The parallel RLC PTE arrangement is considered in
+figure~\ref{fig:WPT}~$b$ and may be simplified to the equivalent
+circuit in $d$, where the voltage across $R_{load}$ is equal to,
+\begin{equation}
+ V_2 = j\omega MI_1 - j\omega L_2I_2,\quad\text{and}\quad
+ I_2 = j\omega MI_1 / Z_2 ,
+\end{equation}
+where $Z_2$ is the total impedance of circuit 2, which in our case is
+a parallel RLC circuit.  As with the RL case, an optimal resistance
+must be found to
+maximise power transfer. In series RLC the optimal resistance is when
+$R_{load}$ matches the sum of internal resistances of the components,
+however in the parallel RLC case it was found that the optimal
+resistance depended non-trivially on the internal resistances of the
+components and on the frequency and inductance/capacitance values. The
+internal resistances of the inductance was also found to be dependent
+of frequency further complicating the optimal resistance calculations.
+The optimal resistances were therefore found experimentally
+through a resistance sweep at each frequency.
+The load voltage can then be shown to be,
+\begin{equation}
+    V_2 \propto \frac{MR_{opt}}{L_2}I_1,
+\label{eqn:RLC-M}
+\end{equation}
+where $R_{opt}$ is the optimal resistor for power transfer. All the
+parameters in this equation may be measured during a PTE experiment
+allowing the comparison of relative changes in mutual inductances (and
+equivalently magnetic fields) when different concentrating shells are
+used. \\
 
 %}}}
 %RESULTS{{{
@@ -707,21 +694,10 @@ MuMetal and superconducting shells for concentrating static magnetic
 fields. This work quoted a concentration factor of XXX at T<Tc and XXX
 at T>Tc.\\
 
-% How L changes
-%% \begin{figure}
-%%   \begin{center}
-%%    \noindent\includegraphics[width=0.75\linewidth]{images/inductance.pdf}
-%%   \end{center}
-%%   \caption{}\label{fig:inductance}
-%% \end{figure}
-So far we have assumed the inductance of the solenoid
+We assumed the inductance of the solenoid
 was independent of the shell surrounding it. Here we shall reexplore
 some results without this assumption. \\ The resonant condition of a
 series RLC circuit (figure~\ref{fig:WPT} $c$)
-%% \begin{equation}
-%%   \label{eqn:RLC}
-%%   \omega = 1/\sqrt{LC},
-%% \end{equation}
 allows the calculation of effective inductance $L$ using the known
 capacitance and found resonance frequency.  The inductance of the bare
 coil or when surrounded by a copper only shell was $(1.02\pm0.02)$~mH
