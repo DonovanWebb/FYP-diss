@@ -161,8 +161,10 @@ space whilst a material with radial permeability $\mu_\rho \rightarrow
 \infty$ and angular permeability $\mu_\theta \rightarrow 0$ is
 required for region $A$. The $z$ components of permeability are ignored
 as we assume the cyclindrical shell is
-infinitely long so the $z$ component must be invariant.\\
-To satisfy these highly anisotropic conditions, an exploration of
+infinitely long so the $z$ component must be invariant. A model for
+this theoretical shell can be seen guiding an external magnetic field
+in the COMSOL simulation (figure~\ref{fig:COMSOL}~$a$).\\ To satisfy
+these highly anisotropic conditions practically, an exploration of
 metamaterials is required. A possible discretized shell construction
 is proposed~\cite{PRATT} where the high radial permeability is
 provided by ferromagnetic materials whilst the angular permeability is
@@ -178,11 +180,10 @@ changing field. At an appropriate frequency, which is proportional to
 the copper thickness, the effective angular permeability is reduced to
 near zero. To approximate the conditions proposed by TO design, these
 two materials may be arranged in alternating angular sheets, as seen
-in figure~\ref{fig:shells}. \\
-In an external static uniform magnetic field, the ideal shell will
-increase the field within region $B$ by a factor of
-$R_2/R_1$. Similarly if a magnetic dipole is surrounded by the
-concentrating shell, then the field outside of the shell will be
+in figure~\ref{fig:shells}. \\ In an external static uniform magnetic
+field, the ideal shell will increase the field within region $B$ by a
+factor of $R_2/R_1$. Similarly if a magnetic dipole is surrounded by
+the concentrating shell, then the field outside of the shell will be
 increased by a factor of $R_2/R_1$. \\
 %% (Comparison to other conc. techniques:
 %% It is known that ferromagnetic materials concentrate magnetic fields
@@ -472,6 +473,37 @@ XXTheory of Rload dependence on power transfer. \\
   \label{fig:DC_RL}
 \end{figure}
 
+\begin{figure}
+  \begin{center}
+   \noindent\includegraphics[width=0.89\linewidth]{images/compoundCOMSOL.png}
+  \end{center}
+  \caption{
+    Exploration of magnetic field distributions using the COMSOL
+    Multiphysics simulation package.
+    \textbf{A)} The perfect anisotropic shell, designed by TO with
+    infinite radial permeability and zero angular permeability, in a
+    static external magentic field.
+    \textbf{B)} A MuMetal only shell guiding a static field. Note the
+    field is guided radially through the interior of the MuMetal but
+    angular field is not adequately blocked.
+    \textbf{C)} A copper only shell guiding an oscillating external
+    magnetic field ($30$~kHz) by effectively shielding the angular component by
+    the production of Eddy currents.
+    \textbf{D)} A full shell comprised of alternating $18$ MuMetal and
+    $18$ copper sheets in an oscillating external magnetic field
+    ($20$~kHz). The dimensions of the simulated shell matches those of
+    the real fabricated shells. The MuMetal sheets are darker due to
+    guiding the field within their interior whilst the copper sheets
+    deflect's the angular component of the fields.  The inset image is
+    the Eddy current density within a single copper sheet with a
+    perpendicular applied magnetic field.
+    \textbf{E)} The dependence of magnetic concentration of various
+    shells on frequency of the oscillating field. It can be seen that
+    the two shells with copper show improved concentration as
+    frequency is increased as predicted and also shown experimentally.
+  }
+  \label{fig:COMSOL}
+\end{figure}
 
 Using Helmholtz coils powered in DC to create a static external
 magnetic field (see Methods), we observed constant field concentration
@@ -481,13 +513,16 @@ concentration factor with field may be seen in
 figure~\ref{fig:DC_RL}$a$, where concentration factor, $C$, is defined
 as (Magnetic field within shell's cavity)/(external field produced by
 Helmholtz coils). It was found that the shell construction of $36$
-MuMetal thin sheets gave the optimum concentration factor of $C =
+MuMetal thin sheets gave the optimum concentration factor of $C_{36} =
 (2.43\pm0.04)$ with errors likely due to the sensitivity of dipole
 orientation within the field. The $18$ MuMetal shell gave a magnetic
-concentration factor of $C = (2.31\pm0.04)$, which suggests that the
-shell behaves more ideally with a greater number of sheets. Simulation
-work performed on COMSOL further supports this as shown in figureXXX
-where more sheets corresponded to more ideal behaviour.
+concentration factor of $C_{18} = (2.31\pm0.04)$, which suggests that
+the shell behaves more ideally with a greater number of
+sheets. Simulation work performed on COMSOL further supports this
+difference between $18$ and $36$ MuMetal sheets as shown in
+figure~\ref{fig:COMSOL}~$e$. The absolute values predicted by COMSOL,
+$C_{18}= (2.32\pm0.01)$ and $C_{36} = (2.46\pm0.02)$, closely match
+the experimentally observed concentration factors for both cases.
 %}}}
 
 \subsection{Power transfer}
@@ -553,9 +588,9 @@ shells for AC power transfer. At higher frequencies the perpendicular
 component of alternating magnetic fields produce eddy currents within
 the copper which, due to Lenz's law, oppose the change of field
 direction and effectively increases the angular permeability of the
-shell.  Supporting work done on COMSOL (figure~\ref{fig:COMSOL_CU})
-shows a similar observed effect where 36 copper sheets increases the
-concentration factor rapidly from $C = 1$ at $0$~Hz to $C = 1.5$ (2SF)
+shell.  Supporting work done on COMSOL (figure~\ref{fig:COMSOL}~$b-e$)
+shows a similar observed effect where $36$ copper sheets increases the
+concentration factor rapidly from $C = 1$ at $0$~Hz to $C \approx 1.5$
 by $10$~kHz and then only a small further increase in efficacy at
 higher frequencies.\\ Apart from errors due to instrument, measurement
 reading, and coil placement, we observed noise due to stray magnetic
@@ -647,48 +682,31 @@ than using the simpler RL circuitary. \\
 
 % Non ideal behaviour \\
 For the constructed shells used in these experiments, their $R_2/R_1$
-ratio was $(4.0\pm0.2)$ . From the theoretical TO work, it is
-predicted that the field should be concentrated by the perfect shell
-by $R_2/R_1$. We found a range of concentrations for both static, $C =
-2.25 - 2.38$ XeX and oscillating, $C = 2 - 3.1$ XeX, external fields
-whose maximum concentration factors are still well below the expected
-theoretical concentration factor of $4.0 \pm 0.2$. This is likely
-explained by our approach to approximating the perfect TO designed
-anisotropic shells with shells comprised of discrete sections of high
-and low permeability.  In both static and oscillating fields, we found
-that 36 MuMetal sheets performed better than 18 MuMetal sheets which
-suggests that finer discretization of the proposed shells gives
-concentrations closer to the theoretical value. In the static field
-experiments, only air was used to approximate the zero relative
-angular permeability. Air has a permeability of $\mu_r = 1$, which
-although is far less than the MuMetal's $\mu_r = 55,000-75,000 $, is
-likely still a poor approximation. This can be seen by the increase in
-performance in the oscillating external field experiments where copper
-sheets are introduced in order to effectively screen out angular field
-density by the production of Eddy currents. Eddy current screening is
-proportional to frequency of the oscillating field~\cite{XXX}, and
-therefore, it can be seen that the concentration factor for shells
-with copper present increase with frequency. \\
-
-%Eddy{{{
-%% Eddy currents may be modelled as a wire loop perpendicular to an
-%% oscillating magenetic field. A current is produced within the loop
-%% which is proportional to frequency of the field and, due to Lenz's
-%% law, flows in a direction to oppose the change in field density. The
-%% induced current in the loop is
-%% $$ I = \frac{A}{R}\omega (B - B'), $$
-%% and the field produced by the current is,
-%% $$ B' = -I \mu_0 r. $$
-%% Combining these equations give,
-%% $$ B' = \frac{\omega B}{1+\omega}, $$
-%% which may be seen plotted with the COMSOL and experimental results for
-%% a copper only shell.\\
-%}}}
-
+ratio was $(4.0\pm0.2)$ and from the theoretical TO work, it was
+predicted that the field should be concentrated in the perfect shell
+by the same ratio. The greatest concentration of field we observed was
+$C_{Full} = (3.0\pm0.1)$ in the AC RL case. This concentration is
+still well below the expected theoretical concentration factor of $C = (4.0
+\pm 0.2)$ and likely explained by our approach to approximating the
+perfect TO designed anisotropic shell to a discretized version
+comprised of sections of high and low permeability.  In both static
+and oscillating fields, experimentally and in simulations, we found
+that $36$ MuMetal sheets performed better than $18$ MuMetal sheets
+which suggests that finer discretization of the proposed shells gives
+concentrations closer to the theoretical value. Furthermore, in the
+static field experiments, only air was used to approximate the zero
+relative angular permeability. Air has a permeability of $\mu_r
+\approx 1$, which although is far less than the MuMetal's $\mu_r =
+55,000-75,000 $, is likely still a poor approximation. This can be
+seen by the increase in performance in the oscillating external field
+experiments where copper sheets are introduced in order to effectively
+screen out angular field density by the production of Eddy
+currents. \\
 Previous work by Pratt et. al.\cite{} included the exploration of
 MuMetal and superconducting shells for concentrating static magnetic
 fields. This work quoted a concentration factor of XXX at T<Tc and XXX
 at T>Tc.\\
+
 % How L changes
 %% \begin{figure}
 %%   \begin{center}
