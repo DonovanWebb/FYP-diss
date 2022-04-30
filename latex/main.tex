@@ -202,7 +202,7 @@ increased by a factor of $R_2/R_1$. \\
   \end{center}
   \caption{A concentrating shell with inner radius $R_1$ and outer
     radius $R_2$ is useful for increasing the efficiency of wireless
-    power transmission by inductive coupling. PTE is highly sensitive
+    power transmission by inductive coupling. Power transfer efficiency is highly sensitive
     to distance between coils being proportional to $r^{-6}$. A
     concentrating shell increases this power transfer by $(R_2/R_1)^2$
     but at the cost of less free space, $x$, between the
@@ -395,6 +395,7 @@ resonance condition at a chosen operating frequency by the
 relationship
 \begin{equation}
   C = \frac{1}{w^2L}.
+  \label{eqn:RLC-res}
 \end{equation}
 Practically the resonant frequency and required capacitance was found
 using a series RLC circuit as seen in
@@ -429,6 +430,17 @@ parameters in this equation may be measured during a PTE experiment
 allowing the comparison of relative changes in mutual inductances (and
 equivalently magnetic fields) when different concentrating shells are
 used. \\
+PTE was calculated by finding the power dropped across the load
+resistor in circuit 2 and dividing by the power dropped across the
+coil in circuit 1. An ideal inductance has voltage and current
+$90^\circ$ out of phase meaning the time averaged power loss is zero,
+however real inductors have non-ideal characteristics and so power may
+be found by,
+\begin{equation}
+    P_1 = I_{rms1}V_{rms1}cos(\phi),
+\label{eqn:P1}
+\end{equation}
+where $\phi$ is the phase difference between $I_1$ and $V_1$.
 
 %}}}
 %RESULTS{{{
@@ -640,7 +652,18 @@ The PTE for RL and RLC, no shell and full shell arrangements are
 compared in figure~\ref{fig:cpdRLC}~$d$. It can be seen that the shell
 increases the efficiency in both cases by a similar factor and that
 the parallel resonant RLC arrangement gives a much greater efficiency
-than using the simpler RL circuitary. \\
+than using the simpler RL circuitary. The optimal power transfer
+effiency achieved at $30$~kHz and $59$~mm with one ``full'' shell was
+$(0.035\pm0.005)\%$. \\ A second ``full'' shell with the same
+dimensions was placed around the transmitting coil (seen in figure~\ref{fig:shells}) and this further
+increased PTE to $(0.35\pm0.02)\%$. This second shell gave a power
+increase of around a factor of $10$ which corresponds to a further
+field concentration of $\sqrt{10} \approx 3.2$. To explore the
+efficacy of this approach at closer distances the two coils were
+seperated by $49$~mm yielding a PTE of $(0.015\pm0.004)\%$ with no
+shells and $(1.0\pm0.1)\%$ with two full shells. The use of two
+concentrating shells displayed an almost $70$ fold increase in
+efficiency.
 %distance{{{
 %% To further explore PTE, the distance between the two coils was
 %% varied. With a distance of XXX mm and a full shell around the
@@ -690,56 +713,51 @@ experiments where copper sheets are introduced in order to effectively
 screen out angular field density by the production of Eddy
 currents. \\
 Previous work by Pratt et. al.\cite{} included the exploration of
-MuMetal and superconducting shells for concentrating static magnetic
-fields. This work quoted a concentration factor of XXX at T<Tc and XXX
-at T>Tc.\\
+MuMetal and superconducting (SC) shells for concentrating static
+magnetic fields. This work quoted a concentration factor of $2.70$ at
+temperature below $T_c$ for the SC material and $2.23$ above the
+critical temperature for a shell of the same dimensions as explored
+here. These values agree well with our found concentrations of $18$
+and $36$ MuMetal sheets and also emphasises coppers effectiveness in
+increasing concentration in the oscillating field. The use of copper
+also has the benefit of room temperature operation being possible
+however, its practicality is strictly limited to frequencies above
+which Eddy current generation is sufficient to shield angular fields. \\
 
-We assumed the inductance of the solenoid
-was independent of the shell surrounding it. Here we shall reexplore
-some results without this assumption. \\ The resonant condition of a
-series RLC circuit (figure~\ref{fig:WPT} $c$)
-allows the calculation of effective inductance $L$ using the known
-capacitance and found resonance frequency.  The inductance of the bare
-coil or when surrounded by a copper only shell was $(1.02\pm0.02)$~mH
-whilst the coil surrounded by the full shell was found to be
-$(1.25\pm0.01)$~mH.  This increase in inductance can be understood by
-the high permeability MuMetal in the shell being located near to the
-coil, which increases the relative permeability of space in the
-vicinity of the coil. A change in inductance will effect the power
-transfer efficiency as described by XXX equation~\ref{eqn:eta}.  The
-use of a resonant parallel RLC setup within the receiving circuit can
-counteract this loss of power transfer as the optimum load resistance
-in this case does not depend as strongly on the inductance value, but
-rather on internal resistances of the components.\\
+We assumed the inductance of the solenoid was independent of the shell
+surrounding it, however, from finding resonance for each experiment
+and using equation~\ref{eqn:RLC-res} we observed that the presence of
+a MuMetal shell significantly changed the inductance of the coil. The
+bare coil and when surrounded by a copper only shell gave an
+inductance of $(1.02\pm0.02)$~mH whilst the coil surrounded by the
+full shell was found to be $(1.25\pm0.01)$~mH.  This increase in
+inductance can be understood by the high permeability MuMetal in the
+shell being located near to the coil, which increases the relative
+permeability of space in the vicinity of the coil. A change in
+inductance of coil 2 is important in the calculation of mutual
+inductance as shown in equation~\ref{eqn:RLC-M}, and if accounted for
+gives concentration factors of $C_{full}=(3.1\pm0.2)$ in the RLC case
+which is in closer agreement to the concentration observed in the RL
+experiments. An increase in inductance may also lead to a decrease in
+PTE depending on the relationship between $R_{optimal}$ and inductance
+in the RLC circuit, but this could be avoided by increasing the
+distance between the coils and the MuMetal sheeting of the shell.\\
 
-Due to the sharp drop off of power transfer with distance, the
-greatest PTE found was $1.01\%$ XeX at a seperation of $48.7$~mm with
-both the transmitting and receiving coil surrounded by a concentrating
-shell. The reason for this poor efficiency is largely due to the
-non-ideal real resistive component of the transmitting coil...
-
-%%%%
-
-DC:  \\
-- further explanation on error source in placement \\
-
-Power transfer \\
-- Generally low PTE due to high loss of inductor.  Could have used
-laminated AC inductor to reduce eddie currents.  Could have not used
-iron core as hysteresis. \\
-- Discussion of other power transfer techniques and coupled inductor
-papers. Why a shell is better than no shell with distances. \\
-- Why a shell allows a small radii inductor to be used - efficiency of scale
-Better coupling for given distance. See p.51 pratt. \\
-- Relationship of PTE with distance -$r^{-5.6}$. Effective mutual
-inductance changed. \\
-- Two shells present. \\
-- Another exploration on error sources and summary of largest
-sources.\\
-
-Comparison of RL, series RLC and parallel RLC circuitary: \\
-- models \\
-- expected efficiency \\
+The poor PTE in all cases is explained by our choice of an ferrous
+core coil 1. This choice was motivated by the sensitivity of our
+detection equipment, the limitations of the current we were able to
+supply to our coils (greater current gives greater $B$ field), and the
+limitations of coil radius as it must fit within our shells. The
+ferrous cored solenoid had a relatively large non-ideal character with
+a measured phase difference between current and voltage being
+consistently between $80^\circ$ and $85^\circ$ depending on the
+frequency and absolute value of current being supplied. Using a more
+ideal inductor would greatly improve PTE and would be neccessary if
+this device were to be used in a practical setting. A laminated core
+inductor could also give greater PTE whilst still maintaining a
+relatively high inductance value as this would reduce the production
+of Eddy current losses within the inductors core as operating
+frequency is increased. \\
 
 %}}}
 %CONCLUSIONS{{{
