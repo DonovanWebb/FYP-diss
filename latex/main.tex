@@ -50,21 +50,21 @@ power transfer need not come at the cost of low efficiencies.
 The manipulation of magnetic fields is a critical tool for many modern
 technologies. Magnetic devices often have efficiencies dependent on
 the strength of interaction with an external magnetic field. Examples
-include energy harvesting from magnetic fields~\cite{HARVESTING} to
-brain activity scans by locating small magnetic
-gradients~\cite{BRAIN}. These devices may have increased efficiency by
+include energy harvesting from magnetic fields~\cite{Hirai2000} to
+MEG brain activity scans by locating small magnetic
+gradients~\cite{Cohen1968}. These devices may have increased efficiency by
 concentrating the desired magnetic field within the area of sensing or
 harvesting. \\ Magnetic fields may be described by Maxwell's
-equations~\cite{MAXWELL} and are guided by materials due to their
-optical properties, such as permitivity and permeability~\cite{OPTICAL
-  PROPERITES}. Fermat's principle of least time allowed the design
-of many optical devices using geometrical lenses~\cite{FERMAT},
-however, with the maturation of fabrication techniques, many materials
-may be produced with exotic anisotropic optical properties~\cite{META}
-prompting the development of transformation optics (TO) --- a modern
-approach to optical device design.\\ Here we describe one such TO
-designed device; The magnetic concentrator~\cite{PRATT}, with a particular focus
-on its efficacy in wireless power transmission. \\ 
+equations and are guided by materials due to their
+optical properties, such as permitivity and permeability. Snell's law
+allowed the design of many optical devices
+using geometrical lenses~\cite{Pendry2012}, however, with the maturation
+of fabrication techniques, many materials may be produced with exotic
+anisotropic optical properties~\cite{Smith2004} prompting the development
+of transformation optics (TO) --- a modern approach to optical device
+design~\cite{Pendry2006}.\\ Here we describe one such TO designed
+device; The magnetic concentrator~\cite{Navau2012}, with a particular
+focus on its efficacy in wireless power transmission. \\
 
 \begin{figure}
   \begin{center}
@@ -82,8 +82,8 @@ on its efficacy in wireless power transmission. \\
 
 \subsection{Transformation Optics and Metamaterials}
 TO informed the design of many new devices such as perfect
-lenses~\cite{}, magenetic-hoses~\cite{}, -cloaks~\cite{},
--rotators~\cite{}, -blackholes~\cite{}, and -concentrators~\cite{}. It
+lenses~\cite{Pendry2000}, magenetic-hoses~\cite{Navau2014}, -cloaks~\cite{Sun2017},
+-rotators~\cite{Sun2017}, and -concentrators~\cite{Navau2012}. It
 can be shown that due to the form invariance of Maxwell's equations, a
 spatial coordinate transform is equivalent to the insertion of a
 material with specific permeabilities and permitivities. This is shown
@@ -120,11 +120,11 @@ where $A$ is the Jacobian matrix describing the transformation of
 coordinate systems (e.g. between panel $a$ and panel $b$ in
 figure~\ref{fig:TO}). \\ The resulting calculated optical properties
 may be anisotropic, have arbitrary magnitude and even be
-negative~\cite{}. As bulk materials rarely, if ever, show these
+negative~\cite{Pendry2000}. As bulk materials rarely, if ever, show these
 properties, optical metamaterials are often
-required~\cite{META3}. \\ Metamaterials are often comprised of
+required~\cite{Smith2004}. \\ Metamaterials are often comprised of
 repeating units whose dimensions are much smaller than the wavelength
-of the interacting radiation~\cite{META2}. The individual units may
+of the interacting radiation. The individual units may
 have specific geometery, orientation and optical properties to
 selectively interact with incident waves so that the net effect of the
 material mimics a bulk substance with different optical properties
@@ -175,13 +175,13 @@ this theoretical shell can be seen guiding an external magnetic field
 in the COMSOL simulation (figure~\ref{fig:COMSOL}~$a$).\\ To satisfy
 these highly anisotropic conditions practically, an exploration of
 metamaterials is required. A possible discretized shell construction
-is proposed~\cite{PRATT} where the high radial permeability is
+is proposed~\cite{N2014} where the high radial permeability is
 provided by ferromagnetic materials whilst the angular permeability is
 shielded by superconducting material. Materials such as MuMetal, have
-relative permeabilities of up to $300,000+$~\cite{MUMETAL} and ideal
+relative permeabilities of up to $300,000+$ and ideal
 superconductors in their Meissner state will exclude all magenetic
 fields from within their interior giving a relative permeability of
-$0$~\cite{Meissner}. In an alternating field, a far cheaper option for
+$0$. In an alternating field, a far cheaper option for
 blocking the angular magnetic field component is the use of copper
 sheeting. From Lenz's law an oscillating magnetic field perpendicular
 to a metal sheet will induce Eddy currents which will oppose the
@@ -264,7 +264,7 @@ to magnify the transmitted field and locally concentrate the field
 around the receiving solenoid. The concentrating shell is larger than
 the coil by necessity, however the presence of a shell is always
 advantageous when the free space distance between the power
-transmitting and power receiving device is greater than $k$, where
+transmitting and power receiving device is greater than $k$,\cite{Prat2016} where
 \begin{equation}
 k = \frac{R_2}{\sqrt[3]{R}-1}
 \end{equation}
@@ -273,7 +273,7 @@ distance $k$ is shown in figure~\ref{fig:d_motiv}.\\
 As the magnetic concentrating shells were designed by TO for static
 magnetic fields, here we explore their behaviour and efficacy in
 oscillating fields of a few kHz, which can be sufficient for practical
-power transfer\cite{}.\\
+power transfer\cite{Wang2005}.\\
 
 
 %% - Wireless power transfer - lit review
@@ -400,7 +400,7 @@ measurement $V_2$ to mutual inductance $M$ is described by,
 \end{equation}
 It is well known that a resonant RLC arrangement on the receiving
 circuit can greatly increase the power transferred in inductive
-coupling\cite{}.  At resonance the complex impedance of the inductance
+coupling\cite{Hirai2000}.  At resonance the complex impedance of the inductance
 and capacitance cancel leaving only the load resistance. Our
 inductance is assumed to be identical between experiments as the same
 coils are used and the capacitance can be found to satisfy the
@@ -641,7 +641,7 @@ careful cable placement and shielding was installed. \\
 \end{figure}
 
 Parallel RLC circuits are more fitting for optimising power
-transfer~\cite{XXX} as explained in Methods. For the arrangement
+transfer as explained in Methods. For the arrangement
 described in figure~\ref{fig:WPT}~$b$, a full shell comprised of $18$
 MuMetal and $18$ copper sheets was explored. The optimal load
 resistances were found experimentally by measuring power for a sweep
@@ -725,7 +725,7 @@ seen by the increase in performance in the oscillating external field
 experiments where copper sheets are introduced in order to effectively
 screen out angular field density by the production of Eddy
 currents. \\
-Previous work by Pratt et. al.\cite{} included the exploration of
+Previous work by Pratt et. al.\cite{N2014} included the exploration of
 MuMetal and superconducting (SC) shells for concentrating static
 magnetic fields. This work quoted a concentration factor of $2.70$ at
 temperature below $T_c$ for the SC material and $2.23$ above the
@@ -800,12 +800,16 @@ $z$ direction of the shells to increase the area of one wire
 loop.\\ The effectiveness of these MuMetal and copper shells should
 also be explored in the mega-Hertz frequency range as is required by
 some high efficiency power transmission
-strategies\cite{soljacic}. Potentially other materials will need to be
+strategies\cite{Kurs2007}. Potentially other materials will need to be
 sought due to the frequency dependence of the permeability of MuMetal.
 
 %}}}
 %REF{{{
 \section{References}
+
+\bibliographystyle{IEEEtran}
+\bibliography{library}
+
 %}}}
 \end{document}
 
