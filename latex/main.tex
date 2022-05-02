@@ -20,7 +20,6 @@ University of Bath, Bath BA2 7AY, United Kingdom}
 \ead{dw711@bath.ac.uk}
 
 \begin{abstract}
-
 A device capable of uniformly concentrating a magnetic field within a
 free space cavity will increase the efficiency of magnetic field
 sensing and wireless power transmission.
@@ -35,18 +34,16 @@ improving efficiency of wireless power transmission.
 The device is shown to effectively concentrate both static and
 oscillating magnetic fields into its interior free space region by a
 factor of up to $(3.0\pm0.1)$. An almost $70$ fold increase in the
-efficiency of wireless power transfer is shown when using the magnetic
+efficiency of wireless power transfer is shown when using a pair of magnetic
 concentrators.
 With the development of such devices, the convenience of wireless
 power transfer need not come at the cost of low efficiencies.
-
 
 \end{abstract}
 %}}}
 %INTRO{{{
 \section{Introduction}
 %% - Motivation and overview brief description of power transfer problem
-
 The manipulation of magnetic fields is a critical tool for many modern
 technologies. Magnetic devices often have efficiencies dependent on
 the strength of interaction with an external magnetic field. Examples
@@ -89,8 +86,8 @@ spatial coordinate transform is equivalent to the insertion of a
 material with specific permeabilities and permittivities. This is shown
 conceptually by the three steps of the schematic shown in
 figure~\ref{fig:TO}. First a ray is considered in free Cartesian space
-in panel $a$, which due to Fermat's principle of least time will be
-following the horizontal spatial grid lines.  The space is then
+in panel $a$, which due to Fermat's principle of least time will 
+follow the horizontal spatial grid lines.  The space is then
 transformed arbitrarily in panel $b$ so that the ray adopts the
 desired path for the final device. The transformation required, $A$,
 to morph the ray now informs the optical properties for the specific
@@ -138,12 +135,13 @@ the criteria: The magnetic field within a region $A$ is concentrated
 into a cavity $B$ where $B$ is free space only. A possible geometry
 for this device that has cylindrical symmetry is shown on LHS of
 figure~\ref{fig:d_motiv}.  To satisfy these conditions two coordinate
-transforms are applied: First the region $\rho < R_2 - \eta$ is
-radially and linearly compressed to the region $\rho < R_1$; Second,
-to ensure the continuity of our transformed space, a high ($k^{th}$)
-order polynomial radial expansion of $R_2 - \eta < \rho < R_2$ to the
-region $R_1 < \rho < R_2$ is made. These transformations are described
-by the coordinate transformations,
+transforms are applied: First the region $\rho < R_2 - \xi$ is
+radially and linearly compressed to the region $\rho < R_1$, where
+$\xi$ is a thin `skin' distance; Second, to ensure the continuity of
+our transformed space, a high ($k^{th}$) order polynomial radial
+expansion of $R_2 - \xi < \rho < R_2$ to the region $R_1 < \rho < R_2$
+is made. These transformations are described by the coordinate
+transformations,
 \begin{equation}
   \label{eqn:transform}
   \begin{split}
@@ -162,9 +160,9 @@ permeabilities of the required inserted material may be found to be
 ~~~~~~\mu' = \begin{pmatrix}k&0&0\\0&1/k&0\\0&0&\frac{1}{k}(\frac{\rho'}{R_2})^{2/k-2}\end{pmatrix}~~~~~\rho'\in[R_1,~R_2)
   \end{split}
 \end{equation}
-Taking the limit $\eta \rightarrow 0$ in order to concentrate all of
+Taking the limit $\xi \rightarrow 0$ to concentrate all of
 the field within $A$ into $B$, and matching the boundary conditions at
-$R_2-\eta$ and at $R1$, we find that $k \rightarrow \infty$. From this
+$R_2-\xi$ and at $R1$, we find that $k \rightarrow \infty$. From this
 we find that the required permeability within $B$ is satisfied by free
 space whilst a material with radial permeability $\mu_\rho \rightarrow
 \infty$ and angular permeability $\mu_\theta \rightarrow 0$ is
@@ -261,7 +259,7 @@ distance as the non-ideal resistive losses in the primary coil remain
 (relatively) constant with distance. To somewhat counteract this sharp
 drop off of efficiency with distance, concentrating shells may be used
 to magnify the transmitted field and locally concentrate the field
-around the receiving solenoid. The concentrating shell is larger than
+around the receiving coil. The concentrating shell is larger than
 the coil by necessity, however the presence of a shell is always
 advantageous when the free space distance between the power
 transmitting and power receiving device is greater than $k$,\cite{Prat2016} where
@@ -292,7 +290,9 @@ power transfer\cite{Wang2005}.\\
         \noindent\includegraphics[width=\linewidth]{images/helm.png}
     \end{minipage}
 \caption{LHS: The constructed shells arranged in the power transfer
-  experiment. RHS: The shell within a pair of Helmholtz coils.}
+  experiment. RHS: The field measured, using a Hall probe, within the
+  inner radius of the shell (white cylinder) when an external magnetic
+  field is created by a pair of Helmholtz coils (black loops).}
 \label{fig:shells}
 \end{center}
 \end{figure}
@@ -308,21 +308,22 @@ alternating copper and MuMetal, whilst the ``No shell'' scenario
 contains no metal. \\
 
 \subsection{DC Magnetic Fields}
-Helmholtz coils (figure~\ref{fig:shells}) were powered by a constant
-DC current to create a uniform magnetic field, $B$, within their
-center described by
-\begin{equation}
-  B = \frac{8}{5\sqrt{5}}\frac{\mu_0 nI}{R},
-  \label{eqn:helm}
-\end{equation}
-where $R$ is the radius of the coils, $I$ is the current supplied to
-the coils, and $n$ is the number of turns of wire.  A Hall probe
-placed at the center of the Helmholtz coils will have a Hall voltage
-induced which is proportional to the magnetic field. Once calibrated
-the Hall probe can be used to measure the absolute value of the
-magnetic field present. A concentrating shell may now be placed 
-at the center of the Helmholtz coils and the Hall probe placed within
-the $R_1$ section of the shells to explore field concentration.
+Helmholtz coils (RHS figure~\ref{fig:shells}) were powered by a constant
+DC current to create a uniform magnetic field within their
+center.
+A Hall probe placed at the center of the Helmholtz coils will have a
+Hall voltage induced which is proportional to the magnetic field. Once
+calibrated the Hall probe can be used to measure the absolute value of
+the magnetic field present. A concentrating shell may now be placed at
+the center of the Helmholtz coils and the Hall probe placed within the
+$R_1$ section of the shells to explore field concentration.
+%% described by
+%% \begin{equation}
+%%   B = \frac{8}{5\sqrt{5}}\frac{\mu_0 nI}{R},
+%%   \label{eqn:helm}
+%% \end{equation}
+%% where $R$ is the radius of the coils, $I$ is the current supplied to
+%% the coils, and $n$ is the number of turns of wire.
 
 %%  This equation follows directly from the Biot-Savart law
 %% \cite{XXX} and the relative geometry of the coils as seen in
@@ -355,7 +356,6 @@ the receiving inductor forming an RL circuit. Assuming the non-ideal
 real resistances of the coil is $r_2 << \omega L$, then the optimal
 load resistance for power transfer at some frequency $\omega$ is found
 by,
-\vspace{-0.5em}
 \begin{center}
 \begin{minipage}{0.4\linewidth}
 \begin{equation}
@@ -363,6 +363,7 @@ by,
 \end{equation}
 \begin{equation}
   P_R = |I_2|^2R = \frac{V_2^2R}{\omega^2L_2^2 + R^2},
+  \label{eqn:RL-max-theory}
 \end{equation}
 \end{minipage}
 ~~
@@ -375,6 +376,7 @@ by,
 \end{equation}
 \end{minipage}
 \end{center}
+\vspace{0.2em}
 The EMF induced in the receiving coil of a coupled inductance system
 may be found by Faraday's law,
 \vspace{-0.5em}
@@ -466,18 +468,18 @@ where $\phi$ is the phase difference between $I_1$ and $V_1$.
    \noindent\includegraphics[width=\linewidth]{images/compoundRL.pdf}
   \end{center}
   \caption{
-    \textbf{A} (DC) The concentration of external static fields into
+    \textbf{A)} (DC) The concentration of external static fields into
     the interior cavity of shells comprised of either $18$ or $36$
     MuMetal sheets.
-    \textbf{B} (AC) Experimentally found relative power transfer
+    \textbf{B)} (AC) Experimentally found relative power transfer
     efficiencies dependence on load resistance in a coupled RL
     inductive circuit for various frequencies. Theory line is found
-    using equation~\ref{eqn:RL-max}.
-    \textbf{C} Finding mutual inductance, $M$, between two coils at a
+    using equation~\ref{eqn:RL-max-theory}.
+    \textbf{C)} Finding mutual inductance, $M$, between two coils at a
     fixed distance for various shell configurations in the RL circuit
     arrangement.  The gradient is equivalent to $M/\sqrt{2}$
     (equation~\ref{eqn:MVs}).
-    \textbf{D} The shell's effect on mutual inductance is found by the
+    \textbf{D)} The shell's effect on mutual inductance is found by the
     ratio of ($M$ with shell)/($M$ bare coil). An increase in mutual
     inductance corresponds to an increase in magnetic field density
     within the shell and is shown to be dependant on frequency for
@@ -519,22 +521,23 @@ where $\phi$ is the phase difference between $I_1$ and $V_1$.
 
 Using Helmholtz coils powered in DC to create a static external
 magnetic field (see Methods), we observed constant field concentration
-factors within the $R_1$ cavity for various shell constructions. No
-shell, 18 MuMetal, and 36 MuMetal shells were used and their
-concentration factor with field may be seen in
-figure~\ref{fig:DC_RL}$a$, where concentration factor, $C$, is defined
-as (Magnetic field within shell's cavity)/(external field produced by
-Helmholtz coils). It was found that the shell construction of $36$
-MuMetal thin sheets gave the optimum concentration factor of $C_{36} =
-(2.43\pm0.04)$ with errors likely due to the sensitivity of dipole
-orientation within the field. The $18$ MuMetal shell gave a magnetic
-concentration factor of $C_{18} = (2.31\pm0.04)$, which suggests that
-the shell behaves more ideally with a greater number of
-sheets. Simulation work performed on COMSOL further supports this
-difference between $18$ and $36$ MuMetal sheets as shown in
-figure~\ref{fig:COMSOL}~$e$. The absolute values predicted by COMSOL,
-$C_{18}= (2.32\pm0.01)$ and $C_{36} = (2.46\pm0.02)$, closely match
-the experimentally observed concentration factors for both cases.
+factors within the $R_1$ cavity, across a range of external field
+strengths, for various shell constructions. No shell, 18 MuMetal, and
+36 MuMetal shells were used and their concentration factor with field
+may be seen in figure~\ref{fig:DC_RL}$a$, where concentration factor,
+$C$, is defined as (Magnetic field within shell's cavity)/(external
+field produced by Helmholtz coils). It was found that the shell
+construction of $36$ MuMetal thin sheets gave the optimum
+concentration factor of $C_{36} = (2.43\pm0.04)$ with errors likely
+due to the sensitivity of dipole orientation within the field. The
+$18$ MuMetal shell gave a magnetic concentration factor of $C_{18} =
+(2.31\pm0.04)$, which suggests that the shell behaves more ideally
+with a greater number of sheets. Simulation work performed on COMSOL
+further supports this difference between $18$ and $36$ MuMetal sheets
+as shown in figure~\ref{fig:COMSOL}~$e$. The absolute values predicted
+by COMSOL, $C_{18}= (2.32\pm0.01)$ and $C_{36} = (2.46\pm0.02)$,
+closely match the experimentally observed concentration factors for
+both cases.
 %}}}
 
 \subsection{Power transfer}
@@ -580,17 +583,17 @@ optimal load resistance was matched to $R = \omega L$ (see Methods
 equation~\ref{eqn:RL-max}). Figure~\ref{fig:DC_RL}~$b$ shows the
 relative PTE versus load resistance for various frequencies confirming
 the expected optimum load resistance. \\ Mutual inductances between
-the coils at a set distance of $59$~mm were found by measuring the
-voltage across the load resistor in the secondary RL circuit and the
-current driving the primary circuit and using
-equation~\ref{eqn:MVs}. The copper only, MuMetal only, and full copper
-plus MuMetal shells all showed a concentrating effect by their
-relative increases in mutual inductance between the two coils as shown
-in figure~\ref{fig:DC_RL}~$c$. The full shell showed an increase of
-mutual inductance (magnetic field) by a factor of $(3.0\pm0.1)$, which
-is nearing the theoretical result from TO of $R_2/R_1 = 4$ despite
-only containing $36$ sheets. The frequency dependence on the relative
-increase in mutual inductance is shown in
+the coils (with inductances $L\approx 1$~mH) at a set distance of
+$59$~mm were found by measuring the voltage across the load resistor
+in the secondary RL circuit and the current driving the primary
+circuit and using equation~\ref{eqn:MVs}. The copper only, MuMetal
+only, and full copper plus MuMetal shells all showed a concentrating
+effect by their relative increases in mutual inductance between the
+two coils as shown in figure~\ref{fig:DC_RL}~$c$. The full shell
+showed an increase of mutual inductance (magnetic field) by a factor
+of $(3.0\pm0.1)$, which is nearing the theoretical result from TO of
+$R_2/R_1 = 4$ despite only containing $36$ sheets. The frequency
+dependence on the relative increase in mutual inductance is shown in
 figure~\ref{fig:DC_RL}~$d$. The two shell configurations containing
 copper are shown to have concentrating effects dependant on
 frequency. The concentrating effect rises steeply within the first
@@ -606,10 +609,10 @@ concentration factor rapidly from $C = 1$ at $0$~Hz to $C \approx 1.5$
 by $10$~kHz and then only a small further increase in efficacy at
 higher frequencies.\\ Apart from errors due to instrument, measurement
 reading, and coil placement, we observed noise due to stray magnetic
-fields inducing pick-up within cables connecting the solenoid to the
+fields inducing pick-up within cables connecting the coil to the
 lock-in amplifier. This source of noise is highly frequency dependent
 and is at the same frequency as our desired signal, so could not be
-removed by the use of a lock-in amplifier. To suppress this noise
+removed by the use of a lock-in amplifier. To suppress this noise,
 careful cable placement and shielding was installed. \\
 
 \subsection*{Resonant --- RLC}
@@ -633,7 +636,7 @@ careful cable placement and shielding was installed. \\
     frequency for the full shell which has copper present.
     \textbf{D)}~A comparison of power transfer efficiencies (PTE) for both a
     full shell (18 copper and 18 MuMetal sheet) and no shell in either
-    the RL and RLC case. PTE is given as a ratio of power dropped
+    the RL or RLC case. PTE is given as a ratio of power dropped
     across the load resistor against power lost in the transmitting
     coil as explained in Methods.
   }
@@ -641,21 +644,21 @@ careful cable placement and shielding was installed. \\
 \end{figure}
 
 Parallel RLC circuits are more fitting for optimising power
-transfer as explained in Methods. For the arrangement
+transfer (see Methods). For the arrangement
 described in figure~\ref{fig:WPT}~$b$, a full shell comprised of $18$
 MuMetal and $18$ copper sheets was explored. The optimal load
 resistances were found experimentally by measuring power for a sweep
 of resistances, an example of which is shown in
 figure~\ref{fig:cpdRLC}~$a$ for a field frequency of $30$~kHz.\\
-From equation~\ref{eqn:RLC-M} the voltage measured across the load
+From equation~\ref{eqn:RLC-M}, the voltage measured across the load
 resistor is proportional to the mutual inductance between the two
-coils when the optimal load resistor is used and the resonance
+coils when the optimal load resistor is used, and the resonance
 condition for the RLC circuit is met. Figure~\ref{fig:cpdRLC}~$b$
 confirms this relationship and shows an increase of mutual inductance
 when the full concentrating shell is present. The gradient was found
 to be increased by a factor of $(2.6 \pm 0.2)$ corresponding to a field
 concentration of the same factor if the inductance of $L_2$ is assumed
-to remain constant. \\
+to remain constant (see Discussion). \\
 The frequency dependence on concentration factor is shown in
 figure~\ref{fig:cpdRLC}~$c$ and it can be seen that, as with the RL and
 simulated experiments, the presence of copper in the shell leads to a
@@ -722,7 +725,7 @@ relative angular permeability. Air has a permeability of $\mu_r
 \approx 1$, which although is far less than the MuMetal's $\mu_r =
 55,000-75,000 $, is likely still a poor approximation. This can be
 seen by the increase in performance in the oscillating external field
-experiments where copper sheets are introduced in order to effectively
+experiments where copper sheets are introduced to effectively
 screen out angular field density by the production of Eddy
 currents. \\
 Previous work by Pratt et. al.\cite{N2014} included the exploration of
@@ -731,36 +734,37 @@ magnetic fields. This work quoted a concentration factor of $2.70$ at
 temperature below $T_c$ for the SC material and $2.23$ above the
 critical temperature for a shell of the same dimensions as explored
 here. These values agree well with our found concentrations of $18$
-and $36$ MuMetal sheets and also emphasises coppers effectiveness in
-increasing concentration in the oscillating field. The use of copper
-also has the benefit of room temperature operation being possible
-however, its practicality is strictly limited to frequencies above
-which Eddy current generation is sufficient to shield angular fields. \\
-
-We assumed the inductance of the solenoid was independent of the shell
+and $36$ MuMetal sheets and emphasises the need for restricting angular
+field by the increase of concentration when SC is present. This
+parallels our findings of copper's effectiveness in increasing
+concentration in the oscillating field. The use of copper also has the
+benefit of room temperature operation being possible however, its
+practicality is strictly limited to frequencies above which Eddy
+current generation is sufficient to shield angular fields. \\
+We assumed the inductance of the coil was independent of the shell
 surrounding it, however, from finding resonance for each experiment
-and using equation~\ref{eqn:RLC-res} we observed that the presence of
-a MuMetal shell significantly changed the inductance of the coil. The
-bare coil and when surrounded by a copper only shell gave an
-inductance of $(1.02\pm0.02)$~mH whilst the coil surrounded by the
-full shell was found to be $(1.25\pm0.01)$~mH.  This increase in
-inductance can be understood by the high permeability MuMetal in the
-shell being located near to the coil, which increases the relative
-permeability of space in the vicinity of the coil. A change in
-inductance of coil 2 is important in the calculation of mutual
-inductance as shown in equation~\ref{eqn:RLC-M}, and if accounted for
-gives concentration factors of $C_{full}=(3.1\pm0.2)$ in the RLC case
-which is in closer agreement to the concentration observed in the RL
-experiments. An increase in inductance may also lead to a decrease in
-PTE depending on the relationship between $R_{optimal}$ and inductance
-in the RLC circuit, but this could be avoided by increasing the
-distance between the coils and the MuMetal sheeting of the shell.\\
-
-The poor PTE in all cases is explained by our choice of an ferrous
+using equation~\ref{eqn:RLC-res} we
+observed that the presence of a MuMetal shell significantly changed
+the inductance of the coil. The bare coil, and when surrounded by a
+copper only shell, gave an inductance of $(1.02\pm0.02)$~mH whilst the
+coil surrounded by the full shell was found to be $(1.25\pm0.01)$~mH.
+This increase in inductance can be understood by the high permeability
+MuMetal in the shell being located near to the coil, which increases
+the relative permeability of space in the vicinity of the coil. A
+change in inductance of coil 2 is important in the calculation of
+mutual inductance as shown in equation~\ref{eqn:RLC-M}, and if
+accounted for, gives concentration factors of $C_{full}=(3.1\pm0.2)$ in
+the RLC case which is in closer agreement to the concentration
+observed in the RL experiments. An increase in inductance may also
+lead to a decrease in PTE depending on the relationship between
+$R_{optimal}$ and inductance in the RLC circuit, but this could be
+avoided by increasing the distance between the coils and the MuMetal
+sheeting of the shell.\\
+The poor PTE in all cases is explained by our choice of a ferrous
 core coil 1. This choice was motivated by the sensitivity of our
 detection equipment, the limitations of the current we were able to
 supply to our coils (greater current gives greater $B$ field), and the
-limitations of coil radius as it must fit within our shells. The
+limitations of the coil radius as it must fit within our shells. The
 ferrous cored solenoid had a relatively large non-ideal character with
 a measured phase difference between current and voltage being
 consistently between $80^\circ$ and $85^\circ$ depending on the
