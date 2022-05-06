@@ -29,7 +29,7 @@ concentrate static fields.
 However, for wireless power transmission, an oscillating magnetic
 field is required.
 Here we explore the efficacy of a magnetic concentrator, comprised of
-MuMetal and copper, in oscillating fields with a specific focus on
+high permeability MuMetal and high conductivity copper, in oscillating fields with a specific focus on
 improving efficiency of wireless power transmission.
 The device is shown to effectively concentrate both static and
 oscillating magnetic fields into its interior free space region by a
@@ -48,7 +48,7 @@ The manipulation of magnetic fields is a critical tool for many modern
 technologies. Magnetic devices often have efficiencies dependent on
 the strength of interaction with an external magnetic field. Examples
 include energy harvesting from magnetic fields~\cite{Hirai2000} to
-MEG brain activity scans by locating small magnetic
+magnetoencephalography brain activity scans by locating small magnetic
 gradients~\cite{Cohen1968}. These devices may have increased efficiency by
 concentrating the desired magnetic field within the area of sensing or
 harvesting. 
@@ -63,9 +63,12 @@ anisotropic optical properties~\cite{Smith2004} prompting the development
 of transformation optics (TO) --- a modern approach to optical device
 design~\cite{Pendry2006}.
 
-Here we describe one such TO designed
-device; The magnetic concentrator~\cite{Navau2012}, with a particular
-focus on its efficacy in wireless power transmission. \\
+Here we describe one such TO designed device; The magnetic
+concentrator~\cite{Navau2012}, with a particular focus on its efficacy
+in wireless power transmission. We first replicate static field
+concentration results~\cite{N2014} and then explore the benefits of
+the concentrating shells in both non-resonant and resonant near field
+wireless power transmission at various frequencies.
 
 \begin{figure}
   \begin{center}
@@ -124,8 +127,8 @@ coordinate systems (e.g. between panel $a$ and panel $b$ in
 figure~\ref{fig:TO}). 
 
 The resulting calculated optical properties
-may be anisotropic, have arbitrary magnitude and even be
-negative~\cite{Pendry2000}. As bulk materials rarely, if ever, show these
+may be anisotropic, have arbitrary magnitude and even have
+negative refractive index~\cite{Pendry2000}. As bulk materials rarely, if ever, show these
 properties, optical metamaterials are often
 required~\cite{Smith2004}. 
 
@@ -182,24 +185,40 @@ infinitely long so the $z$ component must be invariant. A model for
 this theoretical shell can be seen guiding an external magnetic field
 in the COMSOL simulation (figure~\ref{fig:COMSOL}~$a$).
 
-To satisfy
-these highly anisotropic conditions practically, an exploration of
-metamaterials is required. A possible discretized shell construction
+To satisfy these highly anisotropic conditions practically, an
+exploration of metamaterials is required. First, the relative magnetic
+permeability, $\mu_r$, of a material is defined by
+\begin{equation}
+  \vec{B} = \mu_0\mu_r \vec{H},
+\end{equation}
+where $B$ is magnetic induction, $\mu_0$ is vacuum permeability, and
+$H$ is the externally applied magnetic field. If $\mu_r$ is large
+(paramagnetic material) then the magnetic field density within the
+material is larger than the external field resulting in a ``guiding''
+of field within the materials interior. If $\mu_r$ is small
+(diamagnetic material) then the field density is reduced within the material.
+A possible discretized shell construction
 is proposed~\cite{N2014} where the high radial permeability is
 provided by ferromagnetic materials whilst the angular permeability is
-shielded by superconducting material. Materials such as MuMetal, have
-relative permeabilities of up to $300,000+$ and ideal
-superconductors in their Meissner state will exclude all magnetic
-fields from within their interior giving a relative permeability of
-$0$. In an alternating field, a far cheaper option for
-blocking the angular magnetic field component is the use of copper
-sheeting. From Lenz's law an oscillating magnetic field perpendicular
-to a metal sheet will induce Eddy currents which will oppose the
-changing field. At an appropriate frequency, which is proportional to
-the copper thickness, the effective angular permeability is reduced to
-near zero. To approximate the conditions proposed by TO design, these
-two materials may be arranged in alternating angular sheets, as seen
-in figure~\ref{fig:shells}. 
+shielded by superconducting material. MuMetal has
+high relative permeabilities of up to $300,000+$ due to being a soft
+ferromagnetic material. Ferromagnets have unusually high permeability
+due to the exchange interaction between electrons favouring parallel
+spins and, as explained by the Stoner Criterion, a high density of
+states at the Fermi level. MuMetal is a nickel-iron alloy tuned to
+maximise these two effects and by using a thin sheet, the easy axis of
+magnetization lies in-plane further enforcing the field to be guided
+within the sheets. Superconductors in their Meissner state ($B = 0$) will
+exclude all magnetic fields from within their interior giving a
+relative permeability of $0$. In an alternating field, a far cheaper
+option for blocking the angular magnetic field component is the use of
+high conductivity copper sheeting. From Lenz's law an oscillating magnetic field
+perpendicular to a metal sheet will induce Eddy currents which will
+oppose the changing field. At an appropriate frequency, which is
+proportional to the copper thickness, the effective angular
+permeability is reduced to near zero. To approximate the conditions
+proposed by TO design, these two materials may be arranged in
+alternating angular sheets, as seen in figure~\ref{fig:shells}.
 
 In an external static uniform magnetic
 field, the ideal shell will increase the field within region $B$ by a
@@ -254,7 +273,7 @@ increased by a factor of $R_2/R_1$.
 \subsection{Wireless Power Transfer}
 
 The ability to transfer power between devices that are not connected
-by wires is useful in many settings: for convenience, e.g. mobile
+by wires is useful in many settings: for convenience, e.g. charging mobile
 phones; for safety, e.g. implanted medical devices; or for
 practicality, e.g. satellites. We shall focus on near field power
 transmission by the use of inductive coupling. Inductive coupling
@@ -265,10 +284,12 @@ magnetic field. The receiving coil is placed within this magnetic
 field so that a current is induced as described by Faraday's law. A
 schematic of these two coupled circuits can be seen in
 figure~\ref{fig:WPT}~$a, b,$ and $d$. This strategy for power transfer
-is highly sensitive to distance as the magnetic field of a dipole
+is highly sensitive to distance as the magnetic field of a point dipole
 drops off with distance cubed, $r^{-3}$, therefore the power is
 proportional to $r^{-6}$ if the dipole is driven at a fixed frequency
-and current.  The power transfer efficiency, PTE, also suffers with
+and current. If the dipole is a coil of wire with diameter $d$ then
+this approximation holds only if $r>>d$.  The power transfer
+efficiency, PTE, also suffers with
 distance as the non-ideal resistive losses in the primary coil remain
 (relatively) constant with distance. To somewhat counteract this sharp
 drop off of efficiency with distance, concentrating shells may be used
@@ -320,11 +341,11 @@ power transfer\cite{Wang2005}.
 \end{figure}
 
 \subsection{Construction of shell}
-$0.15$~mm MuMetal (MSFHP from Thorlabs) and $0.3$~mm copper were cut
-into $21$~mm by $30$~mm rectangular sheets.  Plastic supports for
+$0.15$~mm MuMetal (MSFHP from Thorlabs) sheets with $\mu_r = 55,000 - 75,000$, and $0.3$~mm high conductivity copper sheets were cut
+into $21$~mm by $30$~mm rectangles.  Plastic supports for
 holding $36$ sheets of either MuMetal or copper were 3D printed to
 produce the shells seen in figure~\ref{fig:shells}. The inner radius
-$R_1$ and outer radius $R_2$ were $7$ and $21$~mm respectively to give
+$R_1$ and outer radius $R_2$ were $7$ and $28$~mm respectively to give
 an $R_2/R_1$ ratio of 4. The ``Full shell'' contains $36$ sheets of
 alternating copper and MuMetal, whilst the ``No shell'' scenario
 contains no metal. 
@@ -374,7 +395,7 @@ resistor in a receiving circuit versus power lost in the transmitting
 circuit's inductor. The receiving circuit, seen in
 figure~\ref{fig:WPT}, has multiple arrangements to optimise power
 transfer, the simplest of which is the load resistor in series with
-the receiving inductor forming an RL circuit. Assuming the non-ideal
+the receiving inductor forming an RL circuit with no resonance conditions. Assuming the non-ideal
 real resistances of the coil is $r_2 << \omega L$, then the optimal
 load resistance for power transfer at some frequency $\omega$ is found
 by,
@@ -431,43 +452,49 @@ coils are used and the capacitance can be found to satisfy the
 resonance condition at a chosen operating frequency by the
 relationship
 \begin{equation}
-  C = \frac{1}{w^2L}.
+  C = \frac{1}{\omega^2L}.
   \label{eqn:RLC-res}
 \end{equation}
 Practically the resonant frequency and required capacitance was found
-using a series RLC circuit as seen in
-figure~\ref{fig:WPT}~$c$. Resonance occurs in this circuit when $V_x$
-is in phase with $V_y$.
+using a resonant series RLC circuit as seen in
+figure~\ref{fig:WPT}~$c$ as this method was experimentally
+simple and fast. Resonance occurs in this circuit when $V_x$ is in phase with
+$V_y$.
 
-The parallel RLC PTE arrangement is considered in
+The parallel resonant RLC PTE arrangement is considered in
 figure~\ref{fig:WPT}~$b$ and may be simplified to the equivalent
 circuit in $d$, where the voltage across $R_{load}$ is equal to,
 \begin{equation}
  V_2 = j\omega MI_1 - j\omega L_2I_2,\quad\text{and}\quad
  I_2 = j\omega MI_1 / Z_2 ,
 \end{equation}
-where $Z_2$ is the total impedance of circuit 2, which in our case is
-a parallel RLC circuit.  As with the RL case, an optimal resistance
-must be found to
-maximise power transfer. In series RLC the optimal resistance is when
+where $Z_2$ is the total impedance of circuit 2, which in the case of
+a parallel RLC circuit is equivalent to
+\begin{equation}
+  Z_2 = j\omega L_2 + \frac{1}{j\omega C + R_{load}^{-1}}.
+\end{equation}
+As with the non-resonant RL case, an optimal resistance must be found to maximise
+power transfer. In series RLC the optimal resistance is when
 $R_{load}$ matches the sum of internal resistances of the components,
 however in the parallel RLC case it was found that the optimal
 resistance depended non-trivially on the internal resistances of the
 components and on the frequency and inductance/capacitance values. The
 internal resistances of the inductance was also found to be dependent
-of frequency further complicating the optimal resistance calculations.
-The optimal resistances were therefore found experimentally
-through a resistance sweep at each frequency.
-The load voltage can then be shown to be,
+on frequency further complicating the optimal resistance calculations.
+The optimal resistances were therefore found experimentally through a
+resistance sweep at each frequency.  The load voltage can then be
+shown to be,
 \begin{equation}
-    V_2 \propto \frac{MR_{opt}}{L_2}I_1,
+    V_2 = A \frac{MR_{opt}}{L_2}I_1,
 \label{eqn:RLC-M}
 \end{equation}
-where $R_{opt}$ is the optimal resistor for power transfer. All the
-parameters in this equation may be measured during a PTE experiment
-allowing the comparison of relative changes in mutual inductances (and
-equivalently magnetic fields) when different concentrating shells are
-used. 
+where $R_{opt}$ is the optimal resistance for power transfer and $A$ is
+some constant. Suprisingly there is no explicit dependence of $V_2$ on
+frequency, however it was found that the optimal load resistance had
+an implicit dependence on frequency. All the parameters in this
+equation may be measured during a PTE experiment allowing the
+comparison of relative changes in mutual inductances (and equivalently
+magnetic fields) when different concentrating shells are used.
 
 PTE was calculated by finding the power dropped across the load
 resistor in circuit 2 and dividing by the power dropped across the
@@ -496,12 +523,12 @@ where $\phi$ is the phase difference between $I_1$ and $V_1$.
     the interior cavity of shells comprised of either $18$ or $36$
     MuMetal sheets.
     \textbf{B)} (AC) Experimentally found relative power transfer
-    efficiencies dependence on load resistance in a coupled RL
+    efficiencies dependence on load resistance in a coupled non-resonant RL
     inductive circuit for various frequencies. Theory line is found
     using equation~\ref{eqn:RL-max-theory}.
     \textbf{C)} Finding mutual inductance, $M$, between two coils at a
-    fixed distance for various shell configurations in the RL circuit
-    arrangement.  The gradient is equivalent to $M/\sqrt{2}$
+    fixed distance for various shell configurations in the non-resonant RL circuit
+    arrangement.  The gradient is equivalent to $2\pi M/\sqrt{2}$
     (equation~\ref{eqn:MVs}).
     \textbf{D)} The shell's effect on mutual inductance is found by the
     ratio of ($M$ with shell)/($M$ bare coil). An increase in mutual
@@ -532,13 +559,14 @@ where $\phi$ is the phase difference between $I_1$ and $V_1$.
     ($20$~kHz). The dimensions of the simulated shell matches those of
     the real fabricated shells. The MuMetal sheets are darker due to
     guiding the field within their interior whilst the copper sheets
-    deflects the angular component of the fields.  The inset image is
-    the Eddy current density within a single copper sheet with a
-    perpendicular applied magnetic field.
-    \textbf{E)} The dependence of magnetic concentration of various
-    shells on frequency of the oscillating field. It can be seen that
-    the two shells with copper show improved concentration as
-    frequency is increased as predicted and also shown experimentally.
+    deflects the angular component of the fields.  The inset image
+    displays the Eddy current density within a copper sheet when an
+    oscillating magnetic field is applied at $45^\circ$.
+    \textbf{E)} The dependence of magnetic concentration factor
+    ((field within cavity)/(external field)) of various shells on
+    frequency of the oscillating field. It can be seen that the two
+    shells with copper show improved concentration as frequency is
+    increased as predicted and also shown experimentally.
   }
   \label{fig:COMSOL}
 \end{figure}
@@ -566,7 +594,7 @@ both cases.
 
 \subsection{Power transfer}
 
-\subsection*{RL}
+\subsection*{Non-resonant power transfer using an RL circuit}
 %removed{{{
 %% An
 %% Oscillating magnetic field, $B$, produced from a solenoid and
@@ -601,7 +629,7 @@ both cases.
 Power is transferred from the primary circuit to a load resistor in
 the secondary circuit in a coupled inductive arrangement as explained
 in Methods. This may be simply performed by placing a load resistor in
-parallel with the receiving inductor $L_2$ forming an RL circuit as
+parallel with the receiving inductor $L_2$ forming an RL circuit with no resonant conditions as
 seen in figure~\ref{fig:WPT}~$a$. To maximise power transferred, the
 optimal load resistance was matched to $R = \omega L$ (see Methods
 equation~\ref{eqn:RL-max}). Figure~\ref{fig:DC_RL}~$b$ shows the
@@ -643,35 +671,37 @@ and is at the same frequency as our desired signal, so could not be
 removed by the use of a lock-in amplifier. To suppress this noise,
 careful cable placement and shielding was installed.
 
-\subsection*{Resonant --- RLC}
+\subsection*{Resonant power transfer using an RLC circuit}
 
 \begin{figure}
   \begin{center}
    \noindent\includegraphics[width=\linewidth]{images/compoundRLC-inset.pdf}
   \end{center}
   \caption{
-    \textbf{A)}~Locating the optimal load resistance for power transfer in a
+    \textbf{A)}~Locating the optimal load resistance for power transfer in a resonant
     parallel RLC receiving circuit at an AC frequency of $30$~kHz.
-    \textbf{B)}~The current across the optimal load resistor is proportional to
-    mutual inductance in the resonant parallel RLC circuit. Comparing
-    the gradients of $I_2$ against $I_1$ for the case when a shell is
-    present to when one is not presents gives the factor increase of
-    mutual inductance which is equivalent to the concentration of the
-    field within the shell.  
+    \textbf{B)}~The current across the optimal load resistance is proportional to
+    mutual inductance in the resonant parallel RLC circuit
+    (equation~\ref{eqn:RLC-M}). Voltage across the transmitting coil
+    remained constant and so various $I_1$ were achieved by using
+    different resonant frequencies. Comparing the gradients of $I_2$
+    against $I_1$ for the case when a shell is present to when one is
+    not gives the factor increase of mutual inductance which
+    is equivalent to the concentration of the field within the shell.
     \textbf{C)}~The shell's effect on mutual inductance in an RLC circuit is
     found by the ratio of ($M$ with shell)/($M$ bare coil). As with
     the RL circuit, the concentration of field is dependant on
     frequency for the full shell which has copper present.
     \textbf{D)}~A comparison of power transfer efficiencies (PTE) for both a
     full shell (18 copper and 18 MuMetal sheet) and no shell in either
-    the RL or RLC case. PTE is given as a ratio of power dropped
+    the non-resonant RL or resonant RLC case. PTE is given as a ratio of power dropped
     across the load resistor against power lost in the transmitting
     coil as explained in Methods.
   }
   \label{fig:cpdRLC}
 \end{figure}
 
-Parallel RLC circuits are more fitting for optimising power
+Resonant parallel RLC circuits are more fitting for optimising power
 transfer (see Methods). For the arrangement
 described in figure~\ref{fig:WPT}~$b$, a full shell comprised of $18$
 MuMetal and $18$ copper sheets was explored. The optimal load
@@ -690,12 +720,12 @@ concentration of the same factor if the inductance of $L_2$ is assumed
 to remain constant (see Discussion). 
 
 The frequency dependence on concentration factor is shown in
-figure~\ref{fig:cpdRLC}~$c$ and it can be seen that, as with the RL and
+figure~\ref{fig:cpdRLC}~$c$ and it can be seen that, as with the non-resonant RL and
 simulated experiments, the presence of copper in the shell leads to a
 low initial concentration which increases with frequency until around
 $10$~kHz at which point the concentration factor plateaus.
 
-The PTE for RL and RLC, no shell and full shell arrangements are
+The PTE for non-resonant RL and resonant RLC, no shell and full shell arrangements are
 compared in figure~\ref{fig:cpdRLC}~$d$. It can be seen that the shell
 increases the efficiency in both cases by a similar factor and that
 the parallel resonant RLC arrangement gives a much greater efficiency
@@ -744,7 +774,7 @@ For the constructed shells used in these experiments, their $R_2/R_1$
 ratio was $(4.0\pm0.2)$ and from the theoretical TO work, it was
 predicted that the field should be concentrated in the perfect shell
 by the same ratio. The greatest concentration of field we observed was
-$C_{Full} = (3.0\pm0.1)$ in the AC RL case. This concentration is
+$C_{Full} = (3.0\pm0.1)$ in the AC non-resonant RL case. This concentration is
 still well below the expected theoretical concentration factor of $C = (4.0
 \pm 0.2)$ and likely explained by our approach to approximating the
 perfect TO designed anisotropic shell to a discretized version
@@ -789,10 +819,10 @@ the relative permeability of space in the vicinity of the coil. A
 change in inductance of coil 2 is important in the calculation of
 mutual inductance as shown in equation~\ref{eqn:RLC-M}, and if
 accounted for, gives concentration factors of $C_{full}=(3.1\pm0.2)$ in
-the RLC case which is in closer agreement to the concentration
-observed in the RL experiments. An increase in inductance may also
+the resonant RLC case which is in closer agreement to the concentration
+observed in the non-resonant RL experiments. An increase in inductance may also
 lead to a decrease in PTE depending on the relationship between
-$R_{optimal}$ and inductance in the RLC circuit, but this could be
+$R_{optimal}$ and inductance in the resonant RLC circuit, but this could be
 avoided by increasing the distance between the coils and the MuMetal
 sheeting of the shell.
 
