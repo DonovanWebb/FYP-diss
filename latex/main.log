@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2022.1.16)  6 MAY 2022 23:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2022.1.16)  6 MAY 2022 23:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -226,7 +226,7 @@ DF version <1.7>, but at most version <1.5> allowed
 <images/free_space.pdf, id=41, 219.82124pt x 164.615pt>
 File: images/free_space.pdf Graphic file (type pdf)
 <use images/free_space.pdf>
-Package pdftex.def Info: images/free_space.pdf  used on input line 240.
+Package pdftex.def Info: images/free_space.pdf  used on input line 251.
 (pdftex.def)             Requested size: 168.00293pt x 125.81451pt.
 
 
@@ -235,13 +235,13 @@ DF version <1.7>, but at most version <1.5> allowed
 <images/dist_motiv.pdf, id=42, 997.7275pt x 600.2425pt>
 File: images/dist_motiv.pdf Graphic file (type pdf)
 <use images/dist_motiv.pdf>
-Package pdftex.def Info: images/dist_motiv.pdf  used on input line 244.
+Package pdftex.def Info: images/dist_motiv.pdf  used on input line 255.
 (pdftex.def)             Requested size: 230.39795pt x 138.6024pt.
 <images/shells.png, id=43, 471.2004pt x 622.9674pt>
 File: images/shells.png Graphic file (type png)
 <use images/shells.png>
-Package pdftex.def Info: images/shells.png  used on input line 265.
-(pdftex.def)             Requested size: 189.60205pt x 250.67494pt.
+Package pdftex.def Info: images/shells.png  used on input line 277.
+(pdftex.def)             Requested size: 208.32275pt x 275.41829pt.
 
 
 pdfTeX warning: pdflatex (file ./images/all_schem.pdf): PDF inclusion: found PD
@@ -249,12 +249,12 @@ F version <1.7>, but at most version <1.5> allowed
 <images/all_schem.pdf, id=45, 564.1075pt x 673.51625pt>
 File: images/all_schem.pdf Graphic file (type pdf)
 <use images/all_schem.pdf>
-Package pdftex.def Info: images/all_schem.pdf  used on input line 269.
-(pdftex.def)             Requested size: 203.04199pt x 242.42455pt.
+Package pdftex.def Info: images/all_schem.pdf  used on input line 281.
+(pdftex.def)             Requested size: 223.19824pt x 266.49333pt.
 <images/WPT.pdf, id=46, 654.445pt x 309.155pt>
 File: images/WPT.pdf Graphic file (type pdf)
 <use images/WPT.pdf>
-Package pdftex.def Info: images/WPT.pdf  used on input line 287.
+Package pdftex.def Info: images/WPT.pdf  used on input line 300.
 (pdftex.def)             Requested size: 311.99707pt x 147.3832pt.
 [3] [4 <./images/free_space.pdf> <./images/dist_motiv.pdf> <./images/shells.png
 > <./images/all_schem.pdf>] [5 <./images/WPT.pdf>] [6]
@@ -264,34 +264,35 @@ ound PDF version <1.7>, but at most version <1.5> allowed
 <images/compoundRL-inset.pdf, id=102, 1126.2075pt x 668.4975pt>
 File: images/compoundRL-inset.pdf Graphic file (type pdf)
 <use images/compoundRL-inset.pdf>
-Package pdftex.def Info: images/compoundRL-inset.pdf  used on input line 527.
+Package pdftex.def Info: images/compoundRL-inset.pdf  used on input line 554.
 (pdftex.def)             Requested size: 480.0pt x 284.91861pt.
 <images/compoundCOMSOL.png, id=103, 1091.57813pt x 686.565pt>
 File: images/compoundCOMSOL.png Graphic file (type png)
 <use images/compoundCOMSOL.png>
-Package pdftex.def Info: images/compoundCOMSOL.png  used on input line 552.
+Package pdftex.def Info: images/compoundCOMSOL.png  used on input line 580.
 (pdftex.def)             Requested size: 427.1997pt x 268.69165pt.
-[7] [8 <./images/compoundRL-inset.pdf>]
+[7]
 
 pdfTeX warning: pdflatex (file ./images/compoundRLC-inset.pdf): PDF inclusion: 
 found PDF version <1.7>, but at most version <1.5> allowed
-<images/compoundRLC-inset.pdf, id=143, 1135.24126pt x 716.6775pt>
+<images/compoundRLC-inset.pdf, id=108, 1135.24126pt x 716.6775pt>
 File: images/compoundRLC-inset.pdf Graphic file (type pdf)
 <use images/compoundRLC-inset.pdf>
-Package pdftex.def Info: images/compoundRLC-inset.pdf  used on input line 687.
+Package pdftex.def Info: images/compoundRLC-inset.pdf  used on input line 716.
 (pdftex.def)             Requested size: 431.99707pt x 272.72302pt.
-[9 <./images/compoundCOMSOL.png>] [10 <./images/compoundRLC-inset.pdf>]
-Underfull \hbox (badness 1009) in paragraph at lines 858--874
+[8 <./images/compoundRL-inset.pdf>] [9 <./images/compoundCOMSOL.png>] [10 <./im
+ages/compoundRLC-inset.pdf>]
+Underfull \hbox (badness 1009) in paragraph at lines 888--904
 \OT1/cmr/m/n/10.95 We have shown a proof of concept for the use of transformati
 on-optics designed magnetic
  []
 
 [11] (./main.bbl) [12] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 3491 strings out of 478353
- 51595 string characters out of 5854635
- 363937 words of memory out of 5000000
- 21568 multiletter control sequences out of 15000+600000
+ 3493 strings out of 478353
+ 51615 string characters out of 5854635
+ 363945 words of memory out of 5000000
+ 21570 multiletter control sequences out of 15000+600000
  412480 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  60i,22n,67p,216b,423s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -308,7 +309,7 @@ e1/public/amsfonts/cm/cmsy6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfo
 nts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pf
 b></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on main.pdf (12 pages, 9621216 bytes).
+Output written on main.pdf (12 pages, 9622263 bytes).
 PDF statistics:
  225 PDF objects out of 1000 (max. 8388607)
  118 compressed objects within 2 object streams

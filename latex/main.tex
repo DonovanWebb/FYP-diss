@@ -64,7 +64,7 @@ of transformation optics (TO) --- a modern approach to optical device
 design~\cite{Pendry2006}.
 
 Here we describe one such TO designed device; The magnetic
-concentrator~\cite{Navau2012}, with a particular focus on its efficacy
+concentrator~\cite{Navau2012, Rahm2008, Wang2008}, with a particular focus on its efficacy
 in wireless power transmission. We first replicate static field
 concentration results~\cite{N2014} and then explore the benefits of
 the concentrating shells in both non-resonant and resonant near field
@@ -82,12 +82,13 @@ wireless power transmission at various frequencies.
     space with corresponding permeabilities and permittivities which mimics
     the spatial coordinate transform $A$ for the ray. }
   \label{fig:TO}
+  \vspace{-0.7em}
 \end{figure}
 
 \subsection{Transformation Optics and Metamaterials}
 TO informed the design of many new devices such as perfect
 lenses~\cite{Pendry2000}, magnetic-hoses~\cite{Navau2014}, -cloaks~\cite{Sun2017},
--rotators~\cite{Sun2017}, and -concentrators~\cite{Navau2012}. It
+-rotators~\cite{Sun2017}, and -concentrators~\cite{Navau2012, Rahm2008, Wang2008}. It
 can be shown that due to the form invariance of Maxwell's equations, a
 spatial coordinate transform is equivalent to the insertion of a
 material with specific permeabilities and permittivities. This is shown
@@ -103,12 +104,14 @@ untransformed space.
 
 The form invariance of Faraday's law is
 described by the equivalent expressions
+\vspace{-0.2em}
 \begin{equation}
   \label{ME1}
   \nabla'\times \textbf{E'} = -jw[\mu_0]\textbf{H'}
   ~~~~~~~~\text{and}~~~~~~~~
   \nabla\times \textbf{E} = -jw[\mu']\textbf{H},
 \end{equation}
+\vspace{-0.2em}
 where the first is expressed in transformed coordinate space $x'(x, y,
 z), y'(x, y, z), z'(x, y, z)$ and free space permeability $[\mu_0]$,
 whilst the second is expressed in untransformed Cartesian space $x, y,
@@ -116,12 +119,14 @@ z$ but with some space-dependent permeability $[\mu']$.  Equivalent
 expressions exist for the remaining Maxwell equations and similarly
 some space-dependant permittivity $[\epsilon']$ is required. The space
 dependant permeabilities and permittivities are found by
+\vspace{-0.2em}
 \begin{equation}
   \label{eqn:J}
   \mu'=\frac{A\mu_0 A^T}{|A|}
   ~~~~~~~~\text{and}~~~~~~~~
   \epsilon'=\frac{A\epsilon_0 A^T}{|A|},
 \end{equation}
+\vspace{-0.2em}
 where $A$ is the Jacobian matrix describing the transformation of
 coordinate systems (e.g. between panel $a$ and panel $b$ in
 figure~\ref{fig:TO}). 
@@ -155,6 +160,7 @@ our transformed space, a high ($k^{th}$) order polynomial radial
 expansion of $R_2 - \xi < \rho < R_2$ to the region $R_1 < \rho < R_2$
 is made. These transformations are described by the coordinate
 transformations
+\vspace{-0.2em}
 \begin{equation}
   \label{eqn:transform}
   \begin{split}
@@ -162,10 +168,12 @@ transformations
 \rho' = R_2^{1-k}\rho^k~~~~~~~~~\rho'\in[R_2-\xi,~R_2).
   \end{split}
 \end{equation}
+\vspace{-0.2em}
 By symmetry we see that $\theta$ and $z$ remain unchanged through the
 two transformations. The corresponding Jacobians may be found for
 these transformations and using (\ref{eqn:J}), the
 permeabilities of the required inserted material may be found to be
+\vspace{-0.2em}
 \begin{equation}
   \label{eqn:mat}
   \begin{split}
@@ -173,6 +181,7 @@ permeabilities of the required inserted material may be found to be
 ~~~~~~\mu' = \begin{pmatrix}k&0&0\\0&1/k&0\\0&0&\frac{1}{k}(\frac{\rho'}{R_2})^{2/k-2}\end{pmatrix}~~~~~\rho'\in[R_1,~R_2)
   \end{split}
 \end{equation}
+\vspace{-0.2em}
 Taking the limit $\xi \rightarrow 0$ to concentrate all of
 the field within $A$ into $B$, and matching the boundary conditions at
 $R_2-\xi$ and at $R_1$, we find that $k \rightarrow \infty$. From this
@@ -188,9 +197,11 @@ in the COMSOL simulation (figure~\ref{fig:COMSOL}$a$).
 To satisfy these highly anisotropic conditions practically, an
 exploration of metamaterials is required. First, the relative magnetic
 permeability, $\mu_r$, of a material is defined by
+\vspace{-0.2em}
 \begin{equation}
   \vec{B} = \mu_0\mu_r \vec{H},
 \end{equation}
+\vspace{-0.2em}
 where $B$ is magnetic induction, $\mu_0$ is vacuum permeability, and
 $H$ is the externally applied magnetic field. If $\mu_r$ is large
 (paramagnetic material) then the magnetic field density within the
@@ -257,15 +268,16 @@ increased by a factor of $R_2/R_1$.
     without (Bottom). RHS: Theoretical power transfer plots for these
     two arrangements when the shell has $R_2 = 40$~mm, $R_1 =
     10$~mm.}\label{fig:d_motiv}
+  \vspace{-0.7em}
 \end{figure}
 
 \begin{figure}
 \begin{center}
-    \begin{minipage}{0.395\textwidth}
+    \begin{minipage}{0.434\textwidth}
         \noindent\includegraphics[width=\linewidth]{images/shells.png}
     \end{minipage}
     ~~~
-    \begin{minipage}{0.423\textwidth}
+    \begin{minipage}{0.465\textwidth}
         \noindent\includegraphics[width=\linewidth]{images/all_schem.pdf}
     \end{minipage}
 \caption{LHS: The constructed shells arranged in the power transfer
@@ -280,6 +292,7 @@ increased by a factor of $R_2/R_1$.
   transfer.}
 \label{fig:shells}
 \end{center}
+  \vspace{-0.7em}
 \end{figure}
 
 \begin{figure}
@@ -295,6 +308,7 @@ increased by a factor of $R_2/R_1$.
     are in phase, the resonant condition is met. d)~An equivalent
     circuit to the coupled inductor circuits but with explicit induced
     voltages shown. }\label{fig:WPT}
+  \vspace{-0.7em}
 \end{figure}
 
 
@@ -326,9 +340,11 @@ around the receiving coil. The concentrating shell is larger than
 the coil by necessity, however, the presence of a shell is always
 advantageous when the free space distance between the power
 transmitting and power receiving device is greater than $k$~\cite{Prat2016}, where
+\vspace{-0.2em}
 \begin{equation}
 k = \frac{R_2}{\sqrt[3]{R}-1}
 \end{equation}
+\vspace{-0.2em}
 and $R$ is the ratio $R_2/R_1$. This arrangement and the critical
 distance $k$ is shown in figure~\ref{fig:d_motiv}.
 
@@ -433,6 +449,7 @@ may be found by Faraday's law,
   \varepsilon = -\frac{d\phi_{21}}{dt},~~~\text{or}~~~\varepsilon = -M\frac{dI_{1}}{dt},
   \label{eqn:M}
 \end{equation}
+\vspace{-0.2em}
 where $\phi_{21}$ is the magnetic flux through coil 2 due to the
 current of coil 1 and $M$ is the equivalent mutual inductance between
 two coils.
@@ -445,10 +462,12 @@ coil one is known and the voltage across the load resistance in
 circuit 2 is measured at the optimal load resistance
 (see (\ref{eqn:RL-max})). This simple relationship of voltage
 measurement $V_2$ to mutual inductance $M$ is described by
+\vspace{-0.2em}
 \begin{equation}
   V_2 = \frac{MI_1\omega}{\sqrt{2}}.
 \label{eqn:MVs}
 \end{equation}
+\vspace{-0.2em}
 It is well known that a resonant RLC arrangement on the receiving
 circuit can greatly increase the power transferred in inductive
 coupling~\cite{Hirai2000}.  At resonance the complex impedance of the inductance
@@ -457,10 +476,12 @@ inductance is assumed to be identical between experiments as the same
 coils are used and the capacitance can be found to satisfy the
 resonance condition at a chosen operating frequency by the
 relationship
+\vspace{-0.4em}
 \begin{equation}
   C = \frac{1}{\omega^2L}.
   \label{eqn:RLC-res}
 \end{equation}
+\vspace{-0.3em}
 Practically the resonant frequency and required capacitance were found
 using a resonant series RLC circuit as seen in
 figure~\ref{fig:WPT}$c$ as this method was experimentally
@@ -470,16 +491,19 @@ $V_y$.
 The parallel resonant RLC PTE arrangement is considered in
 figure~\ref{fig:WPT}$b$ and may be simplified to the equivalent
 circuit in $d$, where the voltage across $R_{load}$ is equal to,
+\vspace{-0.2em}
 \begin{equation}
  V_2 = j\omega MI_1 - j\omega L_2I_2,\quad\text{and}\quad
  I_2 = j\omega MI_1 / Z_2 ,
 \end{equation}
+\vspace{-0.2em}
 where $Z_2$ is the total impedance of circuit 2, which in the case of
 a parallel RLC circuit is equivalent to
 \vspace{-0.5em}
 \begin{equation}
   Z_2 = j\omega L_2 + \frac{1}{j\omega C + R_{load}^{-1}}.
 \end{equation}
+\vspace{-0.2em}
 As with the non-resonant RL case, an optimal resistance must be found to maximise
 power transfer. In series RLC the optimal resistance is when
 $R_{load}$ matches the sum of internal resistances of the components,
@@ -496,6 +520,7 @@ shown to be
     V_2 = A \frac{MR_{opt}}{L_2}I_1,
 \label{eqn:RLC-M}
 \end{equation}
+\vspace{-0.2em}
 where $R_{opt}$ is the optimal resistance for power transfer and $A$ is
 some constant. Surprisingly there is no explicit dependence of $V_2$ on
 frequency, however, it was found that the optimal load resistance had
@@ -509,11 +534,13 @@ resistor in circuit 2 and dividing by the power dropped across the
 coil in circuit 1. An ideal inductance has voltage and current
 $90^\circ$ out of phase meaning the time-averaged power loss is zero,
 however real inductors have non-ideal characteristics and so power may
-be found by,
+be found by
+\vspace{-0.2em}
 \begin{equation}
     P_1 = I_{rms1}V_{rms1}cos(\phi),
 \label{eqn:P1}
 \end{equation}
+\vspace{-0.2em}
 where $\phi$ is the phase difference between $I_1$ and $V_1$.
 
 %}}}
@@ -545,6 +572,7 @@ where $\phi$ is the phase difference between $I_1$ and $V_1$.
     within the shell and is shown to be dependant on frequency for
     shells with copper present.}
   \label{fig:DC_RL}
+  \vspace{-0.7em}
 \end{figure}
 
 \begin{figure}
@@ -578,6 +606,7 @@ where $\phi$ is the phase difference between $I_1$ and $V_1$.
     increased as predicted and also shown experimentally.
   }
   \label{fig:COMSOL}
+  \vspace{-0.7em}
 \end{figure}
 
 Using Helmholtz coils powered in DC to create a static external
@@ -638,12 +667,12 @@ both cases.
 Power is transferred from the primary circuit to a load resistor in
 the secondary circuit in a coupled inductive arrangement as explained
 in Methods. This may be simply performed by placing a load resistor in
-parallel with the receiving inductor $L_2$ forming an RL circuit with no resonant conditions as
-seen in figure~\ref{fig:WPT}$a$. To maximise power transferred, the
-optimal load resistance was matched to $R = \omega L$ (see Methods
-(\ref{eqn:RL-max})). Figure~\ref{fig:DC_RL}$b$ shows the
-relative PTE versus load resistance for various frequencies confirming
-the expected optimum load resistance.
+parallel with the receiving inductor $L_2$ forming an RL circuit with
+no resonant conditions as seen in the inset of figure~\ref{fig:DC_RL}$b$. To maximise
+power transferred, the optimal load resistance was matched to $R =
+\omega L$ (see Methods (\ref{eqn:RL-max})). Figure~\ref{fig:DC_RL}$b$
+shows the relative PTE versus load resistance for various frequencies
+confirming the expected optimum load resistance.
 
 Mutual inductances between
 the coils (with inductances $L\approx 1$~mH) at a set distance of
@@ -708,11 +737,12 @@ cable placement was carefully managed and EM shielding was installed.
     coil as explained in Methods.
   }
   \label{fig:cpdRLC}
+  \vspace{-0.7em}
 \end{figure}
 
 Resonant parallel RLC circuits are more fitting for optimising power
 transfer (see Methods). For the arrangement
-described in figure~\ref{fig:WPT}$b$, a full shell comprised of $18$
+described in figure~\ref{fig:WPT}$b$ (inset in figure~\ref{fig:cpdRLC}$a$), a full shell comprised of $18$
 MuMetal and $18$ copper sheets was explored. The optimal load
 resistances were found experimentally by measuring power for a sweep
 of resistances, an example of which is shown in
