@@ -29,7 +29,7 @@ concentrate static fields.
 However, for wireless power transmission, an oscillating magnetic
 field is required.
 Here we explore the efficacy of a magnetic concentrator, comprised of
-high permeability MuMetal and high conductivity copper, in oscillating fields with a specific focus on
+high permeability MuMetal and high-conductivity copper, in oscillating fields with a specific focus on
 improving the efficiency of wireless power transmission.
 The device is shown to effectively concentrate both static and
 oscillating magnetic fields into its interior free space region by a
@@ -203,10 +203,10 @@ permeability, $\mu_r$, of a material is defined by
 \end{equation}
 \vspace{-0.2em}
 where $B$ is magnetic induction, $\mu_0$ is vacuum permeability, and
-$H$ is the externally applied magnetic field. If $\mu_r$ is large
+$H$ is the externally applied magnetic field. If $\mu_r>1$ 
 (paramagnetic material) then the magnetic field density within the
 material is larger than the external field resulting in a ``guiding''
-of field within the material's interior. If $\mu_r$ is small
+of field within the material's interior. If $\mu_r<1$ 
 (diamagnetic material) then the field density is reduced within the material.
 A possible discretized shell construction
 is proposed~\cite{N2014} where the high radial permeability is
@@ -226,14 +226,14 @@ field to be guided within the sheets. Superconductors in their
 Meissner state ($B = 0$) will exclude all magnetic fields from within
 their interior giving a relative permeability of $0$. In an
 alternating field, a far cheaper option for blocking the angular
-magnetic field component is the use of high conductivity copper
+magnetic field component is the use of high-conductivity copper
 sheeting. From Lenz's law, an oscillating magnetic field perpendicular
 to a metal sheet will induce eddy currents which will oppose the
 changing field. At an appropriate frequency, which is
 proportional to the copper thickness, the effective angular
 permeability is reduced to near zero. To approximate the conditions
 proposed by TO design, these two materials may be arranged in
-alternating angular sheets, as seen in figure~\ref{fig:shells}.
+alternating angular sheets, as seen on the LHS of figure~\ref{fig:shells}.
 
 In an external static uniform magnetic
 field, the ideal shell will increase the field within region $B$ by a
@@ -363,17 +363,17 @@ power transfer~\cite{Wang2005}.
 \section{Methods and Circuitry}
 
 \subsection{Construction of shell}
-$0.15$~mm MuMetal (MSFHP from Thorlabs) sheets with $\mu_r = 55,000 - 75,000$, and $0.3$~mm high conductivity copper sheets were cut
+$0.15$~mm MuMetal (MSFHP from Thorlabs) sheets with $\mu_r = 55,000 - 75,000$, and $0.3$~mm high-conductivity copper sheets were cut
 into $21$~mm by $30$~mm rectangles.  Plastic supports for
 holding $36$ sheets of either MuMetal or copper were 3D printed to
-produce the shells seen in figure~\ref{fig:shells}. The inner radius
+produce the shells seen on LHS of figure~\ref{fig:shells}. The inner radius
 $R_1$ and outer radius $R_2$ were $7$ and $28$~mm respectively to give
 an $R_2/R_1$ ratio of 4. The ``Full shell'' contains $36$ sheets of
 alternating copper and MuMetal, whilst the ``No shell'' scenario
 contains no metal. 
 
 \subsection{DC Magnetic Fields}
-Helmholtz coils (RHS figure~\ref{fig:shells}) were powered by constant
+Helmholtz coils (RHS figure~\ref{fig:shells}$a$) were powered by constant
 DC to create a uniform magnetic field within their
 center.
 A Hall probe placed at the center of the Helmholtz coils will have a
@@ -414,8 +414,8 @@ $R_1$ section of the shells to explore field concentration.
 \subsection{Power Transfer}
 Power transfer experiments measure power dropped across a load
 resistor in a receiving circuit versus power lost in the transmitting
-circuit's inductor. The receiving circuit, seen in
-figure~\ref{fig:WPT}, has multiple arrangements to optimise power
+circuit's inductor. The receiving circuit, set up seen in
+figure~\ref{fig:shells}$b$, has multiple arrangements to optimise power
 transfer, the simplest of which is the load resistor in series with
 the receiving inductor forming an RL circuit with no resonance conditions. Assuming the non-ideal
 real resistances of the coil is $r_2 << \omega L$, then the optimal
@@ -464,10 +464,11 @@ circuit 2 is measured at the optimal load resistance
 measurement $V_2$ to mutual inductance $M$ is described by
 \vspace{-0.2em}
 \begin{equation}
-  V_2 = \frac{MI_1\omega}{\sqrt{2}}.
+  V_2 = \frac{MI_1\omega}{\sqrt{2}}
 \label{eqn:MVs}
 \end{equation}
 \vspace{-0.2em}
+in the non-resonant RL case.
 It is well known that a resonant RLC arrangement on the receiving
 circuit can greatly increase the power transferred in inductive
 coupling~\cite{Hirai2000}.  At resonance the complex impedance of the inductance
@@ -487,7 +488,6 @@ using a resonant series RLC circuit as seen in
 figure~\ref{fig:WPT}$c$ as this method was experimentally
 simple and fast. Resonance occurs in this circuit when $V_x$ is in phase with
 $V_y$.
-
 The parallel resonant RLC PTE arrangement is considered in
 figure~\ref{fig:WPT}$b$ and may be simplified to the equivalent
 circuit in $d$, where the voltage across $R_{load}$ is equal to,
@@ -521,8 +521,9 @@ shown to be
 \label{eqn:RLC-M}
 \end{equation}
 \vspace{-0.2em}
-where $R_{opt}$ is the optimal resistance for power transfer and $A$ is
-some constant. Surprisingly there is no explicit dependence of $V_2$ on
+where $R_{opt}$ is the optimal resistance for power transfer and $A$
+is some constant that does not change when a shell is
+introduced. Surprisingly there is no explicit dependence of $V_2$ on
 frequency, however, it was found that the optimal load resistance had
 an implicit dependence on frequency. All the parameters in this
 equation may be measured during a PTE experiment allowing the
@@ -530,8 +531,8 @@ comparison of relative changes in mutual inductances (and equivalently
 magnetic fields) when different concentrating shells are used.
 
 PTE was calculated by finding the power dropped across the load
-resistor in circuit 2 and dividing by the power dropped across the
-coil in circuit 1. An ideal inductance has voltage and current
+resistor in the receiving circuit and dividing by the power dropped across the
+coil in the transmitting circuit. An ideal inductance has voltage and current
 $90^\circ$ out of phase meaning the time-averaged power loss is zero,
 however real inductors have non-ideal characteristics and so power may
 be found by
@@ -598,12 +599,14 @@ where $\phi$ is the phase difference between $I_1$ and $V_1$.
     guiding the field within their interior whilst the copper sheets
     deflect the angular component of the fields.  The inset image
     displays the eddy current density within a copper sheet when an
-    oscillating magnetic field is applied at $45^\circ$.
+    oscillating magnetic field is applied at $60^\circ$.
     \textbf{E)} The dependence of magnetic concentration factor
     ((field within cavity)/(external field)) of various shells on
     frequency of the oscillating field. It can be seen that the two
     shells with copper show improved concentration as frequency is
-    increased as predicted and also shown experimentally.
+    increased as predicted and also shown experimentally.\\
+    A particular thanks to Dominic Wildman for the work on these
+    simulations.
   }
   \label{fig:COMSOL}
   \vspace{-0.7em}
@@ -773,7 +776,7 @@ efficiency achieved at $30$~kHz and $59$~mm with one ``full'' shell was
 $(0.035\pm0.005)\%$. 
 
 A second ``full'' shell with the same dimensions was placed around the
-transmitting coil (seen in figure~\ref{fig:shells}) and this further
+transmitting coil (seen on LHS of figure~\ref{fig:shells}) and this further
 increased PTE to $(0.35\pm0.02)\%$. This second shell gave a power
 increase of around a factor of $10$ which corresponds to a further
 field concentration of $\sqrt{10} \approx 3.2$. To explore the
@@ -866,7 +869,7 @@ avoided by increasing the distance between the coils and the MuMetal
 sheeting of the shell.
 
 The poor PTE in all cases is explained by our choice of a ferrous
-core coil 1. This choice was motivated by the sensitivity of our
+core transmitting coil. This choice was motivated by the sensitivity of our
 detection equipment, the limitations of the current we were able to
 supply to our coils (greater current gives greater $B$ field), and the
 limitations of the coil radius as it must fit within our shells. The
@@ -903,11 +906,12 @@ almost $70$ fold over a distance of $49$~mm at a frequency of
 $30$~kHz.
 
 In future work, to make such a power transfer device more practical,
-larger elliptical coils could be used within both shells allowing the
-generation and harvesting of stronger magnetic fields with a supplied
-current. Such coils may be narrow to minimise $R_1$, but extend in the
-$z$-direction of the shells to increase the area of one wire
-loop.
+larger elliptical coils could be used within both shells. Larger coils
+mean the breakdown of the distance-power relationship of $r^{-6}$ described in
+section 1.3 as now the diameter of the coil can be comparable to the
+seperation distance. Such coils may be narrow to minimise $R_1$, but
+extend in the $z$-direction of the shells to increase the area of one
+wire loop.
 
 The effectiveness of these MuMetal and copper shells should also be
 explored in the MHz frequency range as is required by some high
