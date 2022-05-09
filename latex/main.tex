@@ -177,8 +177,8 @@ permeabilities of the required inserted material may be found to be
 \begin{equation}
   \label{eqn:mat}
   \begin{split}
- \mu' = \begin{pmatrix}1&0&0\\0&1&0\\0&0&(\frac{R_2-\xi}{R_1})^2\end{pmatrix}~~~~~~~~~~~~~\rho'\in[0,~R_1)~~\\
-~~~~~~\mu' = \begin{pmatrix}k&0&0\\0&1/k&0\\0&0&\frac{1}{k}(\frac{\rho'}{R_2})^{2/k-2}\end{pmatrix}~~~~~\rho'\in[R_1,~R_2)
+ \mu' = \begin{pmatrix}1&0\\0&1\end{pmatrix}~~~~~~~~~~~~~\rho'\in[0,~R_1)~~\\
+ \mu' = \begin{pmatrix}k&0\\0&1/k\end{pmatrix}~~~~~~~~~~\rho'\in[R_1,~R_2)
   \end{split}
 \end{equation}
 \vspace{-0.2em}
@@ -203,37 +203,37 @@ permeability, $\mu_r$, of a material is defined by
 \end{equation}
 \vspace{-0.2em}
 where $B$ is magnetic induction, $\mu_0$ is vacuum permeability, and
-$H$ is the externally applied magnetic field. If $\mu_r>1$ 
+$H$ is the externally applied magnetic field. If $\mu_r>1$
 (paramagnetic material) then the magnetic field density within the
 material is larger than the external field resulting in a ``guiding''
-of field within the material's interior. If $\mu_r<1$ 
-(diamagnetic material) then the field density is reduced within the material.
-A possible discretized shell construction
-is proposed~\cite{N2014} where the high radial permeability is
-provided by ferromagnetic materials whilst the angular permeability is
-shielded by superconducting material.
-MuMetal is a soft ferromagnetic material comprised of annealed
-nickel-iron alloy specifically created to possess unusually high
-permeability ($\mu_r = 50,000-300,000+$).  The magnetization of
-MuMetal responds to externally applied fields by the growth and
-shrinkage of individual magnetic domains. By annealing the MuMetal and
-removing defects, the individual domains may reshape rapidly in
-response to a magnetic field by the unimpeded movement of domain
-walls.
-By using thin sheets, the
-easy axis of magnetization also lies in-plane further enforcing the
-field to be guided within the sheets. Superconductors in their
-Meissner state ($B = 0$) will exclude all magnetic fields from within
-their interior giving a relative permeability of $0$. In an
-alternating field, a far cheaper option for blocking the angular
-magnetic field component is the use of high-conductivity copper
-sheeting. From Lenz's law, an oscillating magnetic field perpendicular
-to a metal sheet will induce eddy currents which will oppose the
-changing field. At an appropriate frequency, which is
-proportional to the copper thickness, the effective angular
-permeability is reduced to near zero. To approximate the conditions
-proposed by TO design, these two materials may be arranged in
-alternating angular sheets, as seen on the LHS of figure~\ref{fig:shells}.
+of field within the material's interior. If $\mu_r<1$ (diamagnetic
+material) then the field density is reduced within the material.  A
+possible discretized shell construction is proposed~\cite{N2014} where
+the high radial permeability is provided by ferromagnetic materials
+whilst the angular permeability is shielded by superconducting
+material.  MuMetal is a soft ferromagnetic material comprised of
+annealed nickel-iron alloy specifically created to possess unusually
+high permeability ($\mu_r = 50,000-300,000+$).  The magnetization of
+MuMetal mainly responds to externally applied fields by the growth and
+shrinkage of individual magnetic domains. Defects are removed from the
+MuMetal by annealing to allow the unimpeded movement of domain
+walls. This allows a rapid response of domain-reshaping when an
+external magnetic field is applied.  By using high aspect ratio thin
+sheets and through annealing, the easy axis of magnetization is made
+to lie in-plane further enforcing the field to be guided within the
+sheets and radially into the central cavity of the
+concentrator. Superconductors in their Meissner state ($B = 0$) will
+exclude all magnetic fields from within their interior giving a
+relative permeability of $0$. In an alternating field, a far cheaper
+option for blocking the angular magnetic field component is the use of
+high-conductivity copper sheeting. From Lenz's law, an oscillating
+magnetic field perpendicular to a metal sheet will induce eddy
+currents which will oppose the changing field. At an appropriate
+frequency, which is proportional to the copper thickness, the
+effective angular permeability is reduced to near zero. To approximate
+the conditions proposed by TO design, these two materials may be
+arranged in alternating angular sheets, as seen on the LHS of
+figure~\ref{fig:shells}.
 
 In an external static uniform magnetic
 field, the ideal shell will increase the field within region $B$ by a
@@ -552,7 +552,7 @@ where $\phi$ is the phase difference between $I_1$ and $V_1$.
 
 \begin{figure}
   \begin{center}
-   \noindent\includegraphics[width=\linewidth]{images/compoundRL-inset.pdf}
+   \noindent\includegraphics[width=0.95\linewidth]{images/compoundRL-error.pdf}
   \end{center}
   \caption{
     \textbf{A)} (DC) The concentration of external static fields into
@@ -560,8 +560,11 @@ where $\phi$ is the phase difference between $I_1$ and $V_1$.
     MuMetal sheets.
     \textbf{B)} (AC) The dependence of relative power transfer
     efficiencies on load resistance in a coupled non-resonant RL
-    inductive circuit for various frequencies. Points correspond to
-    experimentally measured values whilst the solid lines are found
+    inductive circuit for various frequencies. The absolute peak PTE
+    for each frequency is identical however the points have been
+    scaled to better visualise the different resistance peak
+    values. Points correspond to experimentally measured values whilst
+    the solid lines are found
     using (\ref{eqn:RL-max-theory}).
     \textbf{C)} Finding mutual inductance, $M$, between two coils at a
     fixed distance for various shell configurations in the non-resonant RL circuit
@@ -716,7 +719,7 @@ cable placement was carefully managed and EM shielding was installed.
 
 \begin{figure}
   \begin{center}
-   \noindent\includegraphics[width=0.9\linewidth]{images/compoundRLC-inset.pdf}
+   \noindent\includegraphics[width=0.9\linewidth]{images/compoundRLC-error.pdf}
   \end{center}
   \caption{
     \textbf{A)}~Locating the optimal load resistance for power transfer in a resonant
@@ -725,7 +728,9 @@ cable placement was carefully managed and EM shielding was installed.
     mutual inductance in the resonant parallel RLC circuit as seen in
     (\ref{eqn:RLC-M}). Voltage across the transmitting coil
     remained constant and so various $I_1$ were achieved by using
-    different resonant frequencies. Comparing the gradients of $I_2$
+    different resonant frequencies. Error in values correspond to
+    errors in locating the optimal load resistance. Comparing the
+    gradients of $I_2$
     against $I_1$ for the case when a shell is present to when one is
     not gives the factor increase of mutual inductance which
     is equivalent to the concentration of the field within the shell.
@@ -744,22 +749,23 @@ cable placement was carefully managed and EM shielding was installed.
 \end{figure}
 
 Resonant parallel RLC circuits are more fitting for optimising power
-transfer (see Methods). For the arrangement
-described in figure~\ref{fig:WPT}$b$ (inset in figure~\ref{fig:cpdRLC}$a$), a full shell comprised of $18$
+transfer. For the circuit arrangement seen in the
+figure~\ref{fig:cpdRLC}$a$ inset, a full shell comprised of $18$
 MuMetal and $18$ copper sheets was explored. The optimal load
 resistances were found experimentally by measuring power for a sweep
 of resistances, an example of which is shown in
-figure~\ref{fig:cpdRLC}$a$ for a field frequency of $30$~kHz.
-
-From (\ref{eqn:RLC-M}), the voltage measured across the load
-resistor is proportional to the mutual inductance between the two
-coils when the optimal load resistor is used, and the resonance
-condition for the RLC circuit is met. Figure~\ref{fig:cpdRLC}$b$
-confirms this relationship and shows an increase in mutual inductance
-when the full concentrating shell is present. The gradient was found
-to be increased by a factor of $(2.6 \pm 0.2)$ corresponding to a field
-concentration of the same factor if the inductance of $L_2$ is assumed
-to remain constant (see Discussion). 
+figure~\ref{fig:cpdRLC}$a$ for a field frequency of
+$30$~kHz. Inaccurate determination of this optimal resistance are
+believed to be a major error source for subsequent calculations.  From
+(\ref{eqn:RLC-M}), the voltage measured across the load resistor is
+proportional to the mutual inductance between the two coils when the
+optimal load resistor is used, and the resonance condition for the RLC
+circuit is met. Figure~\ref{fig:cpdRLC}$b$ confirms this relationship
+and shows an increase in mutual inductance when the full concentrating
+shell is present. The gradient was found to be increased by a factor
+of $(2.6 \pm 0.2)$ corresponding to a field concentration of the same
+factor if the inductance of $L_2$ is assumed to remain constant (see
+Discussion).
 
 The dependence of frequency on concentration factor is shown in
 figure~\ref{fig:cpdRLC}$c$ and it can be seen that, as with the non-resonant RL and

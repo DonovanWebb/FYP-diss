@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2022.1.16)  8 MAY 2022 12:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2022.1.16)  9 MAY 2022 19:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -259,30 +259,30 @@ Package pdftex.def Info: images/WPT.pdf  used on input line 300.
 [3] [4 <./images/free_space.pdf> <./images/dist_motiv.pdf> <./images/shells.png
 > <./images/all_schem.pdf>] [5 <./images/WPT.pdf>] [6]
 
-pdfTeX warning: pdflatex (file ./images/compoundRL-inset.pdf): PDF inclusion: f
+pdfTeX warning: pdflatex (file ./images/compoundRL-error.pdf): PDF inclusion: f
 ound PDF version <1.7>, but at most version <1.5> allowed
-<images/compoundRL-inset.pdf, id=102, 1126.2075pt x 668.4975pt>
-File: images/compoundRL-inset.pdf Graphic file (type pdf)
-<use images/compoundRL-inset.pdf>
-Package pdftex.def Info: images/compoundRL-inset.pdf  used on input line 555.
-(pdftex.def)             Requested size: 480.0pt x 284.91861pt.
-<images/compoundCOMSOL.png, id=103, 1091.57813pt x 686.565pt>
+<images/compoundRL-error.pdf, id=101, 1126.2075pt x 668.4975pt>
+File: images/compoundRL-error.pdf Graphic file (type pdf)
+<use images/compoundRL-error.pdf>
+Package pdftex.def Info: images/compoundRL-error.pdf  used on input line 555.
+(pdftex.def)             Requested size: 455.99854pt x 270.6686pt.
+<images/compoundCOMSOL.png, id=102, 1091.57813pt x 686.565pt>
 File: images/compoundCOMSOL.png Graphic file (type png)
 <use images/compoundCOMSOL.png>
-Package pdftex.def Info: images/compoundCOMSOL.png  used on input line 581.
+Package pdftex.def Info: images/compoundCOMSOL.png  used on input line 584.
 (pdftex.def)             Requested size: 427.1997pt x 268.69165pt.
 [7]
 
-pdfTeX warning: pdflatex (file ./images/compoundRLC-inset.pdf): PDF inclusion: 
+pdfTeX warning: pdflatex (file ./images/compoundRLC-error.pdf): PDF inclusion: 
 found PDF version <1.7>, but at most version <1.5> allowed
-<images/compoundRLC-inset.pdf, id=108, 1135.24126pt x 716.6775pt>
-File: images/compoundRLC-inset.pdf Graphic file (type pdf)
-<use images/compoundRLC-inset.pdf>
-Package pdftex.def Info: images/compoundRLC-inset.pdf  used on input line 719.
-(pdftex.def)             Requested size: 431.99707pt x 272.72302pt.
-[8 <./images/compoundRL-inset.pdf>] [9 <./images/compoundCOMSOL.png>] [10 <./im
-ages/compoundRLC-inset.pdf>]
-Underfull \hbox (badness 1009) in paragraph at lines 891--907
+<images/compoundRLC-error.pdf, id=107, 1089.06876pt x 691.58376pt>
+File: images/compoundRLC-error.pdf Graphic file (type pdf)
+<use images/compoundRLC-error.pdf>
+Package pdftex.def Info: images/compoundRLC-error.pdf  used on input line 722.
+(pdftex.def)             Requested size: 431.99707pt x 274.32811pt.
+[8 <./images/compoundRL-error.pdf>] [9 <./images/compoundCOMSOL.png>] [10 <./im
+ages/compoundRLC-error.pdf>]
+Underfull \hbox (badness 1009) in paragraph at lines 897--913
 \OT1/cmr/m/n/10.95 We have shown a proof of concept for the use of transformati
 on-optics designed magnetic
  []
@@ -291,11 +291,11 @@ on-optics designed magnetic
 Here is how much of TeX's memory you used:
  3493 strings out of 478353
  51615 string characters out of 5854635
- 364945 words of memory out of 5000000
+ 362945 words of memory out of 5000000
  21570 multiletter control sequences out of 15000+600000
  412480 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,22n,67p,216b,423s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,21n,67p,216b,423s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/
 amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cm
 bx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr
@@ -305,14 +305,13 @@ ist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1
 s/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></
 usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-
 dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmsy6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pf
-b></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on main.pdf (12 pages, 9622541 bytes).
+e1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.p
+fb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on main.pdf (12 pages, 9606619 bytes).
 PDF statistics:
- 225 PDF objects out of 1000 (max. 8388607)
- 118 compressed objects within 2 object streams
+ 220 PDF objects out of 1000 (max. 8388607)
+ 115 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  46 words of extra memory for PDF output out of 10000 (max. 10000000)
 
